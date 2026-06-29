@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VPN UK 信息源观察面板｜2026-06-29 日报</title>
+<style>
+  :root {
+    --bg:#f6f7fb; --panel:#ffffff; --ink:#14213d; --muted:#64748b; --line:#e5e7eb;
+    --brand:#2447f9; --brand2:#00a896; --warn:#f59e0b; --danger:#ef4444; --soft:#eef2ff;
+    --shadow:0 16px 40px rgba(15, 23, 42, .08); --radius:20px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(180deg,#edf2ff 0,#f8fafc 280px,var(--bg) 100%);color:var(--ink);font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",Arial,sans-serif}
+  a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+  header{padding:32px 32px 18px;max-width:1440px;margin:auto}
+  .hero{display:grid;grid-template-columns:1.5fr .9fr;gap:22px;align-items:stretch}
+  .hero-main,.hero-side,.panel,.card{background:rgba(255,255,255,.92);border:1px solid rgba(148,163,184,.25);border-radius:var(--radius);box-shadow:var(--shadow)}
+  .hero-main{padding:30px;position:relative;overflow:hidden}
+  .hero-main:after{content:"";position:absolute;right:-110px;top:-120px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(36,71,249,.20),transparent 70%)}
+  h1{font-size:32px;line-height:1.16;margin:0 0 10px;letter-spacing:-.02em}
+  h2{font-size:22px;margin:0 0 18px} h3{font-size:17px;margin:10px 0 8px} h4{font-size:15px;margin:6px 0 6px}
+  .subtitle{color:var(--muted);max-width:860px;margin:0}
+  .hero-side{padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .kpi{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px}
+  .kpi b{display:block;font-size:28px;line-height:1;color:var(--brand);margin-bottom:6px}
+  .kpi span{color:var(--muted)}
+  .controls{max-width:1440px;margin:0 auto 20px;padding:0 32px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .control{border:1px solid var(--line);background:white;border-radius:999px;padding:9px 14px;box-shadow:0 6px 20px rgba(15,23,42,.04)}
+  input.control{min-width:280px;outline:none}
+  select.control{outline:none}
+  button.control{cursor:pointer;color:var(--ink)}
+  main{max-width:1440px;margin:auto;padding:0 32px 48px;display:grid;gap:22px}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .grid-2{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+  .panel{padding:22px}
+  .daily-read{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .read-card{border:1px solid var(--line);border-radius:16px;padding:15px;background:linear-gradient(180deg,#fff,#f8fafc)}
+  .read-card b{font-size:22px;color:var(--brand);display:block}
+  .read-card span{color:var(--muted)}
+  .card{padding:18px;display:flex;flex-direction:column;gap:8px}
+  .card-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .pill{display:inline-flex;align-items:center;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700;background:#e2e8f0;color:#334155}
+  .p0{background:#fee2e2;color:#b91c1c} .p1{background:#fef3c7;color:#92400e} .p2{background:#dcfce7;color:#166534}
+  .theme{font-size:12px;color:var(--muted)} .score{margin-left:auto;font-weight:700;color:var(--brand2);font-size:13px}
+  .evidence{margin:0;color:#334155} .meta{display:flex;flex-wrap:wrap;gap:8px 16px;color:var(--muted);font-size:12px}
+  .bars{display:grid;gap:6px;margin-top:4px}
+  .bars label{display:grid;grid-template-columns:72px 30px 1fr;gap:8px;align-items:center;color:var(--muted);font-size:12px}
+  .bars i,.mini-bar i{display:block;height:8px;width:var(--w);background:linear-gradient(90deg,var(--brand),var(--brand2));border-radius:999px}
+  .bars label:after,.mini-bar{content:"";height:8px;background:#e5e7eb;border-radius:999px}
+  .bars i{grid-column:3;grid-row:1}
+  .action{margin:0;padding:10px 12px;border-radius:12px;background:#f8fafc;color:#334155}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+  .tags span{font-size:12px;background:#eef2ff;color:#3730a3;border-radius:999px;padding:3px 8px}
+  table{width:100%;border-collapse:collapse;background:white;border-radius:16px;overflow:hidden}
+  th,td{border-bottom:1px solid var(--line);padding:10px 11px;text-align:left;vertical-align:top} th{background:#f8fafc;color:#475569;font-size:12px;text-transform:uppercase;letter-spacing:.02em}
+  td{font-size:13px} tr:hover td{background:#fafafa}
+  .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px}
+  .mini-bar{display:grid;grid-template-columns:1fr 34px;gap:8px;align-items:center;background:transparent;height:auto}
+  .mini-bar:before{content:"";height:8px;background:#e5e7eb;border-radius:999px;grid-column:1;grid-row:1}
+  .mini-bar i{grid-column:1;grid-row:1} .mini-bar b{font-size:12px;color:var(--brand)}
+  .direction,.status{border-radius:999px;background:#ecfeff;color:#0369a1;padding:3px 8px;font-size:12px;font-weight:700}
+  .tier{border-radius:999px;padding:3px 8px;font-size:12px;font-weight:700;white-space:nowrap}
+  .tier.core{background:#fee2e2;color:#b91c1c} .tier.weekly{background:#fef3c7;color:#92400e} .tier.pool{background:#e2e8f0;color:#334155}
+  .action-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .action-card{border:1px solid var(--line);border-radius:16px;background:#fff;padding:15px}
+  .action-card p{margin:6px 0;color:#334155} .action-card small{color:var(--muted)}
+  .method{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;counter-reset:step}
+  .method div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;position:relative}
+  .method div:before{counter-increment:step;content:counter(step);display:inline-flex;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;align-items:center;justify-content:center;font-weight:700;margin-bottom:8px}
+  .note{color:var(--muted);margin:8px 0 0}
+  .source-list{columns:2;gap:40px;margin:0;padding-left:18px} .source-list li{break-inside:avoid;margin:4px 0}
+  footer{max-width:1440px;margin:auto;padding:0 32px 40px;color:var(--muted)}
+  @media (max-width:1100px){.hero,.grid-2{grid-template-columns:1fr}.grid-3,.daily-read,.action-grid,.method{grid-template-columns:1fr 1fr}}
+  @media (max-width:700px){header,main,.controls,footer{padding-left:16px;padding-right:16px}.hero-side,.grid-3,.daily-read,.action-grid,.method{grid-template-columns:1fr}h1{font-size:26px}.source-list{columns:1}}
+  @media print {body{background:#fff}.controls{display:none}.panel,.card,.hero-main,.hero-side{box-shadow:none} a{color:#111;text-decoration:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="hero">
+    <section class="hero-main">
+      <h1>VPN UK 信息源观察面板｜日报版</h1>
+      <p class="subtitle">基于你上传的《来源池》与本次抓取结果，按“最重要、受众最关切、行业最相关、增长需求点”四个原则做信息整合。当前版本为 2026-06-29 的日报样张，可作为每日更新的网页模板。</p>
+    </section>
+    <aside class="hero-side">
+      <div class="kpi"><b>49</b><span>表格信息源</span></div>
+      <div class="kpi"><b>28</b><span>候选源</span></div>
+      <div class="kpi"><b>5</b><span>每日追踪源</span></div>
+      <div class="kpi"><b>19</b><span>每周追踪源</span></div>
+    </aside>
+  </div>
+</header>
+
+<div class="controls">
+  <input id="searchBox" class="control" placeholder="搜索主题、来源、关键词，例如：Nord、UK、流媒体、政策" />
+  <select id="priorityFilter" class="control"><option value="all">全部优先级</option><option value="P0">只看 P0</option><option value="P1">只看 P1</option><option value="P2">只看 P2</option></select>
+  <select id="tierFilter" class="control"><option value="all">全部来源层级</option><option value="核心日报源">核心日报源</option><option value="周更重点源">周更重点源</option><option value="观察池">观察池</option></select>
+  <button class="control" onclick="window.print()">打印/另存 PDF</button>
+  <button class="control" onclick="downloadJSON()">导出本页 JSON</button>
+</div>
+
+<main>
+  <section class="panel">
+    <h2>今日一句话研判</h2>
+    <div class="daily-read">
+      <div class="read-card"><b>政策触发增长</b><span>UK 年龄验证/under‑16 社媒限制让 VPN 合法使用、绕过争议和隐私话题继续升温。</span></div>
+      <div class="read-card"><b>流媒体是刚需</b><span>用户反复抱怨 VPN 被识别、IP 信誉差、Netflix/Prime/YouTube 切区不稳定。</span></div>
+      <div class="read-card"><b>竞品转化窗口</b><span>Nord 用户集中暴露 UK 节点容量、5G/应用兼容、续费与取消路径问题。</span></div>
+      <div class="read-card"><b>信任要补证据</b><span>X‑VPN 外部评测风险聚焦透明审计、速度、WebRTC、隐私政策与价格感知。</span></div>
+    </div>
+    <p class="note">更新口径：日报优先使用“核心日报源 + 高频社群 + 官方政策 + 主流评测媒体”；低频 affiliate 站仅用于 SEO 话术观察，不直接作为产品事实依据。</p>
+  </section>
+
+  <section>
+    <h2>今日 P0/P1 情报卡</h2>
+    <div id="findingGrid" class="grid-3">
+    <article class="card finding" data-priority="P0" data-theme="UK 政策与合规窗口" data-search="英国 under-16 社媒限制进入落地路径，vpn 绕过问题被官方点名研究 uk 政策与合规窗口 政府计划在年底前提交第一批法规、2027 年春季实施；同时承认儿童可能使用 vpn 绕过年龄检查，并表示已委托研究，7 月更新。 政策,uk,年龄验证,vpn 合法性">
+      <div class="card-top"><span class="pill p0">P0</span><span class="theme">UK 政策与合规窗口</span><span class="score">综合 93.9</span></div>
+      <h3>英国 under-16 社媒限制进入落地路径，VPN 绕过问题被官方点名研究</h3>
+      <p class="evidence">政府计划在年底前提交第一批法规、2027 年春季实施；同时承认儿童可能使用 VPN 绕过年龄检查，并表示已委托研究，7 月更新。</p>
+      <div class="meta"><span>受众：家长、学生、隐私关注用户、英国本地媒体</span><span>来源：<a href="https://www.gov.uk/government/publications/fact-sheet-new-rules-to-protect-children-online/fact-sheet-new-rules-to-protect-children-online" target="_blank" rel="noopener">GOV.UK / Ofcom</a></span></div>
+      <div class="bars">
+        <label>重要性 <b>95</b><i style="--w:95%"></i></label>
+        <label>行业相关 <b>95</b><i style="--w:95%"></i></label>
+        <label>增长价值 <b>92</b><i style="--w:92%"></i></label>
+      </div>
+      <p class="action"><b>下一步：</b>准备“合规、安全、隐私不冲突”的内容话术；监控 7 月官方更新与 Ofcom 年龄保证报告。</p>
+      <div class="tags"><span>政策</span><span>UK</span><span>年龄验证</span><span>VPN 合法性</span></div>
+    </article>
+    <article class="card finding" data-priority="P0" data-theme="流媒体/平台检测" data-search="用户在 netflix / prime / youtube / 地区价格场景持续遇到 vpn 被识别、ip 被标记、资料库混乱 流媒体/平台检测 多个新帖集中在“vpn 被平台识别”“某些服务器可用、某些失效”“地区价格/广告/流媒体资料库切换失败”。 streaming,ip reputation,geo-price,netflix">
+      <div class="card-top"><span class="pill p0">P0</span><span class="theme">流媒体/平台检测</span><span class="score">综合 90.8</span></div>
+      <h3>用户在 Netflix / Prime / YouTube / 地区价格场景持续遇到 VPN 被识别、IP 被标记、资料库混乱</h3>
+      <p class="evidence">多个新帖集中在“VPN 被平台识别”“某些服务器可用、某些失效”“地区价格/广告/流媒体资料库切换失败”。</p>
+      <div class="meta"><span>受众：流媒体用户、价格敏感用户、旅行用户、游戏用户</span><span>来源：<a href="https://www.reddit.com/r/VPN/new/" target="_blank" rel="noopener">r/VPN / r/VPN_Question / r/nordvpn</a></span></div>
+      <div class="bars">
+        <label>重要性 <b>90</b><i style="--w:90%"></i></label>
+        <label>行业相关 <b>88</b><i style="--w:88%"></i></label>
+        <label>增长价值 <b>94</b><i style="--w:94%"></i></label>
+      </div>
+      <p class="action"><b>下一步：</b>建立 UK/US 流媒体可用性监控；将“可用服务器推荐、自动切换、IP 信誉”作为产品与内容卖点。</p>
+      <div class="tags"><span>Streaming</span><span>IP reputation</span><span>Geo-price</span><span>Netflix</span></div>
+    </article>
+    <article class="card finding" data-priority="P0" data-theme="竞品口碑：NordVPN" data-search="nord 用户关注 uk 服务器容量、5g/应用拦截、续费价格、取消订阅摩擦 竞品口碑：nordvpn 新帖包含 uk manchester 服务器 captcha/网站加载问题、5g 下地图/音乐/支付受阻、续费价格过高、取消订阅路径不清晰。 nordvpn,uk servers,renewal,churn">
+      <div class="card-top"><span class="pill p0">P0</span><span class="theme">竞品口碑：NordVPN</span><span class="score">综合 89.6</span></div>
+      <h3>Nord 用户关注 UK 服务器容量、5G/应用拦截、续费价格、取消订阅摩擦</h3>
+      <p class="evidence">新帖包含 UK Manchester 服务器 CAPTCHA/网站加载问题、5G 下地图/音乐/支付受阻、续费价格过高、取消订阅路径不清晰。</p>
+      <div class="meta"><span>受众：Nord 存量用户、英国本地 VPN 用户、价格敏感续费用户</span><span>来源：<a href="https://www.reddit.com/r/nordvpn/new/" target="_blank" rel="noopener">r/nordvpn</a></span></div>
+      <div class="bars">
+        <label>重要性 <b>88</b><i style="--w:88%"></i></label>
+        <label>行业相关 <b>90</b><i style="--w:90%"></i></label>
+        <label>增长价值 <b>91</b><i style="--w:91%"></i></label>
+      </div>
+      <p class="action"><b>下一步：</b>以“英国城市级节点/低 CAPTCHA/透明续费/易取消”做竞品转化；社区回复脚本应强调故障排查与试用体验。</p>
+      <div class="tags"><span>NordVPN</span><span>UK servers</span><span>Renewal</span><span>Churn</span></div>
+    </article>
+    <article class="card finding" data-priority="P1" data-theme="公共 Wi‑Fi 与移动场景" data-search="机场、酒店、学校、5g 与校园网是高频真实场景，用户想要“自动、稳定、少打扰” 公共 wi‑fi 与移动场景 新帖涉及机场 wi‑fi、酒店 wi‑fi、学校网络、车上 5g、eduroam/校园游戏等场景。痛点不是“是否需要 vpn”，而是连接后别影响地图、银行、流媒体、游戏。 public wi‑fi,student,remote work,mobile">
+      <div class="card-top"><span class="pill p1">P1</span><span class="theme">公共 Wi‑Fi 与移动场景</span><span class="score">综合 84.1</span></div>
+      <h3>机场、酒店、学校、5G 与校园网是高频真实场景，用户想要“自动、稳定、少打扰”</h3>
+      <p class="evidence">新帖涉及机场 Wi‑Fi、酒店 Wi‑Fi、学校网络、车上 5G、eduroam/校园游戏等场景。痛点不是“是否需要 VPN”，而是连接后别影响地图、银行、流媒体、游戏。</p>
+      <div class="meta"><span>受众：学生、旅行/出差用户、远程办公、游戏用户</span><span>来源：<a href="https://www.reddit.com/r/VPN/new/" target="_blank" rel="noopener">r/VPN / r/nordvpn / r/UniUK</a></span></div>
+      <div class="bars">
+        <label>重要性 <b>84</b><i style="--w:84%"></i></label>
+        <label>行业相关 <b>82</b><i style="--w:82%"></i></label>
+        <label>增长价值 <b>86</b><i style="--w:86%"></i></label>
+      </div>
+      <p class="action"><b>下一步：</b>做“公共 Wi‑Fi 自动连接 + 分应用/分流 + 低电量模式 + 兼容银行/地图”的使用指南和产品清单。</p>
+      <div class="tags"><span>Public Wi‑Fi</span><span>Student</span><span>Remote work</span><span>Mobile</span></div>
+    </article>
+    <article class="card finding" data-priority="P1" data-theme="免费版与价格敏感" data-search="免费 vpn、家庭套餐、低价续费、退款/取消是持续高转化入口 免费版与价格敏感 社区中“免费替代”“家庭套餐”“不贵但能流媒体”的需求不断出现；媒体与 youtube 标题也大量围绕 best/free/uk/deals。 free vpn,deals,学生,价格敏感">
+      <div class="card-top"><span class="pill p1">P1</span><span class="theme">免费版与价格敏感</span><span class="score">综合 84.6</span></div>
+      <h3>免费 VPN、家庭套餐、低价续费、退款/取消是持续高转化入口</h3>
+      <p class="evidence">社区中“免费替代”“家庭套餐”“不贵但能流媒体”的需求不断出现；媒体与 YouTube 标题也大量围绕 best/free/UK/deals。</p>
+      <div class="meta"><span>受众：学生、价格敏感、轻度流媒体用户</span><span>来源：<a href="https://www.reddit.com/r/VPN_Question/new/" target="_blank" rel="noopener">r/VPN_Question / YouTube Search / Tom’s Guide / TechRadar</a></span></div>
+      <div class="bars">
+        <label>重要性 <b>82</b><i style="--w:82%"></i></label>
+        <label>行业相关 <b>78</b><i style="--w:78%"></i></label>
+        <label>增长价值 <b>93</b><i style="--w:93%"></i></label>
+      </div>
+      <p class="action"><b>下一步：</b>增长侧优先测试“免费额度→流媒体/英国节点试用→限时付费”的路径，并突出无套路取消和价格透明。</p>
+      <div class="tags"><span>Free VPN</span><span>Deals</span><span>学生</span><span>价格敏感</span></div>
+    </article>
+    <article class="card finding" data-priority="P1" data-theme="评测媒体竞品叙事" data-search="媒体榜单存在分歧：tom’s/techradar 偏 nord，comparitech 实时实验室当前偏 expressvpn 评测媒体竞品叙事 tom’s guide 将 nordvpn 作为 top recommendation；comparitech live benchmark 显示 expressvpn 当前综合分第一、nordvpn 流媒体分最高。 seo,affiliate,competitors,benchmark">
+      <div class="card-top"><span class="pill p1">P1</span><span class="theme">评测媒体竞品叙事</span><span class="score">综合 85.3</span></div>
+      <h3>媒体榜单存在分歧：Tom’s/TechRadar 偏 Nord，Comparitech 实时实验室当前偏 ExpressVPN</h3>
+      <p class="evidence">Tom’s Guide 将 NordVPN 作为 top recommendation；Comparitech live benchmark 显示 ExpressVPN 当前综合分第一、NordVPN 流媒体分最高。</p>
+      <div class="meta"><span>受众：购买前搜索用户、SEO 流量、联盟评测读者</span><span>来源：<a href="https://www.comparitech.com/vpn/" target="_blank" rel="noopener">Tom’s Guide / TechRadar / Comparitech</a></span></div>
+      <div class="bars">
+        <label>重要性 <b>80</b><i style="--w:80%"></i></label>
+        <label>行业相关 <b>92</b><i style="--w:92%"></i></label>
+        <label>增长价值 <b>85</b><i style="--w:85%"></i></label>
+      </div>
+      <p class="action"><b>下一步：</b>拆解各榜单维度差异，制作“按场景选 VPN”内容：隐私、流媒体、价格、英国节点、初学者。</p>
+      <div class="tags"><span>SEO</span><span>Affiliate</span><span>Competitors</span><span>Benchmark</span></div>
+    </article>
+    <article class="card finding" data-priority="P1" data-theme="X‑VPN 外部评价风险与机会" data-search="top10vpn 对 x‑vpn 的弱项集中在速度、隐私信任、webrtc、价格与透明审计 x‑vpn 外部评价风险与机会 top10vpn 给出付费版 5.4/10，列出慢速、chrome 扩展 webrtc 泄漏、闭源协议、订阅贵、所有权信任等负面点，同时认可流媒体设备支持和免费无限流量。 x‑vpn,review,trust,webrtc">
+      <div class="card-top"><span class="pill p1">P1</span><span class="theme">X‑VPN 外部评价风险与机会</span><span class="score">综合 86.1</span></div>
+      <h3>Top10VPN 对 X‑VPN 的弱项集中在速度、隐私信任、WebRTC、价格与透明审计</h3>
+      <p class="evidence">Top10VPN 给出付费版 5.4/10，列出慢速、Chrome 扩展 WebRTC 泄漏、闭源协议、订阅贵、所有权信任等负面点，同时认可流媒体设备支持和免费无限流量。</p>
+      <div class="meta"><span>受众：X‑VPN 品牌/产品/公关/增长团队</span><span>来源：<a href="https://www.top10vpn.com/reviews/x-vpn/" target="_blank" rel="noopener">Top10VPN X‑VPN Review</a></span></div>
+      <div class="bars">
+        <label>重要性 <b>86</b><i style="--w:86%"></i></label>
+        <label>行业相关 <b>84</b><i style="--w:84%"></i></label>
+        <label>增长价值 <b>88</b><i style="--w:88%"></i></label>
+      </div>
+      <p class="action"><b>下一步：</b>将审计、透明报告、WebRTC 修复、速度数据、取消/价格透明作为外部声誉修复优先级。</p>
+      <div class="tags"><span>X‑VPN</span><span>Review</span><span>Trust</span><span>WebRTC</span></div>
+    </article>
+    <article class="card finding" data-priority="P2" data-theme="审查地区与技术用户" data-search="中国、伊朗、俄罗斯等地区的可用性测试需求出现，用户更看重协议、节点稳定和真实测试反馈 审查地区与技术用户 多帖涉及 gfw、伊朗网络恢复、俄罗斯 ios 测试招募、vless/reality、wireguard 等协议和节点可用性。 censorship,protocol,testing,koc">
+      <div class="card-top"><span class="pill p2">P2</span><span class="theme">审查地区与技术用户</span><span class="score">综合 77.8</span></div>
+      <h3>中国、伊朗、俄罗斯等地区的可用性测试需求出现，用户更看重协议、节点稳定和真实测试反馈</h3>
+      <p class="evidence">多帖涉及 GFW、伊朗网络恢复、俄罗斯 iOS 测试招募、VLESS/Reality、WireGuard 等协议和节点可用性。</p>
+      <div class="meta"><span>受众：高技术用户、审查地区用户、测试/KOC 用户</span><span>来源：<a href="https://www.reddit.com/r/mullvadvpn/new/" target="_blank" rel="noopener">r/VPN / r/Windscribe / r/mullvadvpn / r/VPN_Question</a></span></div>
+      <div class="bars">
+        <label>重要性 <b>74</b><i style="--w:74%"></i></label>
+        <label>行业相关 <b>82</b><i style="--w:82%"></i></label>
+        <label>增长价值 <b>78</b><i style="--w:78%"></i></label>
+      </div>
+      <p class="action"><b>下一步：</b>不做高风险承诺，改做“可用性反馈池”和区域测试用户招募，输出透明可用性状态。</p>
+      <div class="tags"><span>Censorship</span><span>Protocol</span><span>Testing</span><span>KOC</span></div>
+    </article></div>
+  </section>
+
+  <section class="grid-2">
+    <div class="panel">
+      <h2>信号热度矩阵</h2>
+      <div class="table-wrap"><table><thead><tr><th>信号</th><th>热度</th><th>置信度</th><th>方向</th><th>建议 owner</th></tr></thead><tbody>
+      <tr>
+        <td>政策/年龄验证/VPN 合法性</td>
+        <td><div class="mini-bar"><i style="--w:96%"></i><b>96</b></div></td>
+        <td>88</td>
+        <td><span class="direction">上升</span></td>
+        <td>政策监控 + 内容</td>
+      </tr>
+      <tr>
+        <td>流媒体可用性/IP 被识别</td>
+        <td><div class="mini-bar"><i style="--w:93%"></i><b>93</b></div></td>
+        <td>85</td>
+        <td><span class="direction">上升</span></td>
+        <td>产品 + 运营</td>
+      </tr>
+      <tr>
+        <td>UK 节点容量与 IP 信誉</td>
+        <td><div class="mini-bar"><i style="--w:89%"></i><b>89</b></div></td>
+        <td>82</td>
+        <td><span class="direction">上升</span></td>
+        <td>网络 + 增长</td>
+      </tr>
+      <tr>
+        <td>免费/低价/续费透明</td>
+        <td><div class="mini-bar"><i style="--w:86%"></i><b>86</b></div></td>
+        <td>80</td>
+        <td><span class="direction">稳定高位</span></td>
+        <td>增长 + 支付</td>
+      </tr>
+      <tr>
+        <td>公共 Wi‑Fi / 旅行 / 校园</td>
+        <td><div class="mini-bar"><i style="--w:83%"></i><b>83</b></div></td>
+        <td>76</td>
+        <td><span class="direction">上升</span></td>
+        <td>内容 + 社群</td>
+      </tr>
+      <tr>
+        <td>隐私信任/审计/透明报告</td>
+        <td><div class="mini-bar"><i style="--w:81%"></i><b>81</b></div></td>
+        <td>84</td>
+        <td><span class="direction">稳定高位</span></td>
+        <td>品牌 + 法务</td>
+      </tr>
+      <tr>
+        <td>游戏 Ping / 路由 / Discord</td>
+        <td><div class="mini-bar"><i style="--w:72%"></i><b>72</b></div></td>
+        <td>68</td>
+        <td><span class="direction">观察</span></td>
+        <td>用户研究</td>
+      </tr>
+      <tr>
+        <td>KOC/YouTube/TikTok 联盟内容</td>
+        <td><div class="mini-bar"><i style="--w:77%"></i><b>77</b></div></td>
+        <td>70</td>
+        <td><span class="direction">上升</span></td>
+        <td>增长 + KOC</td>
+      </tr></tbody></table></div>
+    </div>
+    <div class="panel">
+      <h2>受限源与补数方式</h2>
+      <div class="table-wrap"><table><thead><tr><th>来源</th><th>状态</th><th>处理建议</th></tr></thead><tbody><tr><td>X/Twitter search</td><td><span class="status">受限</span></td><td>公开搜索页可能需要登录/反爬；日报建议通过 X API、第三方社媒监听工具或手工导出补充。</td></tr><tr><td>YouTube search</td><td><span class="status">部分可用</span></td><td>可通过搜索结果识别标题与内容方向；评论区与实时排序建议用 YouTube Data API。</td></tr><tr><td>TikTok search</td><td><span class="status">受限</span></td><td>当前抓取受 robots/安全限制；建议用 TikTok Creative Center、手工采样或合规监听工具。</td></tr><tr><td>App Store / Google Play 手动搜索</td><td><span class="status">需接 API/手动</span></td><td>ASO 排名和评论建议通过 AppTweak、SensorTower、data.ai 或商店手工记录。</td></tr><tr><td>Discord 群</td><td><span class="status">不可公开抓取</span></td><td>需要入群权限与用户授权；建议只记录公开/授权反馈，避免隐私风险。</td></tr></tbody></table></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>增长行动板</h2>
+    <div class="action-grid">
+      <div class="action-card"><span class="pill p0">P0</span><h4>内容/SEO</h4><p>做 3 篇 UK 场景内容：1）社媒年龄验证与 VPN 合法使用；2）VPN 被 Netflix/Prime 识别怎么办；3）学生/宿舍/公共 Wi‑Fi 安全指南。</p><small>覆盖政策搜索、流媒体痛点、学生渠道</small></div>
+      <div class="action-card"><span class="pill p0">P0</span><h4>产品/网络</h4><p>建立 UK 节点声誉监控：Manchester/London 等城市节点的 CAPTCHA、流媒体、银行/地图 App 可用性。</p><small>竞品用户在 UK server reputation 上有显性抱怨</small></div>
+      <div class="action-card"><span class="pill p1">P1</span><h4>增长/付费</h4><p>测试“无套路取消 + 续费提醒 + 学生价/家庭价”落地页与付费弹窗文案。</p><small>价格/续费/取消摩擦是竞品流失和转化机会</small></div>
+      <div class="action-card"><span class="pill p1">P1</span><h4>社群/KOC</h4><p>从 Reddit / YouTube 小博主筛 20 个“免费 VPN/UK VPN/streaming VPN”内容作者，优先低粉高互动。</p><small>搜索结果里低质量联盟内容很多，存在更真实内容空位</small></div>
+      <div class="action-card"><span class="pill p1">P1</span><h4>品牌/信任</h4><p>为外部评测准备证据包：协议开源/审计计划、WebRTC 修复、速度测试、隐私政策要点、透明报告路线。</p><small>Top10VPN 等第三方评测会影响购买前用户信任</small></div>
+      <div class="action-card"><span class="pill p0">P0</span><h4>用户研究</h4><p>建立 20 人 UK 测试群，分层覆盖学生、旅行、流媒体、游戏、隐私用户，每周收集可用性截图和场景日志。</p><small>你的月计划已包含核心用户群与访谈，这能直接喂给日报面板</small></div></div>
+  </section>
+
+  <section class="panel">
+    <h2>每日更新 SOP</h2>
+    <div class="method">
+      <div><b>读取来源池</b><p>按“是否候选、是否可持续、追踪频率、备注”分层，优先抓核心日报源。</p></div>
+      <div><b>抓取与去噪</b><p>社群抓 new/hot；媒体抓榜单/更新时间；官方抓政策更新；不可抓源记录状态。</p></div>
+      <div><b>四维评分</b><p>重要性、受众关切、行业相关、增长价值各 0–100，P0/P1/P2 输出。</p></div>
+      <div><b>聚类输出</b><p>按政策、竞品、场景、价格、内容机会、产品问题聚合，而不是逐条搬运链接。</p></div>
+      <div><b>行动闭环</b><p>每条高优信号必须给 owner、下一步动作和验证方式，第二天追踪变化。</p></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>来源追踪表</h2>
+    <p class="note">层级计算：候选源 + 可持续 + 高频 + 备注中含竞品/政策/ASO/搜索/KOC/免费版等增长关键词会提高日报优先级。</p>
+    <div class="table-wrap"><table id="sourceTable"><thead><tr><th>层级</th><th>类别</th><th>平台</th><th>来源</th><th>目标用户</th><th>频率</th><th>关键信息</th><th>备注</th><th>分</th></tr></thead><tbody>
+      <tr data-tier="核心日报源" data-search="r/vpn reddit 竞品口碑/故障/需求 技术/隐私用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/VPN/" target="_blank" rel="noopener">r/VPN</a></td>
+        <td>技术/隐私用户</td>
+        <td>每日</td>
+        <td>抓取高频问题</td>
+        <td>竞品口碑/故障/需求</td>
+        <td>9</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="r/vpn_question reddit 竞品口碑/故障/需求 技术/隐私用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/VPN_Question/" target="_blank" rel="noopener">r/VPN_Question</a></td>
+        <td>技术/隐私用户</td>
+        <td>每日</td>
+        <td>抓取高频问题</td>
+        <td>竞品口碑/故障/需求</td>
+        <td>9</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="r/windscribe reddit 竞品消息 相关产品用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/Windscribe/" target="_blank" rel="noopener">r/Windscribe</a></td>
+        <td>相关产品用户</td>
+        <td>每日</td>
+        <td>补充并评估是否可持续</td>
+        <td>竞品消息</td>
+        <td>9</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="r/vpnreviews reddit 竞品口碑/故障/需求 技术/隐私用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/vpnreviews/" target="_blank" rel="noopener">r/vpnreviews</a></td>
+        <td>技术/隐私用户</td>
+        <td>每日</td>
+        <td>记录价格/续费讨论</td>
+        <td>竞品口碑/故障/需求</td>
+        <td>9</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="comparitech vpn blog/media 场景与竞品话术 隐私/流媒体用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>媒体</td>
+        <td>Blog/Media</td>
+        <td><a href="https://www.comparitech.com/vpn/" target="_blank" rel="noopener">Comparitech VPN</a></td>
+        <td>隐私/流媒体用户</td>
+        <td>每周</td>
+        <td>记录英国 VPN 推荐</td>
+        <td>场景与竞品话术</td>
+        <td>8</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="techradar vpn blog/media 竞品卖点/评测维度 购买前用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>媒体</td>
+        <td>Blog/Media</td>
+        <td><a href="https://www.techradar.com/vpn" target="_blank" rel="noopener">TechRadar VPN</a></td>
+        <td>购买前用户</td>
+        <td>每周</td>
+        <td>跟踪推荐榜单变动</td>
+        <td>竞品卖点/评测维度</td>
+        <td>8</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="apple app store 搜索：vpn app store aso 排名/评论/关键词 ios 用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>应用商店</td>
+        <td>App Store</td>
+        <td>Apple App Store 搜索：vpn</td>
+        <td>iOS 用户</td>
+        <td>每周</td>
+        <td>记录 X-VPN 与竞品排名</td>
+        <td>ASO 排名/评论/关键词</td>
+        <td>8</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="google play 搜索：vpn google play aso 排名/评论/关键词 android 用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>应用商店</td>
+        <td>Google Play</td>
+        <td>Google Play 搜索：vpn</td>
+        <td>Android 用户</td>
+        <td>每周</td>
+        <td>记录 X-VPN 与竞品排名</td>
+        <td>ASO 排名/评论/关键词</td>
+        <td>8</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="google uk: best vpn uk google search 搜索需求/竞品内容 购买前用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>搜索</td>
+        <td>Google Search</td>
+        <td><a href="https://www.google.co.uk/search?q=best+vpn+uk" target="_blank" rel="noopener">Google UK: best VPN UK</a></td>
+        <td>购买前用户</td>
+        <td>每周</td>
+        <td>记录 SEO 竞品与内容角度</td>
+        <td>搜索需求/竞品内容</td>
+        <td>8</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="r/vpnreviewhub reddit 竞品口碑/故障/需求 技术/隐私用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/VPNReviewHub/" target="_blank" rel="noopener">r/VPNReviewHub</a></td>
+        <td>技术/隐私用户</td>
+        <td>每周</td>
+        <td></td>
+        <td>竞品口碑/故障/需求</td>
+        <td>8</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="r/expressvpn reddit 竞品消息 相关产品用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/Express_VPN/" target="_blank" rel="noopener">r/expressvpn</a></td>
+        <td>相关产品用户</td>
+        <td>每周</td>
+        <td>补充并评估是否可持续</td>
+        <td>竞品消息</td>
+        <td>8</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="r/firefox reddit 竞品口碑/故障/需求 相关产品用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/firefox/" target="_blank" rel="noopener">r/firefox</a></td>
+        <td>相关产品用户</td>
+        <td>每周</td>
+        <td></td>
+        <td>竞品口碑/故障/需求</td>
+        <td>8</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="r/mullvadvpn reddit 竞品口碑/故障/需求 相关产品用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/mullvadvpn/" target="_blank" rel="noopener">r/mullvadvpn</a></td>
+        <td>相关产品用户</td>
+        <td>每周</td>
+        <td></td>
+        <td>竞品口碑/故障/需求</td>
+        <td>8</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="r/nordvpn reddit 竞品消息 相关产品用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/nordvpn/" target="_blank" rel="noopener">r/nordvpn</a></td>
+        <td>相关产品用户</td>
+        <td>每周</td>
+        <td>补充并评估是否可持续</td>
+        <td>竞品消息</td>
+        <td>8</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="r/protonvpn reddit 竞品消息 相关产品用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/ProtonVPN/" target="_blank" rel="noopener">r/protonvpn</a></td>
+        <td>相关产品用户</td>
+        <td>每周</td>
+        <td>补充并评估是否可持续</td>
+        <td>竞品消息</td>
+        <td>8</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="x 搜索：vpn uk x/twitter 舆情/及时需求 隐私/技术用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>社媒</td>
+        <td>X/Twitter</td>
+        <td><a href="https://x.com/search?q=VPN%20UK&amp;src=typed_query" target="_blank" rel="noopener">X 搜索：VPN UK</a></td>
+        <td>隐私/技术用户</td>
+        <td>每日</td>
+        <td>记录实时抱怨/政策话题</td>
+        <td>舆情/及时需求</td>
+        <td>8</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="air vpn other 竞品口碑/故障/需求 相关产品用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>第三方</td>
+        <td>Other</td>
+        <td><a href="https://airvpn.org/forums/forum/2-general-suggestions/" target="_blank" rel="noopener">Air VPN</a></td>
+        <td>相关产品用户</td>
+        <td>每周</td>
+        <td>补充并评估是否可持续</td>
+        <td>竞品口碑/故障/需求</td>
+        <td>8</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="youtube 搜索：best vpn uk youtube koc/内容合作机会 购买前用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>视频</td>
+        <td>YouTube</td>
+        <td><a href="https://www.youtube.com/results?search_query=best+vpn+uk" target="_blank" rel="noopener">YouTube 搜索：best VPN UK</a></td>
+        <td>购买前用户</td>
+        <td>每周</td>
+        <td>找小博主和评论区痛点</td>
+        <td>KOC/内容合作机会</td>
+        <td>8</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="youtube 搜索：free vpn uk youtube 免费版切入点 价格敏感用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>视频</td>
+        <td>YouTube</td>
+        <td><a href="https://www.youtube.com/results?search_query=free+vpn+uk" target="_blank" rel="noopener">YouTube 搜索：free VPN UK</a></td>
+        <td>价格敏感用户</td>
+        <td>每周</td>
+        <td>找免费 VPN 需求评论</td>
+        <td>免费版切入点</td>
+        <td>8</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="tom’s guide vpn blog/media 内容结构/关键词 购买前用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>媒体</td>
+        <td>Blog/Media</td>
+        <td><a href="https://www.tomsguide.com/best-picks/best-vpn" target="_blank" rel="noopener">Tom’s Guide VPN</a></td>
+        <td>购买前用户</td>
+        <td>每周</td>
+        <td>收集竞品维度</td>
+        <td>内容结构/关键词</td>
+        <td>7</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="r/uniuk reddit 学生价格/校园 wi-fi 需求 学生/价格敏感">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/UniUK/" target="_blank" rel="noopener">r/UniUK</a></td>
+        <td>学生/价格敏感</td>
+        <td>每周</td>
+        <td>设计学生调研入口</td>
+        <td>学生价格/校园 Wi-Fi 需求</td>
+        <td>7</td>
+      </tr>
+      <tr data-tier="核心日报源" data-search="tiktok 搜索：vpn uk tiktok 短视频内容机会 年轻用户">
+        <td><span class="tier core">核心日报源</span></td>
+        <td>视频</td>
+        <td>TikTok</td>
+        <td><a href="https://www.tiktok.com/search?q=vpn%20uk" target="_blank" rel="noopener">TikTok 搜索：VPN UK</a></td>
+        <td>年轻用户</td>
+        <td>每周</td>
+        <td>观察短视频话术</td>
+        <td>短视频内容机会</td>
+        <td>7</td>
+      </tr>
+      <tr data-tier="周更重点源" data-search="safepaper other 独立性较高的vpn评测网站 public">
+        <td><span class="tier weekly">周更重点源</span></td>
+        <td>第三方</td>
+        <td>Other</td>
+        <td><a href="https://safepaper.io" target="_blank" rel="noopener">SafePaper</a></td>
+        <td>public</td>
+        <td>每月</td>
+        <td>补充并评估是否可持续</td>
+        <td>独立性较高的VPN评测网站</td>
+        <td>6</td>
+      </tr>
+      <tr data-tier="周更重点源" data-search="trustpilot other 查看 vpn 品牌在用户中的投诉点，如退款、自动续费、速度、客服、解锁失败（主要评论在美国） public">
+        <td><span class="tier weekly">周更重点源</span></td>
+        <td>第三方</td>
+        <td>Other</td>
+        <td><a href="https://www.trustpilot.com" target="_blank" rel="noopener">Trustpilot</a></td>
+        <td>public</td>
+        <td>每月</td>
+        <td>补充并评估是否可持续</td>
+        <td>查看 VPN 品牌在用户中的投诉点，如退款、自动续费、速度、客服、解锁失败（主要评论在美国）</td>
+        <td>6</td>
+      </tr>
+      <tr data-tier="周更重点源" data-search="vpncompare other 英国本地化重点vpn评测网站 public">
+        <td><span class="tier weekly">周更重点源</span></td>
+        <td>第三方</td>
+        <td>Other</td>
+        <td><a href="https://www.vpncompare.co.uk" target="_blank" rel="noopener">VPNCompare</a></td>
+        <td>public</td>
+        <td>每月</td>
+        <td>补充并评估是否可持续</td>
+        <td>英国本地化重点VPN评测网站</td>
+        <td>6</td>
+      </tr>
+      <tr data-tier="周更重点源" data-search="top 10 vpn other 有x的相关评测但最新更新还是24年 public">
+        <td><span class="tier weekly">周更重点源</span></td>
+        <td>第三方</td>
+        <td>Other</td>
+        <td><a href="https://www.top10vpn.com/reviews/x-vpn/" target="_blank" rel="noopener">top 10 VPN</a></td>
+        <td>public</td>
+        <td>每月</td>
+        <td>独立审计/排行</td>
+        <td>有X的相关评测但最新更新还是24年</td>
+        <td>6</td>
+      </tr>
+      <tr data-tier="周更重点源" data-search="游戏玩家 discord 群 discord 游戏 ping 反馈 游戏用户">
+        <td><span class="tier weekly">周更重点源</span></td>
+        <td>社区</td>
+        <td>Discord</td>
+        <td>游戏玩家 Discord 群</td>
+        <td>游戏用户</td>
+        <td>每周</td>
+        <td>寻找测试用户</td>
+        <td>游戏 Ping 反馈</td>
+        <td>5</td>
+      </tr>
+      <tr data-tier="周更重点源" data-search="英国留学生 discord 群 discord 种子用户招募 留学/旅行用户">
+        <td><span class="tier weekly">周更重点源</span></td>
+        <td>社区</td>
+        <td>Discord</td>
+        <td>英国留学生 Discord 群</td>
+        <td>留学/旅行用户</td>
+        <td>每周</td>
+        <td>通过学生渠道找群</td>
+        <td>种子用户招募</td>
+        <td>5</td>
+      </tr>
+      <tr data-tier="周更重点源" data-search="privacy academy other 隐私安全讨论论坛，有各类隐私政策测评内容 隐私安全用户">
+        <td><span class="tier weekly">周更重点源</span></td>
+        <td>第三方</td>
+        <td>Other</td>
+        <td><a href="https://privacyacademy.com" target="_blank" rel="noopener">Privacy Academy</a></td>
+        <td>隐私安全用户</td>
+        <td>每月</td>
+        <td></td>
+        <td>隐私安全讨论论坛，有各类隐私政策测评内容</td>
+        <td>5</td>
+      </tr>
+      <tr data-tier="观察池" data-search="r/priacy reddit 隐私和安全问题，与vpn关联度高 隐私安全用户">
+        <td><span class="tier pool">观察池</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/Piracy/" target="_blank" rel="noopener">r/Priacy</a></td>
+        <td>隐私安全用户</td>
+        <td>每月</td>
+        <td>补充并评估是否可持续</td>
+        <td>隐私和安全问题，与VPN关联度高</td>
+        <td>4</td>
+      </tr>
+      <tr data-tier="观察池" data-search="privacyguides forum 隐私安全讨论论坛，有各类隐私政策测评内容 隐私安全用户">
+        <td><span class="tier pool">观察池</span></td>
+        <td>社区</td>
+        <td>Forum</td>
+        <td><a href="https://discuss.privacyguides.net" target="_blank" rel="noopener">Privacyguides</a></td>
+        <td>隐私安全用户</td>
+        <td>每月</td>
+        <td>补充并评估是否可持续</td>
+        <td>隐私安全讨论论坛，有各类隐私政策测评内容</td>
+        <td>3</td>
+      </tr>
+      <tr data-tier="观察池" data-search="security.org vpn reviews blog/media 信任背书/隐私维度 隐私安全用户">
+        <td><span class="tier pool">观察池</span></td>
+        <td>媒体</td>
+        <td>Blog/Media</td>
+        <td><a href="https://www.security.org/vpn/" target="_blank" rel="noopener">Security.org VPN Reviews</a></td>
+        <td>隐私安全用户</td>
+        <td>每月</td>
+        <td>抽取评测维度</td>
+        <td>信任背书/隐私维度</td>
+        <td>2</td>
+      </tr>
+      <tr data-tier="观察池" data-search="bbc media 政策信息 public">
+        <td><span class="tier pool">观察池</span></td>
+        <td>新闻网站</td>
+        <td>media</td>
+        <td><a href="https://www.bbc.com/" target="_blank" rel="noopener">bbc</a></td>
+        <td>public</td>
+        <td>低频</td>
+        <td>补充并评估是否可持续</td>
+        <td>政策信息</td>
+        <td>2</td>
+      </tr>
+      <tr data-tier="观察池" data-search="r/privateinternetaccess reddit 竞品口碑/故障/需求 技术/隐私用户">
+        <td><span class="tier pool">观察池</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/PrivateInternetAccess/" target="_blank" rel="noopener">r/PrivateInternetAccess</a></td>
+        <td>技术/隐私用户</td>
+        <td>低频</td>
+        <td></td>
+        <td>竞品口碑/故障/需求</td>
+        <td>2</td>
+      </tr>
+      <tr data-tier="观察池" data-search="r/vpncoupons reddit 免费版切入点 价格敏感用户">
+        <td><span class="tier pool">观察池</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/vpncoupons/" target="_blank" rel="noopener">r/vpncoupons</a></td>
+        <td>价格敏感用户</td>
+        <td>低频</td>
+        <td>找免费 VPN 需求评论</td>
+        <td>免费版切入点</td>
+        <td>2</td>
+      </tr>
+      <tr data-tier="观察池" data-search="the student room forum 学生使用场景 学生/价格敏感">
+        <td><span class="tier pool">观察池</span></td>
+        <td>社区</td>
+        <td>Forum</td>
+        <td><a href="https://www.thestudentroom.co.uk/" target="_blank" rel="noopener">The Student Room</a></td>
+        <td>学生/价格敏感</td>
+        <td>低频</td>
+        <td>调研合作/帖子观察</td>
+        <td>学生使用场景</td>
+        <td>1</td>
+      </tr>
+      <tr data-tier="观察池" data-search="r/askuk reddit 大众认知/价格顾虑 public">
+        <td><span class="tier pool">观察池</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/AskUK/" target="_blank" rel="noopener">r/AskUK</a></td>
+        <td>public</td>
+        <td>低频</td>
+        <td>搜索历史帖子</td>
+        <td>大众认知/价格顾虑</td>
+        <td>1</td>
+      </tr>
+      <tr data-tier="观察池" data-search="r/cyberguides reddit 行业相关 技术/隐私用户">
+        <td><span class="tier pool">观察池</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/CyberGuides/" target="_blank" rel="noopener">r/CyberGuides</a></td>
+        <td>技术/隐私用户</td>
+        <td>低频</td>
+        <td></td>
+        <td>行业相关</td>
+        <td>1</td>
+      </tr>
+      <tr data-tier="观察池" data-search="r/techimpact reddit 行业相关 技术/隐私用户">
+        <td><span class="tier pool">观察池</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/TechImpact/" target="_blank" rel="noopener">r/TechImpact</a></td>
+        <td>技术/隐私用户</td>
+        <td>低频</td>
+        <td></td>
+        <td>行业相关</td>
+        <td>1</td>
+      </tr>
+      <tr data-tier="观察池" data-search="r/vpn_guide reddit 行业相关 技术/隐私用户">
+        <td><span class="tier pool">观察池</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/VPN_Guide/" target="_blank" rel="noopener">r/VPN_Guide</a></td>
+        <td>技术/隐私用户</td>
+        <td>低频</td>
+        <td></td>
+        <td>行业相关</td>
+        <td>1</td>
+      </tr>
+      <tr data-tier="观察池" data-search="r/vpnforfreedom reddit 行业相关 技术/隐私用户">
+        <td><span class="tier pool">观察池</span></td>
+        <td>社区</td>
+        <td>Reddit</td>
+        <td><a href="https://www.reddit.com/r/VPNforFreedom/" target="_blank" rel="noopener">r/VPNforFreedom</a></td>
+        <td>技术/隐私用户</td>
+        <td>低频</td>
+        <td></td>
+        <td>行业相关</td>
+        <td>1</td>
+      </tr>
+      <tr data-tier="观察池" data-search="pc gamer other 游戏向vpn内容 游戏用户">
+        <td><span class="tier pool">观察池</span></td>
+        <td>第三方</td>
+        <td>Other</td>
+        <td><a href="https://www.pcgamer.com/best-vpn-for-pc-gaming/" target="_blank" rel="noopener">PC Gamer</a></td>
+        <td>游戏用户</td>
+        <td>低频</td>
+        <td>补充并评估是否可持续</td>
+        <td>游戏向VPN内容</td>
+        <td>1</td>
+      </tr>
+      <tr data-tier="观察池" data-search="privacysavvy other affiliate 属性较强，需注意商业推荐偏向 public">
+        <td><span class="tier pool">观察池</span></td>
+        <td>第三方</td>
+        <td>Other</td>
+        <td><a href="https://privacysavvy.com/vpn/best/age-verification-vpn/" target="_blank" rel="noopener">PrivacySavvy</a></td>
+        <td>public</td>
+        <td>低频</td>
+        <td>补充并评估是否可持续</td>
+        <td>Affiliate 属性较强，需注意商业推荐偏向</td>
+        <td>1</td>
+      </tr>
+      <tr data-tier="观察池" data-search="proprivacy other affiliate 属性较强，需注意商业推荐偏向 public">
+        <td><span class="tier pool">观察池</span></td>
+        <td>第三方</td>
+        <td>Other</td>
+        <td><a href="https://proprivacy.com/vpn/comparison/best-iphone-vpns#" target="_blank" rel="noopener">ProPrivacy</a></td>
+        <td>public</td>
+        <td>低频</td>
+        <td>补充并评估是否可持续</td>
+        <td>Affiliate 属性较强，需注意商业推荐偏向</td>
+        <td>1</td>
+      </tr>
+      <tr data-tier="观察池" data-search="which? other vpn信息较少，但26年有一篇vpn评测 public">
+        <td><span class="tier pool">观察池</span></td>
+        <td>第三方</td>
+        <td>Other</td>
+        <td><a href="https://www.which.co.uk/reviews/vpn-services/article/guides" target="_blank" rel="noopener">Which?</a></td>
+        <td>public</td>
+        <td>低频</td>
+        <td>补充并评估是否可持续</td>
+        <td>VPN信息较少，但26年有一篇VPN评测</td>
+        <td>1</td>
+      </tr>
+      <tr data-tier="观察池" data-search="wizcase other affiliate 属性较强，需注意商业推荐偏向 public">
+        <td><span class="tier pool">观察池</span></td>
+        <td>第三方</td>
+        <td>Other</td>
+        <td><a href="https://zh.wizcase.com/vpn-reviews/" target="_blank" rel="noopener">WizCase</a></td>
+        <td>public</td>
+        <td>低频</td>
+        <td>补充并评估是否可持续</td>
+        <td>Affiliate 属性较强，需注意商业推荐偏向</td>
+        <td>1</td>
+      </tr>
+      <tr data-tier="观察池" data-search="the best vpn other affiliate 属性较强，需注意商业推荐偏向 public">
+        <td><span class="tier pool">观察池</span></td>
+        <td>第三方</td>
+        <td>Other</td>
+        <td><a href="https://thebestvpn.com" target="_blank" rel="noopener">the best VPN</a></td>
+        <td>public</td>
+        <td>低频</td>
+        <td>补充并评估是否可持续</td>
+        <td>Affiliate 属性较强，需注意商业推荐偏向</td>
+        <td>1</td>
+      </tr>
+      <tr data-tier="观察池" data-search="vpnmentor other affiliate 属性较强，需注意商业推荐偏向 public">
+        <td><span class="tier pool">观察池</span></td>
+        <td>第三方</td>
+        <td>Other</td>
+        <td><a href="https://www.vpnmentor.com" target="_blank" rel="noopener">vpnMentor</a></td>
+        <td>public</td>
+        <td>低频</td>
+        <td>补充并评估是否可持续</td>
+        <td>Affiliate 属性较强，需注意商业推荐偏向</td>
+        <td>1</td>
+      </tr>
+      <tr data-tier="观察池" data-search="vpntierlist other affiliate 属性较强，需注意商业推荐偏向 public">
+        <td><span class="tier pool">观察池</span></td>
+        <td>第三方</td>
+        <td>Other</td>
+        <td><a href="https://vpntierlists.com" target="_blank" rel="noopener">vpntierlist</a></td>
+        <td>public</td>
+        <td>低频</td>
+        <td>补充并评估是否可持续</td>
+        <td>Affiliate 属性较强，需注意商业推荐偏向</td>
+        <td>1</td>
+      </tr></tbody></table></div>
+  </section>
+
+  <section class="panel">
+    <h2>证据来源索引</h2>
+    <ol class="source-list"><li><a href="https://www.gov.uk/government/publications/fact-sheet-new-rules-to-protect-children-online/fact-sheet-new-rules-to-protect-children-online" target="_blank" rel="noopener">GOV.UK child online rules fact sheet</a></li><li><a href="https://www.gov.uk/government/collections/online-safety-act" target="_blank" rel="noopener">GOV.UK Online Safety Act collection</a></li><li><a href="https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/roadmap-to-regulation" target="_blank" rel="noopener">Ofcom Online Safety Act roadmap</a></li><li><a href="https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/03/joint-statement-from-ico-and-ofcom-on-age-assurance/" target="_blank" rel="noopener">ICO &amp; Ofcom age assurance statement</a></li><li><a href="https://www.comparitech.com/vpn/" target="_blank" rel="noopener">Comparitech VPN Data Hub</a></li><li><a href="https://www.tomsguide.com/best-picks/best-vpn" target="_blank" rel="noopener">Tom’s Guide best VPN 2026</a></li><li><a href="https://www.techradar.com/vpn" target="_blank" rel="noopener">TechRadar VPN coverage</a></li><li><a href="https://www.top10vpn.com/reviews/x-vpn/" target="_blank" rel="noopener">Top10VPN X‑VPN review</a></li><li><a href="https://www.reddit.com/r/VPN/new/" target="_blank" rel="noopener">r/VPN new</a></li><li><a href="https://www.reddit.com/r/nordvpn/new/" target="_blank" rel="noopener">r/nordvpn new</a></li><li><a href="https://www.reddit.com/r/ProtonVPN/new/" target="_blank" rel="noopener">r/ProtonVPN new</a></li><li><a href="https://www.reddit.com/r/Express_VPN/new/" target="_blank" rel="noopener">r/Express_VPN new</a></li><li><a href="https://www.reddit.com/r/Windscribe/new/" target="_blank" rel="noopener">r/Windscribe new</a></li><li><a href="https://www.reddit.com/r/mullvadvpn/new/" target="_blank" rel="noopener">r/mullvadvpn new</a></li><li><a href="https://www.reddit.com/r/VPN_Question/new/" target="_blank" rel="noopener">r/VPN_Question new</a></li><li><a href="https://www.reddit.com/r/UniUK/search/?q=VPN&amp;restrict_sr=1&amp;sort=new" target="_blank" rel="noopener">r/UniUK VPN search</a></li></ol>
+  </section>
+</main>
+
+<footer>
+  <p>生成时间：2026-06-29（Asia/Singapore）。这是一次静态抓取与整合结果；要做到真正“每日实时更新”，建议把此页面接入一个定时任务（GitHub Actions / 云函数 / 内部 BI）每天抓取来源池并覆盖 JSON 数据。</p>
+</footer>
+
+<script>
+const DATA = {"generated_at": "2026-06-29 Asia/Singapore", "stats": {"total_sources": 49, "candidate": 28, "sustainable": 28, "daily": 5, "weekly": 19, "monthly": 8, "low": 17}, "findings": [{"priority": "P0", "theme": "UK 政策与合规窗口", "title": "英国 under-16 社媒限制进入落地路径，VPN 绕过问题被官方点名研究", "source": "GOV.UK / Ofcom", "url": "https://www.gov.uk/government/publications/fact-sheet-new-rules-to-protect-children-online/fact-sheet-new-rules-to-protect-children-online", "evidence": "政府计划在年底前提交第一批法规、2027 年春季实施；同时承认儿童可能使用 VPN 绕过年龄检查，并表示已委托研究，7 月更新。", "audience": "家长、学生、隐私关注用户、英国本地媒体", "impact": 95, "industry": 95, "growth": 92, "action": "准备“合规、安全、隐私不冲突”的内容话术；监控 7 月官方更新与 Ofcom 年龄保证报告。", "tags": ["政策", "UK", "年龄验证", "VPN 合法性"]}, {"priority": "P0", "theme": "流媒体/平台检测", "title": "用户在 Netflix / Prime / YouTube / 地区价格场景持续遇到 VPN 被识别、IP 被标记、资料库混乱", "source": "r/VPN / r/VPN_Question / r/nordvpn", "url": "https://www.reddit.com/r/VPN/new/", "evidence": "多个新帖集中在“VPN 被平台识别”“某些服务器可用、某些失效”“地区价格/广告/流媒体资料库切换失败”。", "audience": "流媒体用户、价格敏感用户、旅行用户、游戏用户", "impact": 90, "industry": 88, "growth": 94, "action": "建立 UK/US 流媒体可用性监控；将“可用服务器推荐、自动切换、IP 信誉”作为产品与内容卖点。", "tags": ["Streaming", "IP reputation", "Geo-price", "Netflix"]}, {"priority": "P0", "theme": "竞品口碑：NordVPN", "title": "Nord 用户关注 UK 服务器容量、5G/应用拦截、续费价格、取消订阅摩擦", "source": "r/nordvpn", "url": "https://www.reddit.com/r/nordvpn/new/", "evidence": "新帖包含 UK Manchester 服务器 CAPTCHA/网站加载问题、5G 下地图/音乐/支付受阻、续费价格过高、取消订阅路径不清晰。", "audience": "Nord 存量用户、英国本地 VPN 用户、价格敏感续费用户", "impact": 88, "industry": 90, "growth": 91, "action": "以“英国城市级节点/低 CAPTCHA/透明续费/易取消”做竞品转化；社区回复脚本应强调故障排查与试用体验。", "tags": ["NordVPN", "UK servers", "Renewal", "Churn"]}, {"priority": "P1", "theme": "公共 Wi‑Fi 与移动场景", "title": "机场、酒店、学校、5G 与校园网是高频真实场景，用户想要“自动、稳定、少打扰”", "source": "r/VPN / r/nordvpn / r/UniUK", "url": "https://www.reddit.com/r/VPN/new/", "evidence": "新帖涉及机场 Wi‑Fi、酒店 Wi‑Fi、学校网络、车上 5G、eduroam/校园游戏等场景。痛点不是“是否需要 VPN”，而是连接后别影响地图、银行、流媒体、游戏。", "audience": "学生、旅行/出差用户、远程办公、游戏用户", "impact": 84, "industry": 82, "growth": 86, "action": "做“公共 Wi‑Fi 自动连接 + 分应用/分流 + 低电量模式 + 兼容银行/地图”的使用指南和产品清单。", "tags": ["Public Wi‑Fi", "Student", "Remote work", "Mobile"]}, {"priority": "P1", "theme": "免费版与价格敏感", "title": "免费 VPN、家庭套餐、低价续费、退款/取消是持续高转化入口", "source": "r/VPN_Question / YouTube Search / Tom’s Guide / TechRadar", "url": "https://www.reddit.com/r/VPN_Question/new/", "evidence": "社区中“免费替代”“家庭套餐”“不贵但能流媒体”的需求不断出现；媒体与 YouTube 标题也大量围绕 best/free/UK/deals。", "audience": "学生、价格敏感、轻度流媒体用户", "impact": 82, "industry": 78, "growth": 93, "action": "增长侧优先测试“免费额度→流媒体/英国节点试用→限时付费”的路径，并突出无套路取消和价格透明。", "tags": ["Free VPN", "Deals", "学生", "价格敏感"]}, {"priority": "P1", "theme": "评测媒体竞品叙事", "title": "媒体榜单存在分歧：Tom’s/TechRadar 偏 Nord，Comparitech 实时实验室当前偏 ExpressVPN", "source": "Tom’s Guide / TechRadar / Comparitech", "url": "https://www.comparitech.com/vpn/", "evidence": "Tom’s Guide 将 NordVPN 作为 top recommendation；Comparitech live benchmark 显示 ExpressVPN 当前综合分第一、NordVPN 流媒体分最高。", "audience": "购买前搜索用户、SEO 流量、联盟评测读者", "impact": 80, "industry": 92, "growth": 85, "action": "拆解各榜单维度差异，制作“按场景选 VPN”内容：隐私、流媒体、价格、英国节点、初学者。", "tags": ["SEO", "Affiliate", "Competitors", "Benchmark"]}, {"priority": "P1", "theme": "X‑VPN 外部评价风险与机会", "title": "Top10VPN 对 X‑VPN 的弱项集中在速度、隐私信任、WebRTC、价格与透明审计", "source": "Top10VPN X‑VPN Review", "url": "https://www.top10vpn.com/reviews/x-vpn/", "evidence": "Top10VPN 给出付费版 5.4/10，列出慢速、Chrome 扩展 WebRTC 泄漏、闭源协议、订阅贵、所有权信任等负面点，同时认可流媒体设备支持和免费无限流量。", "audience": "X‑VPN 品牌/产品/公关/增长团队", "impact": 86, "industry": 84, "growth": 88, "action": "将审计、透明报告、WebRTC 修复、速度数据、取消/价格透明作为外部声誉修复优先级。", "tags": ["X‑VPN", "Review", "Trust", "WebRTC"]}, {"priority": "P2", "theme": "审查地区与技术用户", "title": "中国、伊朗、俄罗斯等地区的可用性测试需求出现，用户更看重协议、节点稳定和真实测试反馈", "source": "r/VPN / r/Windscribe / r/mullvadvpn / r/VPN_Question", "url": "https://www.reddit.com/r/mullvadvpn/new/", "evidence": "多帖涉及 GFW、伊朗网络恢复、俄罗斯 iOS 测试招募、VLESS/Reality、WireGuard 等协议和节点可用性。", "audience": "高技术用户、审查地区用户、测试/KOC 用户", "impact": 74, "industry": 82, "growth": 78, "action": "不做高风险承诺，改做“可用性反馈池”和区域测试用户招募，输出透明可用性状态。", "tags": ["Censorship", "Protocol", "Testing", "KOC"]}], "signals": [{"name": "政策/年龄验证/VPN 合法性", "heat": 96, "confidence": 88, "direction": "上升", "owner": "政策监控 + 内容"}, {"name": "流媒体可用性/IP 被识别", "heat": 93, "confidence": 85, "direction": "上升", "owner": "产品 + 运营"}, {"name": "UK 节点容量与 IP 信誉", "heat": 89, "confidence": 82, "direction": "上升", "owner": "网络 + 增长"}, {"name": "免费/低价/续费透明", "heat": 86, "confidence": 80, "direction": "稳定高位", "owner": "增长 + 支付"}, {"name": "公共 Wi‑Fi / 旅行 / 校园", "heat": 83, "confidence": 76, "direction": "上升", "owner": "内容 + 社群"}, {"name": "隐私信任/审计/透明报告", "heat": 81, "confidence": 84, "direction": "稳定高位", "owner": "品牌 + 法务"}, {"name": "游戏 Ping / 路由 / Discord", "heat": 72, "confidence": 68, "direction": "观察", "owner": "用户研究"}, {"name": "KOC/YouTube/TikTok 联盟内容", "heat": 77, "confidence": 70, "direction": "上升", "owner": "增长 + KOC"}], "actions": [{"lane": "内容/SEO", "task": "做 3 篇 UK 场景内容：1）社媒年龄验证与 VPN 合法使用；2）VPN 被 Netflix/Prime 识别怎么办；3）学生/宿舍/公共 Wi‑Fi 安全指南。", "why": "覆盖政策搜索、流媒体痛点、学生渠道", "priority": "P0"}, {"lane": "产品/网络", "task": "建立 UK 节点声誉监控：Manchester/London 等城市节点的 CAPTCHA、流媒体、银行/地图 App 可用性。", "why": "竞品用户在 UK server reputation 上有显性抱怨", "priority": "P0"}, {"lane": "增长/付费", "task": "测试“无套路取消 + 续费提醒 + 学生价/家庭价”落地页与付费弹窗文案。", "why": "价格/续费/取消摩擦是竞品流失和转化机会", "priority": "P1"}, {"lane": "社群/KOC", "task": "从 Reddit / YouTube 小博主筛 20 个“免费 VPN/UK VPN/streaming VPN”内容作者，优先低粉高互动。", "why": "搜索结果里低质量联盟内容很多，存在更真实内容空位", "priority": "P1"}, {"lane": "品牌/信任", "task": "为外部评测准备证据包：协议开源/审计计划、WebRTC 修复、速度测试、隐私政策要点、透明报告路线。", "why": "Top10VPN 等第三方评测会影响购买前用户信任", "priority": "P1"}, {"lane": "用户研究", "task": "建立 20 人 UK 测试群，分层覆盖学生、旅行、流媒体、游戏、隐私用户，每周收集可用性截图和场景日志。", "why": "你的月计划已包含核心用户群与访谈，这能直接喂给日报面板", "priority": "P0"}], "limitations": [{"source": "X/Twitter search", "status": "受限", "note": "公开搜索页可能需要登录/反爬；日报建议通过 X API、第三方社媒监听工具或手工导出补充。"}, {"source": "YouTube search", "status": "部分可用", "note": "可通过搜索结果识别标题与内容方向；评论区与实时排序建议用 YouTube Data API。"}, {"source": "TikTok search", "status": "受限", "note": "当前抓取受 robots/安全限制；建议用 TikTok Creative Center、手工采样或合规监听工具。"}, {"source": "App Store / Google Play 手动搜索", "status": "需接 API/手动", "note": "ASO 排名和评论建议通过 AppTweak、SensorTower、data.ai 或商店手工记录。"}, {"source": "Discord 群", "status": "不可公开抓取", "note": "需要入群权限与用户授权；建议只记录公开/授权反馈，避免隐私风险。"}], "sources": [{"来源类别": "社媒", "平台": "X/Twitter", "来源名称": "X 搜索：VPN UK", "URL/入口": "https://x.com/search?q=VPN%20UK&src=typed_query", "目标用户": "隐私/技术用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每日", "关键信息": "记录实时抱怨/政策话题", "备注": "舆情/及时需求", "_row": 2, "监控优先级分": 8, "日报层级": "核心日报源"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/VPN", "URL/入口": "https://www.reddit.com/r/VPN/", "目标用户": "技术/隐私用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每日", "关键信息": "抓取高频问题", "备注": "竞品口碑/故障/需求", "_row": 3, "监控优先级分": 9, "日报层级": "核心日报源"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/vpnreviews", "URL/入口": "https://www.reddit.com/r/vpnreviews/", "目标用户": "技术/隐私用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每日", "关键信息": "记录价格/续费讨论", "备注": "竞品口碑/故障/需求", "_row": 4, "监控优先级分": 9, "日报层级": "核心日报源"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/Windscribe", "URL/入口": "https://www.reddit.com/r/Windscribe/", "目标用户": "相关产品用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每日", "关键信息": "补充并评估是否可持续", "备注": "竞品消息", "_row": 5, "监控优先级分": 9, "日报层级": "核心日报源"}, {"来源类别": "第三方", "平台": "Other", "来源名称": "SafePaper", "URL/入口": "https://safepaper.io", "目标用户": "public", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每月", "关键信息": "补充并评估是否可持续", "备注": "独立性较高的VPN评测网站", "_row": 6, "监控优先级分": 6, "日报层级": "周更重点源"}, {"来源类别": "第三方", "平台": "Other", "来源名称": "top 10 VPN", "URL/入口": "https://www.top10vpn.com/reviews/x-vpn/", "目标用户": "public", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每月", "关键信息": "独立审计/排行", "备注": "有X的相关评测但最新更新还是24年", "_row": 7, "监控优先级分": 6, "日报层级": "周更重点源"}, {"来源类别": "第三方", "平台": "Other", "来源名称": "VPNCompare", "URL/入口": "https://www.vpncompare.co.uk", "目标用户": "public", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每月", "关键信息": "补充并评估是否可持续", "备注": "英国本地化重点VPN评测网站", "_row": 8, "监控优先级分": 6, "日报层级": "周更重点源"}, {"来源类别": "第三方", "平台": "Other", "来源名称": "Trustpilot", "URL/入口": "https://www.trustpilot.com", "目标用户": "public", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每月", "关键信息": "补充并评估是否可持续", "备注": "查看 VPN 品牌在用户中的投诉点，如退款、自动续费、速度、客服、解锁失败（主要评论在美国）", "_row": 9, "监控优先级分": 6, "日报层级": "周更重点源"}, {"来源类别": "媒体", "平台": "Blog/Media", "来源名称": "TechRadar VPN", "URL/入口": "https://www.techradar.com/vpn", "目标用户": "购买前用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "跟踪推荐榜单变动", "备注": "竞品卖点/评测维度", "_row": 10, "监控优先级分": 8, "日报层级": "核心日报源"}, {"来源类别": "媒体", "平台": "Blog/Media", "来源名称": "Tom’s Guide VPN", "URL/入口": "https://www.tomsguide.com/best-picks/best-vpn", "目标用户": "购买前用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "收集竞品维度", "备注": "内容结构/关键词", "_row": 11, "监控优先级分": 7, "日报层级": "核心日报源"}, {"来源类别": "媒体", "平台": "Blog/Media", "来源名称": "Comparitech VPN", "URL/入口": "https://www.comparitech.com/vpn/", "目标用户": "隐私/流媒体用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "记录英国 VPN 推荐", "备注": "场景与竞品话术", "_row": 12, "监控优先级分": 8, "日报层级": "核心日报源"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/UniUK", "URL/入口": "https://www.reddit.com/r/UniUK/", "目标用户": "学生/价格敏感", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "设计学生调研入口", "备注": "学生价格/校园 Wi-Fi 需求", "_row": 13, "监控优先级分": 7, "日报层级": "核心日报源"}, {"来源类别": "社区", "平台": "Discord", "来源名称": "英国留学生 Discord 群", "URL/入口": "待补充邀请链接", "目标用户": "留学/旅行用户", "是否候选": "是", "是否可持续追踪": "否", "追踪频率": "每周", "关键信息": "通过学生渠道找群", "备注": "种子用户招募", "_row": 14, "监控优先级分": 5, "日报层级": "周更重点源"}, {"来源类别": "社区", "平台": "Discord", "来源名称": "游戏玩家 Discord 群", "URL/入口": "已加入fortnite", "目标用户": "游戏用户", "是否候选": "是", "是否可持续追踪": "否", "追踪频率": "每周", "关键信息": "寻找测试用户", "备注": "游戏 Ping 反馈", "_row": 15, "监控优先级分": 5, "日报层级": "周更重点源"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/nordvpn", "URL/入口": "https://www.reddit.com/r/nordvpn/", "目标用户": "相关产品用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "补充并评估是否可持续", "备注": "竞品消息", "_row": 16, "监控优先级分": 8, "日报层级": "核心日报源"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/protonvpn", "URL/入口": "https://www.reddit.com/r/ProtonVPN/", "目标用户": "相关产品用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "补充并评估是否可持续", "备注": "竞品消息", "_row": 17, "监控优先级分": 8, "日报层级": "核心日报源"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/expressvpn", "URL/入口": "https://www.reddit.com/r/Express_VPN/", "目标用户": "相关产品用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "补充并评估是否可持续", "备注": "竞品消息", "_row": 18, "监控优先级分": 8, "日报层级": "核心日报源"}, {"来源类别": "视频", "平台": "YouTube", "来源名称": "YouTube 搜索：best VPN UK", "URL/入口": "https://www.youtube.com/results?search_query=best+vpn+uk", "目标用户": "购买前用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "找小博主和评论区痛点", "备注": "KOC/内容合作机会", "_row": 19, "监控优先级分": 8, "日报层级": "核心日报源"}, {"来源类别": "视频", "平台": "YouTube", "来源名称": "YouTube 搜索：free VPN UK", "URL/入口": "https://www.youtube.com/results?search_query=free+vpn+uk", "目标用户": "价格敏感用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "找免费 VPN 需求评论", "备注": "免费版切入点", "_row": 20, "监控优先级分": 8, "日报层级": "核心日报源"}, {"来源类别": "视频", "平台": "TikTok", "来源名称": "TikTok 搜索：VPN UK", "URL/入口": "https://www.tiktok.com/search?q=vpn%20uk", "目标用户": "年轻用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "观察短视频话术", "备注": "短视频内容机会", "_row": 21, "监控优先级分": 7, "日报层级": "核心日报源"}, {"来源类别": "搜索", "平台": "Google Search", "来源名称": "Google UK: best VPN UK", "URL/入口": "https://www.google.co.uk/search?q=best+vpn+uk", "目标用户": "购买前用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "记录 SEO 竞品与内容角度", "备注": "搜索需求/竞品内容", "_row": 22, "监控优先级分": 8, "日报层级": "核心日报源"}, {"来源类别": "应用商店", "平台": "App Store", "来源名称": "Apple App Store 搜索：vpn", "URL/入口": "手动搜索 UK App Store", "目标用户": "iOS 用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "记录 X-VPN 与竞品排名", "备注": "ASO 排名/评论/关键词", "_row": 23, "监控优先级分": 8, "日报层级": "核心日报源"}, {"来源类别": "应用商店", "平台": "Google Play", "来源名称": "Google Play 搜索：vpn", "URL/入口": "手动搜索 UK Google Play", "目标用户": "Android 用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "记录 X-VPN 与竞品排名", "备注": "ASO 排名/评论/关键词", "_row": 24, "监控优先级分": 8, "日报层级": "核心日报源"}, {"来源类别": "第三方", "平台": "Other", "来源名称": "vpntierlist", "URL/入口": "https://vpntierlists.com", "目标用户": "public", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "补充并评估是否可持续", "备注": "Affiliate 属性较强，需注意商业推荐偏向", "_row": 25, "监控优先级分": 1, "日报层级": "观察池"}, {"来源类别": "第三方", "平台": "Other", "来源名称": "the best VPN", "URL/入口": "https://thebestvpn.com", "目标用户": "public", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "补充并评估是否可持续", "备注": "Affiliate 属性较强，需注意商业推荐偏向", "_row": 26, "监控优先级分": 1, "日报层级": "观察池"}, {"来源类别": "第三方", "平台": "Other", "来源名称": "vpnMentor", "URL/入口": "https://www.vpnmentor.com", "目标用户": "public", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "补充并评估是否可持续", "备注": "Affiliate 属性较强，需注意商业推荐偏向", "_row": 27, "监控优先级分": 1, "日报层级": "观察池"}, {"来源类别": "第三方", "平台": "Other", "来源名称": "WizCase", "URL/入口": "https://zh.wizcase.com/vpn-reviews/", "目标用户": "public", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "补充并评估是否可持续", "备注": "Affiliate 属性较强，需注意商业推荐偏向", "_row": 28, "监控优先级分": 1, "日报层级": "观察池"}, {"来源类别": "第三方", "平台": "Other", "来源名称": "PrivacySavvy", "URL/入口": "https://privacysavvy.com/vpn/best/age-verification-vpn/", "目标用户": "public", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "补充并评估是否可持续", "备注": "Affiliate 属性较强，需注意商业推荐偏向", "_row": 29, "监控优先级分": 1, "日报层级": "观察池"}, {"来源类别": "第三方", "平台": "Other", "来源名称": "ProPrivacy", "URL/入口": "https://proprivacy.com/vpn/comparison/best-iphone-vpns#", "目标用户": "public", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "补充并评估是否可持续", "备注": "Affiliate 属性较强，需注意商业推荐偏向", "_row": 30, "监控优先级分": 1, "日报层级": "观察池"}, {"来源类别": "第三方", "平台": "Other", "来源名称": "Which?", "URL/入口": "https://www.which.co.uk/reviews/vpn-services/article/guides", "目标用户": "public", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "补充并评估是否可持续", "备注": "VPN信息较少，但26年有一篇VPN评测", "_row": 31, "监控优先级分": 1, "日报层级": "观察池"}, {"来源类别": "第三方", "平台": "Other", "来源名称": "PC Gamer", "URL/入口": "https://www.pcgamer.com/best-vpn-for-pc-gaming/", "目标用户": "游戏用户", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "补充并评估是否可持续", "备注": "游戏向VPN内容", "_row": 32, "监控优先级分": 1, "日报层级": "观察池"}, {"来源类别": "社区", "平台": "Forum", "来源名称": "The Student Room", "URL/入口": "https://www.thestudentroom.co.uk/", "目标用户": "学生/价格敏感", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "调研合作/帖子观察", "备注": "学生使用场景", "_row": 33, "监控优先级分": 1, "日报层级": "观察池"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/AskUK", "URL/入口": "https://www.reddit.com/r/AskUK/", "目标用户": "public", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "搜索历史帖子", "备注": "大众认知/价格顾虑", "_row": 34, "监控优先级分": 1, "日报层级": "观察池"}, {"来源类别": "新闻网站", "平台": "media", "来源名称": "bbc", "URL/入口": "https://www.bbc.com/", "目标用户": "public", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "补充并评估是否可持续", "备注": "政策信息", "_row": 35, "监控优先级分": 2, "日报层级": "观察池"}, {"来源类别": "社区", "平台": "Forum", "来源名称": "Privacyguides", "URL/入口": "https://discuss.privacyguides.net", "目标用户": "隐私安全用户", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "每月", "关键信息": "补充并评估是否可持续", "备注": "隐私安全讨论论坛，有各类隐私政策测评内容", "_row": 36, "监控优先级分": 3, "日报层级": "观察池"}, {"来源类别": "媒体", "平台": "Blog/Media", "来源名称": "Security.org VPN Reviews", "URL/入口": "https://www.security.org/vpn/", "目标用户": "隐私安全用户", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "每月", "关键信息": "抽取评测维度", "备注": "信任背书/隐私维度", "_row": 37, "监控优先级分": 2, "日报层级": "观察池"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/mullvadvpn", "URL/入口": "https://www.reddit.com/r/mullvadvpn/", "目标用户": "相关产品用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "", "备注": "竞品口碑/故障/需求", "_row": 38, "监控优先级分": 8, "日报层级": "核心日报源"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/Priacy", "URL/入口": "https://www.reddit.com/r/Piracy/", "目标用户": "隐私安全用户", "是否候选": "否", "是否可持续追踪": "是", "追踪频率": "每月", "关键信息": "补充并评估是否可持续", "备注": "隐私和安全问题，与VPN关联度高", "_row": 39, "监控优先级分": 4, "日报层级": "观察池"}, {"来源类别": "第三方", "平台": "Other", "来源名称": "Privacy Academy", "URL/入口": "https://privacyacademy.com", "目标用户": "隐私安全用户", "是否候选": "否", "是否可持续追踪": "是", "追踪频率": "每月", "关键信息": "", "备注": "隐私安全讨论论坛，有各类隐私政策测评内容", "_row": 40, "监控优先级分": 5, "日报层级": "周更重点源"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/firefox", "URL/入口": "https://www.reddit.com/r/firefox/", "目标用户": "相关产品用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "", "备注": "竞品口碑/故障/需求", "_row": 41, "监控优先级分": 8, "日报层级": "核心日报源"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/VPN_Question", "URL/入口": "https://www.reddit.com/r/VPN_Question/", "目标用户": "技术/隐私用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每日", "关键信息": "抓取高频问题", "备注": "竞品口碑/故障/需求", "_row": 42, "监控优先级分": 9, "日报层级": "核心日报源"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/VPNReviewHub", "URL/入口": "https://www.reddit.com/r/VPNReviewHub/", "目标用户": "技术/隐私用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "", "备注": "竞品口碑/故障/需求", "_row": 43, "监控优先级分": 8, "日报层级": "核心日报源"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/CyberGuides", "URL/入口": "https://www.reddit.com/r/CyberGuides/", "目标用户": "技术/隐私用户", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "", "备注": "行业相关", "_row": 44, "监控优先级分": 1, "日报层级": "观察池"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/VPN_Guide", "URL/入口": "https://www.reddit.com/r/VPN_Guide/", "目标用户": "技术/隐私用户", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "", "备注": "行业相关", "_row": 45, "监控优先级分": 1, "日报层级": "观察池"}, {"来源类别": "第三方", "平台": "Other", "来源名称": "Air VPN", "URL/入口": "https://airvpn.org/forums/forum/2-general-suggestions/", "目标用户": "相关产品用户", "是否候选": "是", "是否可持续追踪": "是", "追踪频率": "每周", "关键信息": "补充并评估是否可持续", "备注": "竞品口碑/故障/需求", "_row": 46, "监控优先级分": 8, "日报层级": "核心日报源"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/VPNforFreedom", "URL/入口": "https://www.reddit.com/r/VPNforFreedom/", "目标用户": "技术/隐私用户", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "", "备注": "行业相关", "_row": 47, "监控优先级分": 1, "日报层级": "观察池"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/TechImpact", "URL/入口": "https://www.reddit.com/r/TechImpact/", "目标用户": "技术/隐私用户", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "", "备注": "行业相关", "_row": 48, "监控优先级分": 1, "日报层级": "观察池"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/PrivateInternetAccess", "URL/入口": "https://www.reddit.com/r/PrivateInternetAccess/", "目标用户": "技术/隐私用户", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "", "备注": "竞品口碑/故障/需求", "_row": 49, "监控优先级分": 2, "日报层级": "观察池"}, {"来源类别": "社区", "平台": "Reddit", "来源名称": "r/vpncoupons", "URL/入口": "https://www.reddit.com/r/vpncoupons/", "目标用户": "价格敏感用户", "是否候选": "否", "是否可持续追踪": "否", "追踪频率": "低频", "关键信息": "找免费 VPN 需求评论", "备注": "免费版切入点", "_row": 50, "监控优先级分": 2, "日报层级": "观察池"}], "citation_links": [{"label": "GOV.UK child online rules fact sheet", "url": "https://www.gov.uk/government/publications/fact-sheet-new-rules-to-protect-children-online/fact-sheet-new-rules-to-protect-children-online"}, {"label": "GOV.UK Online Safety Act collection", "url": "https://www.gov.uk/government/collections/online-safety-act"}, {"label": "Ofcom Online Safety Act roadmap", "url": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/roadmap-to-regulation"}, {"label": "ICO & Ofcom age assurance statement", "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/03/joint-statement-from-ico-and-ofcom-on-age-assurance/"}, {"label": "Comparitech VPN Data Hub", "url": "https://www.comparitech.com/vpn/"}, {"label": "Tom’s Guide best VPN 2026", "url": "https://www.tomsguide.com/best-picks/best-vpn"}, {"label": "TechRadar VPN coverage", "url": "https://www.techradar.com/vpn"}, {"label": "Top10VPN X‑VPN review", "url": "https://www.top10vpn.com/reviews/x-vpn/"}, {"label": "r/VPN new", "url": "https://www.reddit.com/r/VPN/new/"}, {"label": "r/nordvpn new", "url": "https://www.reddit.com/r/nordvpn/new/"}, {"label": "r/ProtonVPN new", "url": "https://www.reddit.com/r/ProtonVPN/new/"}, {"label": "r/Express_VPN new", "url": "https://www.reddit.com/r/Express_VPN/new/"}, {"label": "r/Windscribe new", "url": "https://www.reddit.com/r/Windscribe/new/"}, {"label": "r/mullvadvpn new", "url": "https://www.reddit.com/r/mullvadvpn/new/"}, {"label": "r/VPN_Question new", "url": "https://www.reddit.com/r/VPN_Question/new/"}, {"label": "r/UniUK VPN search", "url": "https://www.reddit.com/r/UniUK/search/?q=VPN&restrict_sr=1&sort=new"}]};
+function applyFilters() {
+  const q = document.getElementById('searchBox').value.trim().toLowerCase();
+  const p = document.getElementById('priorityFilter').value;
+  const t = document.getElementById('tierFilter').value;
+  document.querySelectorAll('.finding').forEach(card => {
+    const okP = p === 'all' || card.dataset.priority === p;
+    const okQ = !q || card.dataset.search.includes(q);
+    card.style.display = (okP && okQ) ? '' : 'none';
+  });
+  document.querySelectorAll('#sourceTable tbody tr').forEach(row => {
+    const okT = t === 'all' || row.dataset.tier === t;
+    const okQ = !q || row.dataset.search.includes(q);
+    row.style.display = (okT && okQ) ? '' : 'none';
+  });
+}
+document.getElementById('searchBox').addEventListener('input', applyFilters);
+document.getElementById('priorityFilter').addEventListener('change', applyFilters);
+document.getElementById('tierFilter').addEventListener('change', applyFilters);
+function downloadJSON() {
+  const blob = new Blob([JSON.stringify(DATA, null, 2)], {type:'application/json;charset=utf-8'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'vpn_source_observation_data_2026-06-29.json'; a.click();
+  URL.revokeObjectURL(url);
+}
+</script>
+</body>
+</html>

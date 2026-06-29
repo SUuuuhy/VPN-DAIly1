@@ -1,0 +1,50 @@
+﻿来源类别,平台,来源名称,URL/入口,目标用户,是否候选,是否可持续追踪,追踪频率,关键信息,备注,_row,监控优先级分,日报层级
+社媒,X/Twitter,X 搜索：VPN UK,https://x.com/search?q=VPN%20UK&src=typed_query,隐私/技术用户,是,是,每日,记录实时抱怨/政策话题,舆情/及时需求,2,8,核心日报源
+社区,Reddit,r/VPN,https://www.reddit.com/r/VPN/,技术/隐私用户,是,是,每日,抓取高频问题,竞品口碑/故障/需求,3,9,核心日报源
+社区,Reddit,r/vpnreviews,https://www.reddit.com/r/vpnreviews/,技术/隐私用户,是,是,每日,记录价格/续费讨论,竞品口碑/故障/需求,4,9,核心日报源
+社区,Reddit,r/Windscribe,https://www.reddit.com/r/Windscribe/,相关产品用户,是,是,每日,补充并评估是否可持续,竞品消息,5,9,核心日报源
+第三方,Other,SafePaper,https://safepaper.io,public,是,是,每月,补充并评估是否可持续,独立性较高的VPN评测网站,6,6,周更重点源
+第三方,Other,top 10 VPN,https://www.top10vpn.com/reviews/x-vpn/,public,是,是,每月,独立审计/排行,有X的相关评测但最新更新还是24年,7,6,周更重点源
+第三方,Other,VPNCompare,https://www.vpncompare.co.uk,public,是,是,每月,补充并评估是否可持续,英国本地化重点VPN评测网站,8,6,周更重点源
+第三方,Other,Trustpilot,https://www.trustpilot.com,public,是,是,每月,补充并评估是否可持续,查看 VPN 品牌在用户中的投诉点，如退款、自动续费、速度、客服、解锁失败（主要评论在美国）,9,6,周更重点源
+媒体,Blog/Media,TechRadar VPN,https://www.techradar.com/vpn,购买前用户,是,是,每周,跟踪推荐榜单变动,竞品卖点/评测维度,10,8,核心日报源
+媒体,Blog/Media,Tom’s Guide VPN,https://www.tomsguide.com/best-picks/best-vpn,购买前用户,是,是,每周,收集竞品维度,内容结构/关键词,11,7,核心日报源
+媒体,Blog/Media,Comparitech VPN,https://www.comparitech.com/vpn/,隐私/流媒体用户,是,是,每周,记录英国 VPN 推荐,场景与竞品话术,12,8,核心日报源
+社区,Reddit,r/UniUK,https://www.reddit.com/r/UniUK/,学生/价格敏感,是,是,每周,设计学生调研入口,学生价格/校园 Wi-Fi 需求,13,7,核心日报源
+社区,Discord,英国留学生 Discord 群,待补充邀请链接,留学/旅行用户,是,否,每周,通过学生渠道找群,种子用户招募,14,5,周更重点源
+社区,Discord,游戏玩家 Discord 群,已加入fortnite,游戏用户,是,否,每周,寻找测试用户,游戏 Ping 反馈,15,5,周更重点源
+社区,Reddit,r/nordvpn,https://www.reddit.com/r/nordvpn/,相关产品用户,是,是,每周,补充并评估是否可持续,竞品消息,16,8,核心日报源
+社区,Reddit,r/protonvpn,https://www.reddit.com/r/ProtonVPN/,相关产品用户,是,是,每周,补充并评估是否可持续,竞品消息,17,8,核心日报源
+社区,Reddit,r/expressvpn,https://www.reddit.com/r/Express_VPN/,相关产品用户,是,是,每周,补充并评估是否可持续,竞品消息,18,8,核心日报源
+视频,YouTube,YouTube 搜索：best VPN UK,https://www.youtube.com/results?search_query=best+vpn+uk,购买前用户,是,是,每周,找小博主和评论区痛点,KOC/内容合作机会,19,8,核心日报源
+视频,YouTube,YouTube 搜索：free VPN UK,https://www.youtube.com/results?search_query=free+vpn+uk,价格敏感用户,是,是,每周,找免费 VPN 需求评论,免费版切入点,20,8,核心日报源
+视频,TikTok,TikTok 搜索：VPN UK,https://www.tiktok.com/search?q=vpn%20uk,年轻用户,是,是,每周,观察短视频话术,短视频内容机会,21,7,核心日报源
+搜索,Google Search,Google UK: best VPN UK,https://www.google.co.uk/search?q=best+vpn+uk,购买前用户,是,是,每周,记录 SEO 竞品与内容角度,搜索需求/竞品内容,22,8,核心日报源
+应用商店,App Store,Apple App Store 搜索：vpn,手动搜索 UK App Store,iOS 用户,是,是,每周,记录 X-VPN 与竞品排名,ASO 排名/评论/关键词,23,8,核心日报源
+应用商店,Google Play,Google Play 搜索：vpn,手动搜索 UK Google Play,Android 用户,是,是,每周,记录 X-VPN 与竞品排名,ASO 排名/评论/关键词,24,8,核心日报源
+第三方,Other,vpntierlist,https://vpntierlists.com,public,否,否,低频,补充并评估是否可持续,Affiliate 属性较强，需注意商业推荐偏向,25,1,观察池
+第三方,Other,the best VPN,https://thebestvpn.com,public,否,否,低频,补充并评估是否可持续,Affiliate 属性较强，需注意商业推荐偏向,26,1,观察池
+第三方,Other,vpnMentor,https://www.vpnmentor.com,public,否,否,低频,补充并评估是否可持续,Affiliate 属性较强，需注意商业推荐偏向,27,1,观察池
+第三方,Other,WizCase,https://zh.wizcase.com/vpn-reviews/,public,否,否,低频,补充并评估是否可持续,Affiliate 属性较强，需注意商业推荐偏向,28,1,观察池
+第三方,Other,PrivacySavvy,https://privacysavvy.com/vpn/best/age-verification-vpn/,public,否,否,低频,补充并评估是否可持续,Affiliate 属性较强，需注意商业推荐偏向,29,1,观察池
+第三方,Other,ProPrivacy,https://proprivacy.com/vpn/comparison/best-iphone-vpns#,public,否,否,低频,补充并评估是否可持续,Affiliate 属性较强，需注意商业推荐偏向,30,1,观察池
+第三方,Other,Which?,https://www.which.co.uk/reviews/vpn-services/article/guides,public,否,否,低频,补充并评估是否可持续,VPN信息较少，但26年有一篇VPN评测,31,1,观察池
+第三方,Other,PC Gamer,https://www.pcgamer.com/best-vpn-for-pc-gaming/,游戏用户,否,否,低频,补充并评估是否可持续,游戏向VPN内容,32,1,观察池
+社区,Forum,The Student Room,https://www.thestudentroom.co.uk/,学生/价格敏感,否,否,低频,调研合作/帖子观察,学生使用场景,33,1,观察池
+社区,Reddit,r/AskUK,https://www.reddit.com/r/AskUK/,public,否,否,低频,搜索历史帖子,大众认知/价格顾虑,34,1,观察池
+新闻网站,media,bbc,https://www.bbc.com/,public,否,否,低频,补充并评估是否可持续,政策信息,35,2,观察池
+社区,Forum,Privacyguides,https://discuss.privacyguides.net,隐私安全用户,否,否,每月,补充并评估是否可持续,隐私安全讨论论坛，有各类隐私政策测评内容,36,3,观察池
+媒体,Blog/Media,Security.org VPN Reviews,https://www.security.org/vpn/,隐私安全用户,否,否,每月,抽取评测维度,信任背书/隐私维度,37,2,观察池
+社区,Reddit,r/mullvadvpn,https://www.reddit.com/r/mullvadvpn/,相关产品用户,是,是,每周,,竞品口碑/故障/需求,38,8,核心日报源
+社区,Reddit,r/Priacy,https://www.reddit.com/r/Piracy/,隐私安全用户,否,是,每月,补充并评估是否可持续,隐私和安全问题，与VPN关联度高,39,4,观察池
+第三方,Other,Privacy Academy,https://privacyacademy.com,隐私安全用户,否,是,每月,,隐私安全讨论论坛，有各类隐私政策测评内容,40,5,周更重点源
+社区,Reddit,r/firefox,https://www.reddit.com/r/firefox/,相关产品用户,是,是,每周,,竞品口碑/故障/需求,41,8,核心日报源
+社区,Reddit,r/VPN_Question,https://www.reddit.com/r/VPN_Question/,技术/隐私用户,是,是,每日,抓取高频问题,竞品口碑/故障/需求,42,9,核心日报源
+社区,Reddit,r/VPNReviewHub,https://www.reddit.com/r/VPNReviewHub/,技术/隐私用户,是,是,每周,,竞品口碑/故障/需求,43,8,核心日报源
+社区,Reddit,r/CyberGuides,https://www.reddit.com/r/CyberGuides/,技术/隐私用户,否,否,低频,,行业相关,44,1,观察池
+社区,Reddit,r/VPN_Guide,https://www.reddit.com/r/VPN_Guide/,技术/隐私用户,否,否,低频,,行业相关,45,1,观察池
+第三方,Other,Air VPN,https://airvpn.org/forums/forum/2-general-suggestions/,相关产品用户,是,是,每周,补充并评估是否可持续,竞品口碑/故障/需求,46,8,核心日报源
+社区,Reddit,r/VPNforFreedom,https://www.reddit.com/r/VPNforFreedom/,技术/隐私用户,否,否,低频,,行业相关,47,1,观察池
+社区,Reddit,r/TechImpact,https://www.reddit.com/r/TechImpact/,技术/隐私用户,否,否,低频,,行业相关,48,1,观察池
+社区,Reddit,r/PrivateInternetAccess,https://www.reddit.com/r/PrivateInternetAccess/,技术/隐私用户,否,否,低频,,竞品口碑/故障/需求,49,2,观察池
+社区,Reddit,r/vpncoupons,https://www.reddit.com/r/vpncoupons/,价格敏感用户,否,否,低频,找免费 VPN 需求评论,免费版切入点,50,2,观察池

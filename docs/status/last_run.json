@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-06-29 14:48 Asia/Singapore",
+  "date": "2026-06-29",
+  "stats": {
+    "total_sources": 49,
+    "due_sources": 49,
+    "fetched_sources": 0,
+    "partial_sources": 0,
+    "limited_sources": 0,
+    "failed_sources": 0,
+    "skipped_sources": 49,
+    "raw_items": 0,
+    "candidate": 28,
+    "sustainable": 28,
+    "daily": 5,
+    "weekly": 19,
+    "monthly": 8,
+    "low": 17
+  },
+  "method": {
+    "summary": "公开来源自动抓取 + 规则打分；若配置 OPENAI_API_KEY 且 OPENAI_MODEL 可启用 LLM 二次整合。",
+    "principles": [
+      "最重要",
+      "受众最关切",
+      "行业最相关",
+      "增长需求点"
+    ]
+  }
+}
