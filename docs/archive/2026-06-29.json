@@ -1,15 +1,15 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29 17:01:52 Asia/Singapore",
+  "generated_at": "2026-06-29 17:21:36 Asia/Singapore",
   "stats": {
     "total_sources": 99,
     "monitored_sources": 80,
-    "current_items": 0,
-    "raw_items": 0,
-    "filtered_items": 0,
-    "sources_ok": 0,
-    "sources_limited": 80,
-    "sources_failed": 0,
+    "current_items": 1,
+    "raw_items": 125,
+    "filtered_items": 124,
+    "sources_ok": 29,
+    "sources_limited": 20,
+    "sources_failed": 31,
     "reddit_oauth_ready": false,
     "x_api_ready": false,
     "freshness_windows": {
@@ -60,11 +60,16 @@
       "name": "竞品动态",
       "definition": "只放竞品官方网站、官方博客、新闻室、更新日志、状态页等竞品一手内容；用户论坛不放这里。",
       "examples": "NordVPN/ExpressVPN/Proton VPN/Surfshark/Windscribe/Mullvad/PIA/CyberGhost 官网内容。",
-      "items": 0,
+      "items": 1,
       "sources": 26,
-      "heat": 0,
-      "priority": "无新信息",
-      "subcategories": [],
+      "heat": 92,
+      "priority": "P0",
+      "subcategories": [
+        [
+          "官网综合动态",
+          1
+        ]
+      ],
       "freshness_days": 1.5,
       "freshness_label": "36小时",
       "freshness_hours": 36
@@ -122,135 +127,1154 @@
       "freshness_hours": 36
     }
   ],
-  "findings": [],
-  "items": [],
-  "filtered_items": [],
+  "findings": [
+    {
+      "priority": "P0",
+      "category": "竞品动态",
+      "subcategory": "官网综合动态",
+      "issue": "产品/功能更新",
+      "title": "官网综合动态｜All services are online",
+      "evidence": "All services are online",
+      "source_count": 1,
+      "source_names": [
+        "NordVPN Status"
+      ],
+      "source_links": [
+        {
+          "title": "All services are online",
+          "url": "https://status.nordvpn.com/",
+          "source": "NordVPN Status",
+          "published_at": "2026-06-29 08:00 SGT",
+          "age": "9小时前",
+          "method": "html_page"
+        }
+      ],
+      "url": "https://status.nordvpn.com/",
+      "latest_published_at": "2026-06-29T08:00:00+08:00",
+      "earliest_published_at": "2026-06-29T08:00:00+08:00",
+      "freshness": "最新 2026-06-29 08:00 SGT；窗口 36 小时",
+      "importance_score": 92,
+      "tags": [
+        "更新",
+        "产品/功能更新",
+        "官网综合动态"
+      ],
+      "items": [
+        {
+          "title": "All services are online",
+          "snippet": "Welcome to NordVPN status page for real-time and historical data on system performance.",
+          "url": "https://status.nordvpn.com/",
+          "published_at": "2026-06-29T08:00:00+08:00",
+          "source_name": "NordVPN Status",
+          "platform": "Official Website",
+          "source_category": "竞品官网",
+          "fetch_method": "html_page",
+          "intelligence_category": "竞品动态",
+          "subcategory": "官网综合动态",
+          "issue": "产品/功能更新",
+          "matched_keywords": [
+            "更新"
+          ],
+          "importance_score": 92,
+          "priority": "P0",
+          "audience": "竞品/市场/产品团队",
+          "source_note": "NordVPN 官方状态页",
+          "source_strategy": "官方网页/RSS/博客页；只保留可识别发布时间/更新时间的官方内容",
+          "evidence_role": "竞品官方动态",
+          "age_days": 0.39,
+          "age_label": "9小时前",
+          "freshness_window_days": 1.5,
+          "freshness_window_label": "36小时",
+          "freshness_window_hours": 36,
+          "is_current": true,
+          "freshness_reason": "9小时前，在 36 小时时效窗口内"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "title": "All services are online",
+      "snippet": "Welcome to NordVPN status page for real-time and historical data on system performance.",
+      "url": "https://status.nordvpn.com/",
+      "published_at": "2026-06-29T08:00:00+08:00",
+      "source_name": "NordVPN Status",
+      "platform": "Official Website",
+      "source_category": "竞品官网",
+      "fetch_method": "html_page",
+      "intelligence_category": "竞品动态",
+      "subcategory": "官网综合动态",
+      "issue": "产品/功能更新",
+      "matched_keywords": [
+        "更新"
+      ],
+      "importance_score": 92,
+      "priority": "P0",
+      "audience": "竞品/市场/产品团队",
+      "source_note": "NordVPN 官方状态页",
+      "source_strategy": "官方网页/RSS/博客页；只保留可识别发布时间/更新时间的官方内容",
+      "evidence_role": "竞品官方动态",
+      "age_days": 0.39,
+      "age_label": "9小时前",
+      "freshness_window_days": 1.5,
+      "freshness_window_label": "36小时",
+      "freshness_window_hours": 36,
+      "is_current": true,
+      "freshness_reason": "9小时前，在 36 小时时效窗口内"
+    }
+  ],
+  "filtered_items": [
+    {
+      "source_name": "Windscribe official blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-06-05T08:00:00+08:00",
+      "freshness_reason": "24天前，超过 36 小时时效窗口",
+      "age_label": "24天前"
+    },
+    {
+      "source_name": "Proton VPN 官方博客 Latest",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-06-19T20:50:10+08:00",
+      "freshness_reason": "9天前，超过 36 小时时效窗口",
+      "age_label": "9天前"
+    },
+    {
+      "source_name": "Proton VPN 官方博客 Latest",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-06-19T20:50:10+08:00",
+      "freshness_reason": "9天前，超过 36 小时时效窗口",
+      "age_label": "9天前"
+    },
+    {
+      "source_name": "Proton VPN 官方博客 Latest",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-06-19T20:50:10+08:00",
+      "freshness_reason": "9天前，超过 36 小时时效窗口",
+      "age_label": "9天前"
+    },
+    {
+      "source_name": "Proton VPN 官方博客 Latest",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-06-19T20:50:10+08:00",
+      "freshness_reason": "9天前，超过 36 小时时效窗口",
+      "age_label": "9天前"
+    },
+    {
+      "source_name": "Proton VPN 官方博客 Latest",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-06-19T20:50:10+08:00",
+      "freshness_reason": "9天前，超过 36 小时时效窗口",
+      "age_label": "9天前"
+    },
+    {
+      "source_name": "Proton VPN 官方博客 Latest",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-06-19T20:50:10+08:00",
+      "freshness_reason": "9天前，超过 36 小时时效窗口",
+      "age_label": "9天前"
+    },
+    {
+      "source_name": "Proton VPN 官方博客 Latest",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-06-19T20:50:10+08:00",
+      "freshness_reason": "9天前，超过 36 小时时效窗口",
+      "age_label": "9天前"
+    },
+    {
+      "source_name": "Proton VPN 官方博客 Latest",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-06-19T20:50:10+08:00",
+      "freshness_reason": "9天前，超过 36 小时时效窗口",
+      "age_label": "9天前"
+    },
+    {
+      "source_name": "Proton VPN official blog feed",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-06-19T08:00:00+08:00",
+      "freshness_reason": "10天前，超过 36 小时时效窗口",
+      "age_label": "10天前"
+    },
+    {
+      "source_name": "Mullvad Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-06-01T20:12:40.297000+08:00",
+      "freshness_reason": "27天前，超过 36 小时时效窗口",
+      "age_label": "27天前"
+    },
+    {
+      "source_name": "Mullvad Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-06-01T18:26:11.381000+08:00",
+      "freshness_reason": "27天前，超过 36 小时时效窗口",
+      "age_label": "27天前"
+    },
+    {
+      "source_name": "Mullvad Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-06-01T18:26:11.381000+08:00",
+      "freshness_reason": "27天前，超过 36 小时时效窗口",
+      "age_label": "27天前"
+    },
+    {
+      "source_name": "Mullvad Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-05-20T23:12:05.203000+08:00",
+      "freshness_reason": "39天前，超过 36 小时时效窗口",
+      "age_label": "39天前"
+    },
+    {
+      "source_name": "Mullvad Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-05-12T17:16:16.798000+08:00",
+      "freshness_reason": "48天前，超过 36 小时时效窗口",
+      "age_label": "48天前"
+    },
+    {
+      "source_name": "Mullvad Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-04-21T22:03:52.167000+08:00",
+      "freshness_reason": "68天前，超过 36 小时时效窗口",
+      "age_label": "68天前"
+    },
+    {
+      "source_name": "Mullvad Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-03-26T20:43:51.423000+08:00",
+      "freshness_reason": "94天前，超过 36 小时时效窗口",
+      "age_label": "94天前"
+    },
+    {
+      "source_name": "Mullvad Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-03-06T17:50:01.594000+08:00",
+      "freshness_reason": "114天前，超过 36 小时时效窗口",
+      "age_label": "114天前"
+    },
+    {
+      "source_name": "Mullvad official news",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-02-03T18:30:59.711000+08:00",
+      "freshness_reason": "145天前，超过 36 小时时效窗口",
+      "age_label": "145天前"
+    },
+    {
+      "source_name": "Mullvad official news",
+      "intelligence_category": "竞品动态",
+      "published_at": "2025-12-30T19:57:24.923000+08:00",
+      "freshness_reason": "180天前，超过 36 小时时效窗口",
+      "age_label": "180天前"
+    },
+    {
+      "source_name": "Mullvad official news",
+      "intelligence_category": "竞品动态",
+      "published_at": "2025-12-15T21:40:38.216000+08:00",
+      "freshness_reason": "195天前，超过 36 小时时效窗口",
+      "age_label": "195天前"
+    },
+    {
+      "source_name": "Mullvad official news",
+      "intelligence_category": "竞品动态",
+      "published_at": "2025-11-14T18:46:37.220000+08:00",
+      "freshness_reason": "226天前，超过 36 小时时效窗口",
+      "age_label": "226天前"
+    },
+    {
+      "source_name": "Surfshark Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2018-07-28T13:57:31+08:00",
+      "freshness_reason": "2893天前，超过 36 小时时效窗口",
+      "age_label": "2893天前"
+    },
+    {
+      "source_name": "Surfshark Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2018-07-28T13:57:31+08:00",
+      "freshness_reason": "2893天前，超过 36 小时时效窗口",
+      "age_label": "2893天前"
+    },
+    {
+      "source_name": "Surfshark Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2018-07-28T13:57:31+08:00",
+      "freshness_reason": "2893天前，超过 36 小时时效窗口",
+      "age_label": "2893天前"
+    },
+    {
+      "source_name": "Surfshark Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2018-07-28T13:57:31+08:00",
+      "freshness_reason": "2893天前，超过 36 小时时效窗口",
+      "age_label": "2893天前"
+    },
+    {
+      "source_name": "Surfshark Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2018-07-28T13:57:31+08:00",
+      "freshness_reason": "2893天前，超过 36 小时时效窗口",
+      "age_label": "2893天前"
+    },
+    {
+      "source_name": "Surfshark Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2018-07-28T13:57:31+08:00",
+      "freshness_reason": "2893天前，超过 36 小时时效窗口",
+      "age_label": "2893天前"
+    },
+    {
+      "source_name": "Surfshark Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2018-07-28T13:57:31+08:00",
+      "freshness_reason": "2893天前，超过 36 小时时效窗口",
+      "age_label": "2893天前"
+    },
+    {
+      "source_name": "Surfshark Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2018-07-28T13:57:31+08:00",
+      "freshness_reason": "2893天前，超过 36 小时时效窗口",
+      "age_label": "2893天前"
+    },
+    {
+      "source_name": "CyberGhost official privacy hub posts",
+      "intelligence_category": "竞品动态",
+      "published_at": "2019-06-14T18:26:02+08:00",
+      "freshness_reason": "2571天前，超过 36 小时时效窗口",
+      "age_label": "2571天前"
+    },
+    {
+      "source_name": "CyberGhost official privacy hub posts",
+      "intelligence_category": "竞品动态",
+      "published_at": "2019-06-14T18:26:02+08:00",
+      "freshness_reason": "2571天前，超过 36 小时时效窗口",
+      "age_label": "2571天前"
+    },
+    {
+      "source_name": "CyberGhost official privacy hub posts",
+      "intelligence_category": "竞品动态",
+      "published_at": "2019-06-14T18:26:02+08:00",
+      "freshness_reason": "2571天前，超过 36 小时时效窗口",
+      "age_label": "2571天前"
+    },
+    {
+      "source_name": "CyberGhost official privacy hub posts",
+      "intelligence_category": "竞品动态",
+      "published_at": "2019-06-14T18:26:02+08:00",
+      "freshness_reason": "2571天前，超过 36 小时时效窗口",
+      "age_label": "2571天前"
+    },
+    {
+      "source_name": "CyberGhost official privacy hub posts",
+      "intelligence_category": "竞品动态",
+      "published_at": "2019-06-14T18:26:02+08:00",
+      "freshness_reason": "2571天前，超过 36 小时时效窗口",
+      "age_label": "2571天前"
+    },
+    {
+      "source_name": "CyberGhost official privacy hub posts",
+      "intelligence_category": "竞品动态",
+      "published_at": "2019-06-14T18:26:02+08:00",
+      "freshness_reason": "2571天前，超过 36 小时时效窗口",
+      "age_label": "2571天前"
+    },
+    {
+      "source_name": "CyberGhost official privacy hub posts",
+      "intelligence_category": "竞品动态",
+      "published_at": "2019-06-14T18:26:02+08:00",
+      "freshness_reason": "2571天前，超过 36 小时时效窗口",
+      "age_label": "2571天前"
+    },
+    {
+      "source_name": "Private Internet Access official news",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-06-18T08:00:00+08:00",
+      "freshness_reason": "11天前，超过 36 小时时效窗口",
+      "age_label": "11天前"
+    },
+    {
+      "source_name": "Private Internet Access official news",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-06-18T08:00:00+08:00",
+      "freshness_reason": "11天前，超过 36 小时时效窗口",
+      "age_label": "11天前"
+    },
+    {
+      "source_name": "Private Internet Access official news",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-05-26T08:00:00+08:00",
+      "freshness_reason": "34天前，超过 36 小时时效窗口",
+      "age_label": "34天前"
+    },
+    {
+      "source_name": "Private Internet Access official news",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-05-26T08:00:00+08:00",
+      "freshness_reason": "34天前，超过 36 小时时效窗口",
+      "age_label": "34天前"
+    },
+    {
+      "source_name": "Private Internet Access official news",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-05-26T08:00:00+08:00",
+      "freshness_reason": "34天前，超过 36 小时时效窗口",
+      "age_label": "34天前"
+    },
+    {
+      "source_name": "Private Internet Access official news",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-02-05T08:00:00+08:00",
+      "freshness_reason": "144天前，超过 36 小时时效窗口",
+      "age_label": "144天前"
+    },
+    {
+      "source_name": "Private Internet Access official news",
+      "intelligence_category": "竞品动态",
+      "published_at": "2026-05-27T08:00:00+08:00",
+      "freshness_reason": "33天前，超过 36 小时时效窗口",
+      "age_label": "33天前"
+    },
+    {
+      "source_name": "Private Internet Access official news",
+      "intelligence_category": "竞品动态",
+      "published_at": "2025-10-22T08:00:00+08:00",
+      "freshness_reason": "250天前，超过 36 小时时效窗口",
+      "age_label": "250天前"
+    },
+    {
+      "source_name": "Private Internet Access Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2024-01-15T17:10:16+08:00",
+      "freshness_reason": "896天前，超过 36 小时时效窗口",
+      "age_label": "896天前"
+    },
+    {
+      "source_name": "Private Internet Access Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2024-01-15T17:10:16+08:00",
+      "freshness_reason": "896天前，超过 36 小时时效窗口",
+      "age_label": "896天前"
+    },
+    {
+      "source_name": "Private Internet Access Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2024-01-15T17:10:16+08:00",
+      "freshness_reason": "896天前，超过 36 小时时效窗口",
+      "age_label": "896天前"
+    },
+    {
+      "source_name": "Private Internet Access Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2024-01-15T17:10:16+08:00",
+      "freshness_reason": "896天前，超过 36 小时时效窗口",
+      "age_label": "896天前"
+    },
+    {
+      "source_name": "Private Internet Access Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2024-01-15T17:10:16+08:00",
+      "freshness_reason": "896天前，超过 36 小时时效窗口",
+      "age_label": "896天前"
+    },
+    {
+      "source_name": "Private Internet Access Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2024-01-15T17:10:16+08:00",
+      "freshness_reason": "896天前，超过 36 小时时效窗口",
+      "age_label": "896天前"
+    },
+    {
+      "source_name": "Private Internet Access Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "2024-01-15T17:10:16+08:00",
+      "freshness_reason": "896天前，超过 36 小时时效窗口",
+      "age_label": "896天前"
+    },
+    {
+      "source_name": "TunnelBear Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "",
+      "freshness_reason": "无法确认发布时间，已从主面板隐藏",
+      "age_label": "无法确认"
+    },
+    {
+      "source_name": "TunnelBear Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "",
+      "freshness_reason": "无法确认发布时间，已从主面板隐藏",
+      "age_label": "无法确认"
+    },
+    {
+      "source_name": "TunnelBear Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "",
+      "freshness_reason": "无法确认发布时间，已从主面板隐藏",
+      "age_label": "无法确认"
+    },
+    {
+      "source_name": "TunnelBear Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "",
+      "freshness_reason": "无法确认发布时间，已从主面板隐藏",
+      "age_label": "无法确认"
+    },
+    {
+      "source_name": "TunnelBear Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "",
+      "freshness_reason": "无法确认发布时间，已从主面板隐藏",
+      "age_label": "无法确认"
+    },
+    {
+      "source_name": "TunnelBear Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "",
+      "freshness_reason": "无法确认发布时间，已从主面板隐藏",
+      "age_label": "无法确认"
+    },
+    {
+      "source_name": "TunnelBear Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "",
+      "freshness_reason": "无法确认发布时间，已从主面板隐藏",
+      "age_label": "无法确认"
+    },
+    {
+      "source_name": "TunnelBear Blog",
+      "intelligence_category": "竞品动态",
+      "published_at": "",
+      "freshness_reason": "无法确认发布时间，已从主面板隐藏",
+      "age_label": "无法确认"
+    },
+    {
+      "source_name": "CyberGhost Privacy Hub",
+      "intelligence_category": "竞品动态",
+      "published_at": "2023-10-13T21:14:36+08:00",
+      "freshness_reason": "989天前，超过 36 小时时效窗口",
+      "age_label": "989天前"
+    },
+    {
+      "source_name": "CyberGhost Privacy Hub",
+      "intelligence_category": "竞品动态",
+      "published_at": "2023-10-13T21:14:36+08:00",
+      "freshness_reason": "989天前，超过 36 小时时效窗口",
+      "age_label": "989天前"
+    },
+    {
+      "source_name": "ICO & Ofcom age assurance statement",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-03-25T08:00:00+08:00",
+      "freshness_reason": "96天前，超过 36 小时时效窗口",
+      "age_label": "96天前"
+    },
+    {
+      "source_name": "ICO & Ofcom age assurance statement",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-03-25T08:00:00+08:00",
+      "freshness_reason": "96天前，超过 36 小时时效窗口",
+      "age_label": "96天前"
+    },
+    {
+      "source_name": "ICO & Ofcom age assurance statement",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-03-25T08:00:00+08:00",
+      "freshness_reason": "96天前，超过 36 小时时效窗口",
+      "age_label": "96天前"
+    },
+    {
+      "source_name": "ICO & Ofcom age assurance statement",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-03-25T08:00:00+08:00",
+      "freshness_reason": "96天前，超过 36 小时时效窗口",
+      "age_label": "96天前"
+    },
+    {
+      "source_name": "ICO & Ofcom age assurance statement",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-03-25T08:00:00+08:00",
+      "freshness_reason": "96天前，超过 36 小时时效窗口",
+      "age_label": "96天前"
+    },
+    {
+      "source_name": "ICO & Ofcom age assurance statement",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-03-25T08:00:00+08:00",
+      "freshness_reason": "96天前，超过 36 小时时效窗口",
+      "age_label": "96天前"
+    },
+    {
+      "source_name": "ICO & Ofcom age assurance statement",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-03-25T08:00:00+08:00",
+      "freshness_reason": "96天前，超过 36 小时时效窗口",
+      "age_label": "96天前"
+    },
+    {
+      "source_name": "ICO & Ofcom age assurance statement",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-03-25T08:00:00+08:00",
+      "freshness_reason": "96天前，超过 36 小时时效窗口",
+      "age_label": "96天前"
+    },
+    {
+      "source_name": "TechRadar VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-06-28T02:00:00+08:00",
+      "freshness_reason": "1天前，超过 36 小时时效窗口",
+      "age_label": "1天前"
+    },
+    {
+      "source_name": "TechRadar VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-06-28T02:00:00+08:00",
+      "freshness_reason": "1天前，超过 36 小时时效窗口",
+      "age_label": "1天前"
+    },
+    {
+      "source_name": "TechRadar VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-06-28T02:00:00+08:00",
+      "freshness_reason": "1天前，超过 36 小时时效窗口",
+      "age_label": "1天前"
+    },
+    {
+      "source_name": "TechRadar VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-06-28T02:00:00+08:00",
+      "freshness_reason": "1天前，超过 36 小时时效窗口",
+      "age_label": "1天前"
+    },
+    {
+      "source_name": "TechRadar VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-06-26T18:30:00+08:00",
+      "freshness_reason": "2天前，超过 36 小时时效窗口",
+      "age_label": "2天前"
+    },
+    {
+      "source_name": "TechRadar VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-06-28T02:00:00+08:00",
+      "freshness_reason": "1天前，超过 36 小时时效窗口",
+      "age_label": "1天前"
+    },
+    {
+      "source_name": "TechRadar VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-06-28T02:00:00+08:00",
+      "freshness_reason": "1天前，超过 36 小时时效窗口",
+      "age_label": "1天前"
+    },
+    {
+      "source_name": "TechRadar VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-06-28T02:00:00+08:00",
+      "freshness_reason": "1天前，超过 36 小时时效窗口",
+      "age_label": "1天前"
+    },
+    {
+      "source_name": "Comparitech VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2024-07-02T08:00:00+08:00",
+      "freshness_reason": "727天前，超过 36 小时时效窗口",
+      "age_label": "727天前"
+    },
+    {
+      "source_name": "Comparitech VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2024-07-02T08:00:00+08:00",
+      "freshness_reason": "727天前，超过 36 小时时效窗口",
+      "age_label": "727天前"
+    },
+    {
+      "source_name": "Comparitech VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2024-07-02T08:00:00+08:00",
+      "freshness_reason": "727天前，超过 36 小时时效窗口",
+      "age_label": "727天前"
+    },
+    {
+      "source_name": "Comparitech VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2024-07-02T08:00:00+08:00",
+      "freshness_reason": "727天前，超过 36 小时时效窗口",
+      "age_label": "727天前"
+    },
+    {
+      "source_name": "Comparitech VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2024-07-02T08:00:00+08:00",
+      "freshness_reason": "727天前，超过 36 小时时效窗口",
+      "age_label": "727天前"
+    },
+    {
+      "source_name": "Comparitech VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2024-07-02T08:00:00+08:00",
+      "freshness_reason": "727天前，超过 36 小时时效窗口",
+      "age_label": "727天前"
+    },
+    {
+      "source_name": "Comparitech VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2024-07-02T08:00:00+08:00",
+      "freshness_reason": "727天前，超过 36 小时时效窗口",
+      "age_label": "727天前"
+    },
+    {
+      "source_name": "Comparitech VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2024-07-02T08:00:00+08:00",
+      "freshness_reason": "727天前，超过 36 小时时效窗口",
+      "age_label": "727天前"
+    },
+    {
+      "source_name": "Tom’s Guide VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-06-23T00:30:16+08:00",
+      "freshness_reason": "6天前，超过 36 小时时效窗口",
+      "age_label": "6天前"
+    },
+    {
+      "source_name": "Tom’s Guide VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-06-23T00:30:16+08:00",
+      "freshness_reason": "6天前，超过 36 小时时效窗口",
+      "age_label": "6天前"
+    },
+    {
+      "source_name": "Tom’s Guide VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-06-23T00:30:16+08:00",
+      "freshness_reason": "6天前，超过 36 小时时效窗口",
+      "age_label": "6天前"
+    },
+    {
+      "source_name": "Tom’s Guide VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2022-10-25T19:49:50+08:00",
+      "freshness_reason": "1342天前，超过 36 小时时效窗口",
+      "age_label": "1342天前"
+    },
+    {
+      "source_name": "Tom’s Guide VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2022-10-25T19:49:50+08:00",
+      "freshness_reason": "1342天前，超过 36 小时时效窗口",
+      "age_label": "1342天前"
+    },
+    {
+      "source_name": "Tom’s Guide VPN",
+      "intelligence_category": "第三方网站",
+      "published_at": "2022-10-25T19:49:50+08:00",
+      "freshness_reason": "1342天前，超过 36 小时时效窗口",
+      "age_label": "1342天前"
+    },
+    {
+      "source_name": "GOV.UK child online rules fact sheet",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-06-15T17:08:01+08:00",
+      "freshness_reason": "14天前，超过 36 小时时效窗口",
+      "age_label": "14天前"
+    },
+    {
+      "source_name": "GOV.UK child online rules fact sheet",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-06-15T17:08:01+08:00",
+      "freshness_reason": "14天前，超过 36 小时时效窗口",
+      "age_label": "14天前"
+    },
+    {
+      "source_name": "GOV.UK child online rules fact sheet",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-06-15T17:08:01+08:00",
+      "freshness_reason": "14天前，超过 36 小时时效窗口",
+      "age_label": "14天前"
+    },
+    {
+      "source_name": "GOV.UK child online rules fact sheet",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-06-15T17:08:01+08:00",
+      "freshness_reason": "14天前，超过 36 小时时效窗口",
+      "age_label": "14天前"
+    },
+    {
+      "source_name": "GOV.UK child online rules fact sheet",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-06-15T17:08:01+08:00",
+      "freshness_reason": "14天前，超过 36 小时时效窗口",
+      "age_label": "14天前"
+    },
+    {
+      "source_name": "GOV.UK child online rules fact sheet",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-06-15T17:08:01+08:00",
+      "freshness_reason": "14天前，超过 36 小时时效窗口",
+      "age_label": "14天前"
+    },
+    {
+      "source_name": "GOV.UK child online rules fact sheet",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-06-15T17:08:01+08:00",
+      "freshness_reason": "14天前，超过 36 小时时效窗口",
+      "age_label": "14天前"
+    },
+    {
+      "source_name": "GOV.UK child online rules fact sheet",
+      "intelligence_category": "政策风险",
+      "published_at": "2026-06-15T17:08:01+08:00",
+      "freshness_reason": "14天前，超过 36 小时时效窗口",
+      "age_label": "14天前"
+    },
+    {
+      "source_name": "Privacy Academy",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-04-20T04:26:54+08:00",
+      "freshness_reason": "70天前，超过 36 小时时效窗口",
+      "age_label": "70天前"
+    },
+    {
+      "source_name": "Privacy Academy",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-04-20T04:26:54+08:00",
+      "freshness_reason": "70天前，超过 36 小时时效窗口",
+      "age_label": "70天前"
+    },
+    {
+      "source_name": "Privacy Academy",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-04-20T04:26:54+08:00",
+      "freshness_reason": "70天前，超过 36 小时时效窗口",
+      "age_label": "70天前"
+    },
+    {
+      "source_name": "Privacy Academy",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-04-20T04:26:54+08:00",
+      "freshness_reason": "70天前，超过 36 小时时效窗口",
+      "age_label": "70天前"
+    },
+    {
+      "source_name": "Privacy Academy",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-04-20T04:26:54+08:00",
+      "freshness_reason": "70天前，超过 36 小时时效窗口",
+      "age_label": "70天前"
+    },
+    {
+      "source_name": "Privacy Academy",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-06-24T08:00:00+08:00",
+      "freshness_reason": "5天前，超过 36 小时时效窗口",
+      "age_label": "5天前"
+    },
+    {
+      "source_name": "Privacy Academy",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-06-15T08:00:00+08:00",
+      "freshness_reason": "14天前，超过 36 小时时效窗口",
+      "age_label": "14天前"
+    },
+    {
+      "source_name": "Privacy Academy",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-06-10T08:00:00+08:00",
+      "freshness_reason": "19天前，超过 36 小时时效窗口",
+      "age_label": "19天前"
+    },
+    {
+      "source_name": "SafePaper",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-02-28T08:00:00+08:00",
+      "freshness_reason": "121天前，超过 36 小时时效窗口",
+      "age_label": "121天前"
+    },
+    {
+      "source_name": "SafePaper",
+      "intelligence_category": "第三方网站",
+      "published_at": "2023-11-10T19:22:31+08:00",
+      "freshness_reason": "961天前，超过 36 小时时效窗口",
+      "age_label": "961天前"
+    },
+    {
+      "source_name": "SafePaper",
+      "intelligence_category": "第三方网站",
+      "published_at": "2023-11-10T19:22:31+08:00",
+      "freshness_reason": "961天前，超过 36 小时时效窗口",
+      "age_label": "961天前"
+    },
+    {
+      "source_name": "SafePaper",
+      "intelligence_category": "第三方网站",
+      "published_at": "2023-11-10T19:22:31+08:00",
+      "freshness_reason": "961天前，超过 36 小时时效窗口",
+      "age_label": "961天前"
+    },
+    {
+      "source_name": "SafePaper",
+      "intelligence_category": "第三方网站",
+      "published_at": "2023-11-10T19:22:31+08:00",
+      "freshness_reason": "961天前，超过 36 小时时效窗口",
+      "age_label": "961天前"
+    },
+    {
+      "source_name": "SafePaper",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-01-26T08:00:00+08:00",
+      "freshness_reason": "154天前，超过 36 小时时效窗口",
+      "age_label": "154天前"
+    },
+    {
+      "source_name": "SafePaper",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-01-25T08:00:00+08:00",
+      "freshness_reason": "155天前，超过 36 小时时效窗口",
+      "age_label": "155天前"
+    },
+    {
+      "source_name": "SafePaper",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-01-22T08:00:00+08:00",
+      "freshness_reason": "158天前，超过 36 小时时效窗口",
+      "age_label": "158天前"
+    },
+    {
+      "source_name": "VPNCompare",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-01-27T22:54:08+08:00",
+      "freshness_reason": "152天前，超过 36 小时时效窗口",
+      "age_label": "152天前"
+    },
+    {
+      "source_name": "VPNCompare",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-01-27T22:54:08+08:00",
+      "freshness_reason": "152天前，超过 36 小时时效窗口",
+      "age_label": "152天前"
+    },
+    {
+      "source_name": "VPNCompare",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-01-27T22:54:08+08:00",
+      "freshness_reason": "152天前，超过 36 小时时效窗口",
+      "age_label": "152天前"
+    },
+    {
+      "source_name": "VPNCompare",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-01-27T22:54:08+08:00",
+      "freshness_reason": "152天前，超过 36 小时时效窗口",
+      "age_label": "152天前"
+    },
+    {
+      "source_name": "VPNCompare",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-01-27T22:54:08+08:00",
+      "freshness_reason": "152天前，超过 36 小时时效窗口",
+      "age_label": "152天前"
+    },
+    {
+      "source_name": "VPNCompare",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-01-27T22:54:08+08:00",
+      "freshness_reason": "152天前，超过 36 小时时效窗口",
+      "age_label": "152天前"
+    },
+    {
+      "source_name": "VPNCompare",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-01-27T22:54:08+08:00",
+      "freshness_reason": "152天前，超过 36 小时时效窗口",
+      "age_label": "152天前"
+    },
+    {
+      "source_name": "VPNCompare",
+      "intelligence_category": "第三方网站",
+      "published_at": "2026-01-27T22:54:08+08:00",
+      "freshness_reason": "152天前，超过 36 小时时效窗口",
+      "age_label": "152天前"
+    }
+  ],
   "limitations": [
     {
-      "source": "Surfshark News",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
+      "source": "ExpressVPN 官方博客 Latest",
+      "status": "failed",
+      "method": "html",
+      "reason": "403 Client Error: Forbidden for url: https://www.expressvpn.com/blog/category/latest/",
       "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
     },
     {
-      "source": "CyberGhost official privacy hub posts",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
-    },
-    {
-      "source": "ExpressVPN official YouTube",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
-    },
-    {
-      "source": "Surfshark Blog",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
-    },
-    {
-      "source": "ExpressVPN Newsroom",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
-    },
-    {
-      "source": "CyberGhost Privacy Hub",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
-    },
-    {
-      "source": "Mullvad official news",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
-    },
-    {
-      "source": "CyberGhost official X",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
-    },
-    {
-      "source": "Proton VPN official YouTube",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
-    },
-    {
-      "source": "Proton VPN Blog",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
-    },
-    {
-      "source": "Proton VPN 官方博客 Latest",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
-    },
-    {
-      "source": "Private Internet Access Blog",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
+      "source": "ExpressVPN Blog",
+      "status": "failed",
+      "method": "html",
+      "reason": "403 Client Error: Forbidden for url: https://www.expressvpn.com/blog/",
       "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
     },
     {
       "source": "ExpressVPN News",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
+      "status": "failed",
+      "method": "html",
+      "reason": "403 Client Error: Forbidden for url: https://www.expressvpn.com/blog/category/expressvpn-news/",
       "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
     },
     {
-      "source": "Windscribe official announcements",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
+      "source": "ExpressVPN Newsroom",
+      "status": "failed",
+      "method": "html",
+      "reason": "403 Client Error: Forbidden for url: https://www.expressvpn.com/newsroom/",
       "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
+    },
+    {
+      "source": "ExpressVPN Press Room",
+      "status": "failed",
+      "method": "html",
+      "reason": "403 Client Error: Forbidden for url: https://www.expressvpn.com/press",
+      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
+    },
+    {
+      "source": "NordVPN Blog",
+      "status": "failed",
+      "method": "html",
+      "reason": "403 Client Error: Forbidden for url: https://nordvpn.com/blog/",
+      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
+    },
+    {
+      "source": "NordVPN Newsroom",
+      "status": "failed",
+      "method": "html",
+      "reason": "403 Client Error: Forbidden for url: https://nordvpn.com/newsroom/",
+      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
+    },
+    {
+      "source": "NordVPN Press Area",
+      "status": "failed",
+      "method": "html",
+      "reason": "403 Client Error: Forbidden for url: https://nordvpn.com/press-area/",
+      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
+    },
+    {
+      "source": "Surfshark 官方博客 News",
+      "status": "failed",
+      "method": "html",
+      "reason": "404 Client Error: Not Found for url: https://surfshark.com/blog/category/surfshark-news",
+      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
+    },
+    {
+      "source": "CyberGhost official X",
+      "status": "limited",
+      "method": "x_api_required",
+      "reason": "X/Twitter 官方账号需要 X_BEARER_TOKEN；未配置时不抓取，避免旧页面内容误入日报。",
+      "next_step": "社交媒体官方账号建议接官方 API，或把当天官方帖粘到 manual_inputs.csv。"
+    },
+    {
+      "source": "ExpressVPN official X",
+      "status": "limited",
+      "method": "x_api_required",
+      "reason": "X/Twitter 官方账号需要 X_BEARER_TOKEN；未配置时不抓取，避免旧页面内容误入日报。",
+      "next_step": "社交媒体官方账号建议接官方 API，或把当天官方帖粘到 manual_inputs.csv。"
+    },
+    {
+      "source": "ExpressVPN official YouTube",
+      "status": "limited",
+      "method": "youtube_api_missing",
+      "reason": "YouTube 搜索若需稳定发布时间与原视频链接，建议配置 YOUTUBE_API_KEY；未配置时不纳入重点，避免旧视频混入。",
+      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
+    },
+    {
+      "source": "Mullvad official X",
+      "status": "limited",
+      "method": "x_api_required",
+      "reason": "X/Twitter 官方账号需要 X_BEARER_TOKEN；未配置时不抓取，避免旧页面内容误入日报。",
+      "next_step": "社交媒体官方账号建议接官方 API，或把当天官方帖粘到 manual_inputs.csv。"
+    },
+    {
+      "source": "NordVPN official X",
+      "status": "limited",
+      "method": "x_api_required",
+      "reason": "X/Twitter 官方账号需要 X_BEARER_TOKEN；未配置时不抓取，避免旧页面内容误入日报。",
+      "next_step": "社交媒体官方账号建议接官方 API，或把当天官方帖粘到 manual_inputs.csv。"
+    },
+    {
+      "source": "NordVPN official YouTube",
+      "status": "limited",
+      "method": "youtube_api_missing",
+      "reason": "YouTube 搜索若需稳定发布时间与原视频链接，建议配置 YOUTUBE_API_KEY；未配置时不纳入重点，避免旧视频混入。",
+      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
+    },
+    {
+      "source": "PIA official X",
+      "status": "limited",
+      "method": "x_api_required",
+      "reason": "X/Twitter 官方账号需要 X_BEARER_TOKEN；未配置时不抓取，避免旧页面内容误入日报。",
+      "next_step": "社交媒体官方账号建议接官方 API，或把当天官方帖粘到 manual_inputs.csv。"
     },
     {
       "source": "Proton VPN official X",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
+      "status": "limited",
+      "method": "x_api_required",
+      "reason": "X/Twitter 官方账号需要 X_BEARER_TOKEN；未配置时不抓取，避免旧页面内容误入日报。",
+      "next_step": "社交媒体官方账号建议接官方 API，或把当天官方帖粘到 manual_inputs.csv。"
+    },
+    {
+      "source": "Proton VPN official YouTube",
+      "status": "limited",
+      "method": "youtube_api_missing",
+      "reason": "YouTube 搜索若需稳定发布时间与原视频链接，建议配置 YOUTUBE_API_KEY；未配置时不纳入重点，避免旧视频混入。",
       "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
     },
     {
-      "source": "NordVPN Status",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
+      "source": "时效过滤 9 条",
+      "status": "filtered",
+      "method": "freshness_guard",
+      "reason": "14天前，超过 36 小时时效窗口",
+      "next_step": "不会进入重点卡；如需放宽，调整 .github/workflows/daily-update.yml 中 DASHBOARD_LOOKBACK_HOURS。"
     },
     {
-      "source": "Mullvad Blog",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
+      "source": "时效过滤 8 条",
+      "status": "filtered",
+      "method": "freshness_guard",
+      "reason": "9天前，超过 36 小时时效窗口",
+      "next_step": "不会进入重点卡；如需放宽，调整 .github/workflows/daily-update.yml 中 DASHBOARD_LOOKBACK_HOURS。"
     },
     {
-      "source": "Windscribe Blog",
-      "status": "skipped",
-      "method": "preview",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "next_step": "换成 RSS/API/具体文章页，或在 manual_inputs.csv 手工补当天线索。"
+      "source": "时效过滤 8 条",
+      "status": "filtered",
+      "method": "freshness_guard",
+      "reason": "2893天前，超过 36 小时时效窗口",
+      "next_step": "不会进入重点卡；如需放宽，调整 .github/workflows/daily-update.yml 中 DASHBOARD_LOOKBACK_HOURS。"
+    },
+    {
+      "source": "时效过滤 8 条",
+      "status": "filtered",
+      "method": "freshness_guard",
+      "reason": "无法确认发布时间，已从主面板隐藏",
+      "next_step": "不会进入重点卡；如需放宽，调整 .github/workflows/daily-update.yml 中 DASHBOARD_LOOKBACK_HOURS。"
+    },
+    {
+      "source": "时效过滤 8 条",
+      "status": "filtered",
+      "method": "freshness_guard",
+      "reason": "96天前，超过 36 小时时效窗口",
+      "next_step": "不会进入重点卡；如需放宽，调整 .github/workflows/daily-update.yml 中 DASHBOARD_LOOKBACK_HOURS。"
+    },
+    {
+      "source": "时效过滤 8 条",
+      "status": "filtered",
+      "method": "freshness_guard",
+      "reason": "727天前，超过 36 小时时效窗口",
+      "next_step": "不会进入重点卡；如需放宽，调整 .github/workflows/daily-update.yml 中 DASHBOARD_LOOKBACK_HOURS。"
+    },
+    {
+      "source": "时效过滤 8 条",
+      "status": "filtered",
+      "method": "freshness_guard",
+      "reason": "152天前，超过 36 小时时效窗口",
+      "next_step": "不会进入重点卡；如需放宽，调整 .github/workflows/daily-update.yml 中 DASHBOARD_LOOKBACK_HOURS。"
+    },
+    {
+      "source": "时效过滤 7 条",
+      "status": "filtered",
+      "method": "freshness_guard",
+      "reason": "2571天前，超过 36 小时时效窗口",
+      "next_step": "不会进入重点卡；如需放宽，调整 .github/workflows/daily-update.yml 中 DASHBOARD_LOOKBACK_HOURS。"
     }
   ],
   "sources": [
@@ -2831,727 +3855,778 @@
   ],
   "source_statuses": [
     {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Surfshark News",
-      "platform": "Official Website",
-      "url": "https://surfshark.com/blog/news",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "CyberGhost official privacy hub posts",
-      "platform": "Official Website",
-      "url": "https://www.cyberghostvpn.com/privacyhub/posts/",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "ExpressVPN official YouTube",
-      "platform": "YouTube",
-      "url": "https://www.youtube.com/@ExpressVPN",
-      "intelligence_category": "社交媒体"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Surfshark Blog",
-      "platform": "Official Website",
-      "url": "https://surfshark.com/blog",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "ExpressVPN Newsroom",
-      "platform": "Official Website",
-      "url": "https://www.expressvpn.com/newsroom/",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "CyberGhost Privacy Hub",
-      "platform": "Official Website",
-      "url": "https://www.cyberghostvpn.com/en_US/privacyhub",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Mullvad official news",
-      "platform": "Official Website",
-      "url": "https://mullvad.net/en/blog/tag/news",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "CyberGhost official X",
-      "platform": "X/Twitter",
-      "url": "https://x.com/CyberGhost_EN",
-      "intelligence_category": "社交媒体"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Proton VPN official YouTube",
-      "platform": "YouTube",
-      "url": "https://www.youtube.com/@ProtonVPN",
-      "intelligence_category": "社交媒体"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Proton VPN Blog",
-      "platform": "Official Website",
-      "url": "https://protonvpn.com/blog",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Proton VPN 官方博客 Latest",
-      "platform": "Official Website",
-      "url": "https://protonvpn.com/blog/all",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Private Internet Access Blog",
-      "platform": "Official Website",
-      "url": "https://www.privateinternetaccess.com/blog/",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "ExpressVPN News",
-      "platform": "Official Website",
-      "url": "https://www.expressvpn.com/blog/category/expressvpn-news/",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Windscribe official announcements",
-      "platform": "Official Website",
-      "url": "https://windscribe.com/blog/tag/announcements/",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Proton VPN official X",
-      "platform": "X/Twitter",
-      "url": "https://x.com/ProtonVPN",
-      "intelligence_category": "社交媒体"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "NordVPN Status",
-      "platform": "Official Website",
-      "url": "https://status.nordvpn.com/",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Mullvad Blog",
-      "platform": "Official Website",
-      "url": "https://mullvad.net/en/blog",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Windscribe Blog",
-      "platform": "Official Website",
-      "url": "https://blog.windscribe.com/",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "PIA official X",
-      "platform": "X/Twitter",
-      "url": "https://x.com/PIAprivacy",
-      "intelligence_category": "社交媒体"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "NordVPN Newsroom",
-      "platform": "Official Website",
-      "url": "https://nordvpn.com/newsroom/",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "ExpressVPN Blog",
-      "platform": "Official Website",
-      "url": "https://www.expressvpn.com/blog/",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "TunnelBear Blog",
-      "platform": "Official Website",
-      "url": "https://www.tunnelbear.com/blog/",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "NordVPN official YouTube",
-      "platform": "YouTube",
-      "url": "https://www.youtube.com/@NordVPN",
-      "intelligence_category": "社交媒体"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "ExpressVPN Press Room",
-      "platform": "Official Website",
-      "url": "https://www.expressvpn.com/press",
-      "intelligence_category": "竞品动态"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
+      "status": "failed",
+      "reason": "403 Client Error: Forbidden for url: https://www.expressvpn.com/blog/category/latest/",
+      "method": "html",
       "source_name": "ExpressVPN 官方博客 Latest",
       "platform": "Official Website",
       "url": "https://www.expressvpn.com/blog/category/latest/",
       "intelligence_category": "竞品动态"
     },
     {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "NordVPN official X",
-      "platform": "X/Twitter",
-      "url": "https://x.com/NordVPN",
-      "intelligence_category": "社交媒体"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Surfshark Research",
+      "status": "failed",
+      "reason": "403 Client Error: Forbidden for url: https://www.expressvpn.com/blog/",
+      "method": "html",
+      "source_name": "ExpressVPN Blog",
       "platform": "Official Website",
-      "url": "https://surfshark.com/research",
+      "url": "https://www.expressvpn.com/blog/",
       "intelligence_category": "竞品动态"
     },
     {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "NordVPN Press Area",
+      "status": "failed",
+      "reason": "403 Client Error: Forbidden for url: https://www.expressvpn.com/blog/category/expressvpn-news/",
+      "method": "html",
+      "source_name": "ExpressVPN News",
       "platform": "Official Website",
-      "url": "https://nordvpn.com/press-area/",
+      "url": "https://www.expressvpn.com/blog/category/expressvpn-news/",
       "intelligence_category": "竞品动态"
     },
     {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
+      "status": "failed",
+      "reason": "403 Client Error: Forbidden for url: https://www.expressvpn.com/newsroom/",
+      "method": "html",
+      "source_name": "ExpressVPN Newsroom",
+      "platform": "Official Website",
+      "url": "https://www.expressvpn.com/newsroom/",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "failed",
+      "reason": "403 Client Error: Forbidden for url: https://www.expressvpn.com/press",
+      "method": "html",
+      "source_name": "ExpressVPN Press Room",
+      "platform": "Official Website",
+      "url": "https://www.expressvpn.com/press",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "ok",
+      "fetched": 1,
+      "method": "html",
+      "url": "https://windscribe.com/blog/",
       "source_name": "Windscribe official blog",
       "platform": "Official Website",
-      "url": "https://windscribe.com/blog/",
       "intelligence_category": "竞品动态"
     },
     {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://protonvpn.com/blog/all",
+      "source_name": "Proton VPN 官方博客 Latest",
+      "platform": "Official Website",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "ok",
+      "fetched": 1,
+      "method": "html",
+      "url": "https://protonvpn.com/blog/feed",
+      "source_name": "Proton VPN official blog feed",
+      "platform": "RSS",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "ok",
+      "fetched": 0,
+      "method": "html",
+      "url": "https://airvpn.org/forums/forum/2-general-suggestions/",
+      "source_name": "Air VPN",
+      "platform": "Other",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://mullvad.net/en/blog",
+      "source_name": "Mullvad Blog",
+      "platform": "Official Website",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "failed",
+      "reason": "403 Client Error: Forbidden for url: https://nordvpn.com/blog/",
+      "method": "html",
       "source_name": "NordVPN Blog",
       "platform": "Official Website",
       "url": "https://nordvpn.com/blog/",
       "intelligence_category": "竞品动态"
     },
     {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Air VPN",
-      "platform": "Other",
-      "url": "https://airvpn.org/forums/forum/2-general-suggestions/",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "ExpressVPN official X",
-      "platform": "X/Twitter",
-      "url": "https://x.com/expressvpn",
-      "intelligence_category": "社交媒体"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Private Internet Access official news",
+      "status": "failed",
+      "reason": "403 Client Error: Forbidden for url: https://nordvpn.com/newsroom/",
+      "method": "html",
+      "source_name": "NordVPN Newsroom",
       "platform": "Official Website",
-      "url": "https://www.privateinternetaccess.com/blog/category/news/",
+      "url": "https://nordvpn.com/newsroom/",
       "intelligence_category": "竞品动态"
     },
     {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Mullvad official X",
-      "platform": "X/Twitter",
-      "url": "https://x.com/mullvadnet",
-      "intelligence_category": "社交媒体"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Proton VPN official blog feed",
-      "platform": "RSS",
-      "url": "https://protonvpn.com/blog/feed",
+      "status": "failed",
+      "reason": "403 Client Error: Forbidden for url: https://nordvpn.com/press-area/",
+      "method": "html",
+      "source_name": "NordVPN Press Area",
+      "platform": "Official Website",
+      "url": "https://nordvpn.com/press-area/",
       "intelligence_category": "竞品动态"
     },
     {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://mullvad.net/en/blog/tag/news",
+      "source_name": "Mullvad official news",
+      "platform": "Official Website",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "ok",
+      "fetched": 1,
+      "method": "html",
+      "url": "https://status.nordvpn.com/",
+      "source_name": "NordVPN Status",
+      "platform": "Official Website",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://protonvpn.com/blog",
+      "source_name": "Proton VPN Blog",
+      "platform": "Official Website",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://surfshark.com/blog",
+      "source_name": "Surfshark Blog",
+      "platform": "Official Website",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://surfshark.com/blog/news",
+      "source_name": "Surfshark News",
+      "platform": "Official Website",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "failed",
+      "reason": "404 Client Error: Not Found for url: https://surfshark.com/blog/category/surfshark-news",
+      "method": "html",
       "source_name": "Surfshark 官方博客 News",
       "platform": "Official Website",
       "url": "https://surfshark.com/blog/category/surfshark-news",
       "intelligence_category": "竞品动态"
     },
     {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
+      "status": "ok",
+      "fetched": 7,
+      "method": "html",
+      "url": "https://www.cyberghostvpn.com/privacyhub/posts/",
+      "source_name": "CyberGhost official privacy hub posts",
+      "platform": "Official Website",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "limited",
+      "reason": "X/Twitter 官方账号需要 X_BEARER_TOKEN；未配置时不抓取，避免旧页面内容误入日报。",
+      "method": "x_api_required",
+      "source_name": "CyberGhost official X",
+      "platform": "X/Twitter",
+      "url": "https://x.com/CyberGhost_EN",
+      "intelligence_category": "社交媒体"
+    },
+    {
+      "status": "limited",
+      "reason": "X/Twitter 官方账号需要 X_BEARER_TOKEN；未配置时不抓取，避免旧页面内容误入日报。",
+      "method": "x_api_required",
+      "source_name": "ExpressVPN official X",
+      "platform": "X/Twitter",
+      "url": "https://x.com/expressvpn",
+      "intelligence_category": "社交媒体"
+    },
+    {
+      "status": "limited",
+      "reason": "YouTube 搜索若需稳定发布时间与原视频链接，建议配置 YOUTUBE_API_KEY；未配置时不纳入重点，避免旧视频混入。",
+      "method": "youtube_api_missing",
+      "source_name": "ExpressVPN official YouTube",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/@ExpressVPN",
+      "intelligence_category": "社交媒体"
+    },
+    {
+      "status": "limited",
+      "reason": "X/Twitter 官方账号需要 X_BEARER_TOKEN；未配置时不抓取，避免旧页面内容误入日报。",
+      "method": "x_api_required",
+      "source_name": "Mullvad official X",
+      "platform": "X/Twitter",
+      "url": "https://x.com/mullvadnet",
+      "intelligence_category": "社交媒体"
+    },
+    {
+      "status": "limited",
+      "reason": "X/Twitter 官方账号需要 X_BEARER_TOKEN；未配置时不抓取，避免旧页面内容误入日报。",
+      "method": "x_api_required",
+      "source_name": "NordVPN official X",
+      "platform": "X/Twitter",
+      "url": "https://x.com/NordVPN",
+      "intelligence_category": "社交媒体"
+    },
+    {
+      "status": "limited",
+      "reason": "YouTube 搜索若需稳定发布时间与原视频链接，建议配置 YOUTUBE_API_KEY；未配置时不纳入重点，避免旧视频混入。",
+      "method": "youtube_api_missing",
+      "source_name": "NordVPN official YouTube",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/@NordVPN",
+      "intelligence_category": "社交媒体"
+    },
+    {
+      "status": "limited",
+      "reason": "X/Twitter 官方账号需要 X_BEARER_TOKEN；未配置时不抓取，避免旧页面内容误入日报。",
+      "method": "x_api_required",
+      "source_name": "PIA official X",
+      "platform": "X/Twitter",
+      "url": "https://x.com/PIAprivacy",
+      "intelligence_category": "社交媒体"
+    },
+    {
+      "status": "limited",
+      "reason": "X/Twitter 官方账号需要 X_BEARER_TOKEN；未配置时不抓取，避免旧页面内容误入日报。",
+      "method": "x_api_required",
+      "source_name": "Proton VPN official X",
+      "platform": "X/Twitter",
+      "url": "https://x.com/ProtonVPN",
+      "intelligence_category": "社交媒体"
+    },
+    {
+      "status": "limited",
+      "reason": "YouTube 搜索若需稳定发布时间与原视频链接，建议配置 YOUTUBE_API_KEY；未配置时不纳入重点，避免旧视频混入。",
+      "method": "youtube_api_missing",
+      "source_name": "Proton VPN official YouTube",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/@ProtonVPN",
+      "intelligence_category": "社交媒体"
+    },
+    {
+      "status": "limited",
+      "reason": "X/Twitter 官方账号需要 X_BEARER_TOKEN；未配置时不抓取，避免旧页面内容误入日报。",
+      "method": "x_api_required",
       "source_name": "Surfshark official X",
       "platform": "X/Twitter",
       "url": "https://x.com/surfshark",
       "intelligence_category": "社交媒体"
     },
     {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/VPN_Question",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/VPN_Question/",
-      "intelligence_category": "reddit讨论"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/VPN_Question new",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/VPN_Question/new/",
-      "intelligence_category": "reddit讨论"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/Windscribe",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/Windscribe/",
-      "intelligence_category": "reddit讨论"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/Windscribe new",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/Windscribe/new/",
-      "intelligence_category": "reddit讨论"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/mullvadvpn new",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/mullvadvpn/new/",
-      "intelligence_category": "reddit讨论"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/nordvpn new",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/nordvpn/new/",
-      "intelligence_category": "reddit讨论"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/vpnreviews",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/vpnreviews/",
-      "intelligence_category": "reddit讨论"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/VPNReviewHub",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/VPNReviewHub/",
-      "intelligence_category": "reddit讨论"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/expressvpn",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/Express_VPN/",
-      "intelligence_category": "reddit讨论"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/firefox",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/firefox/",
-      "intelligence_category": "reddit讨论"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/mullvadvpn",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/mullvadvpn/",
-      "intelligence_category": "reddit讨论"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/nordvpn",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/nordvpn/",
-      "intelligence_category": "reddit讨论"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/protonvpn",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/ProtonVPN/",
-      "intelligence_category": "reddit讨论"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/UniUK",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/UniUK/",
-      "intelligence_category": "reddit讨论"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/Priacy",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/Piracy/",
-      "intelligence_category": "reddit讨论"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "GOV.UK Online Safety Act collection",
-      "platform": "Government/Regulator",
-      "url": "https://www.gov.uk/government/collections/online-safety-act",
-      "intelligence_category": "政策风险"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "GOV.UK child online rules fact sheet",
-      "platform": "Government/Regulator",
-      "url": "https://www.gov.uk/government/publications/fact-sheet-new-rules-to-protect-children-online/fact-sheet-new-rules-to-protect-children-online",
-      "intelligence_category": "政策风险"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "ICO & Ofcom age assurance statement",
-      "platform": "Government/Regulator",
-      "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/03/joint-statement-from-ico-and-ofcom-on-age-assurance/",
-      "intelligence_category": "政策风险"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Ofcom Online Safety Act roadmap",
-      "platform": "Government/Regulator",
-      "url": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/roadmap-to-regulation",
-      "intelligence_category": "政策风险"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Apple App Store 搜索：vpn",
-      "platform": "App Store",
-      "url": "手动搜索 UK App Store",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Comparitech VPN",
-      "platform": "Blog/Media",
-      "url": "https://www.comparitech.com/vpn/",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Google Play 搜索：vpn",
-      "platform": "Google Play",
-      "url": "手动搜索 UK Google Play",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Google UK: best VPN UK",
-      "platform": "Google Search",
-      "url": "https://www.google.co.uk/search?q=best+vpn+uk",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "TechRadar VPN",
-      "platform": "Blog/Media",
-      "url": "https://www.techradar.com/vpn",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "X 搜索：VPN UK",
-      "platform": "X/Twitter",
-      "url": "https://x.com/search?q=VPN%20UK&src=typed_query",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "YouTube 搜索：best VPN UK",
-      "platform": "YouTube",
-      "url": "https://www.youtube.com/results?search_query=best+vpn+uk",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "YouTube 搜索：free VPN UK",
-      "platform": "YouTube",
-      "url": "https://www.youtube.com/results?search_query=free+vpn+uk",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "TikTok 搜索：VPN UK",
-      "platform": "TikTok",
-      "url": "https://www.tiktok.com/search?q=vpn%20uk",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Tom’s Guide VPN",
-      "platform": "Blog/Media",
-      "url": "https://www.tomsguide.com/best-picks/best-vpn",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "SafePaper",
-      "platform": "Other",
-      "url": "https://safepaper.io",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Trustpilot",
-      "platform": "Other",
-      "url": "https://www.trustpilot.com",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "VPNCompare",
-      "platform": "Other",
-      "url": "https://www.vpncompare.co.uk",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "top 10 VPN",
-      "platform": "Other",
-      "url": "https://www.top10vpn.com/reviews/x-vpn/",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Privacy Academy",
-      "platform": "Other",
-      "url": "https://privacyacademy.com",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "游戏玩家 Discord 群",
-      "platform": "Discord",
-      "url": "已加入fortnite",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "英国留学生 Discord 群",
-      "platform": "Discord",
-      "url": "待补充邀请链接",
-      "intelligence_category": "第三方网站"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "Windscribe official X",
-      "platform": "X/Twitter",
-      "url": "https://x.com/windscribecom",
-      "intelligence_category": "社交媒体"
-    },
-    {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
+      "status": "limited",
+      "reason": "YouTube 搜索若需稳定发布时间与原视频链接，建议配置 YOUTUBE_API_KEY；未配置时不纳入重点，避免旧视频混入。",
+      "method": "youtube_api_missing",
       "source_name": "Surfshark official YouTube",
       "platform": "YouTube",
       "url": "https://www.youtube.com/@Surfshark",
       "intelligence_category": "社交媒体"
     },
     {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
-      "source_name": "r/ProtonVPN new",
-      "platform": "Reddit",
-      "url": "https://www.reddit.com/r/ProtonVPN/new/",
-      "intelligence_category": "reddit讨论"
+      "status": "limited",
+      "reason": "X/Twitter 官方账号需要 X_BEARER_TOKEN；未配置时不抓取，避免旧页面内容误入日报。",
+      "method": "x_api_required",
+      "source_name": "Windscribe official X",
+      "platform": "X/Twitter",
+      "url": "https://x.com/windscribecom",
+      "intelligence_category": "社交媒体"
     },
     {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://www.privateinternetaccess.com/blog/category/news/",
+      "source_name": "Private Internet Access official news",
+      "platform": "Official Website",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://www.privateinternetaccess.com/blog/",
+      "source_name": "Private Internet Access Blog",
+      "platform": "Official Website",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://www.tunnelbear.com/blog/",
+      "source_name": "TunnelBear Blog",
+      "platform": "Official Website",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "ok",
+      "fetched": 0,
+      "method": "html",
+      "url": "https://windscribe.com/blog/tag/announcements/",
+      "source_name": "Windscribe official announcements",
+      "platform": "Official Website",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://surfshark.com/research",
+      "source_name": "Surfshark Research",
+      "platform": "Official Website",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://www.cyberghostvpn.com/en_US/privacyhub",
+      "source_name": "CyberGhost Privacy Hub",
+      "platform": "Official Website",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "ok",
+      "fetched": 1,
+      "method": "html",
+      "url": "https://blog.windscribe.com/",
+      "source_name": "Windscribe Blog",
+      "platform": "Official Website",
+      "intelligence_category": "竞品动态"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/Express_VPN/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/Express_VPN/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/Express_VPN/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/Express_VPN/new/",
       "source_name": "r/Express_VPN new",
       "platform": "Reddit",
-      "url": "https://www.reddit.com/r/Express_VPN/new/",
       "intelligence_category": "reddit讨论"
     },
     {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/ProtonVPN/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/ProtonVPN/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/ProtonVPN/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r/Proto",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/ProtonVPN/new/",
+      "source_name": "r/ProtonVPN new",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/UniUK/search.json?q=VPN&restrict_sr=1&sort=new&limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/UniUK/search.rss?q=VPN&restrict_sr=1&sort=new&limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/UniUK/.rss?limit=8 | old_html: 403 Client Er",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/UniUK/search/?q=VPN&restrict_sr=1&sort=new",
       "source_name": "r/UniUK VPN search",
       "platform": "Reddit",
-      "url": "https://www.reddit.com/r/UniUK/search/?q=VPN&restrict_sr=1&sort=new",
       "intelligence_category": "reddit讨论"
     },
     {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/VPN/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/VPN/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/VPN/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r/VPN/new/?limit=8",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/VPN/",
       "source_name": "r/VPN",
       "platform": "Reddit",
-      "url": "https://www.reddit.com/r/VPN/",
       "intelligence_category": "reddit讨论"
     },
     {
-      "status": "skipped",
-      "reason": "SKIP_NETWORK=1，仅生成预览",
-      "method": "preview",
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/VPN/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/VPN/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/VPN/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r/VPN/new/?limit=8",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/VPN/new/",
       "source_name": "r/VPN new",
       "platform": "Reddit",
-      "url": "https://www.reddit.com/r/VPN/new/",
       "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/VPN_Question/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/VPN_Question/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/VPN_Question/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.co",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/VPN_Question/",
+      "source_name": "r/VPN_Question",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/VPN_Question/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/VPN_Question/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/VPN_Question/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.co",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/VPN_Question/new/",
+      "source_name": "r/VPN_Question new",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/Windscribe/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/Windscribe/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/Windscribe/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r/Wi",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/Windscribe/",
+      "source_name": "r/Windscribe",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/Windscribe/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/Windscribe/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/Windscribe/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r/Wi",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/Windscribe/new/",
+      "source_name": "r/Windscribe new",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/mullvadvpn/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/mullvadvpn/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/mullvadvpn/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r/mu",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/mullvadvpn/new/",
+      "source_name": "r/mullvadvpn new",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/nordvpn/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/nordvpn/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/nordvpn/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r/nordvpn/new",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/nordvpn/new/",
+      "source_name": "r/nordvpn new",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/vpnreviews/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/vpnreviews/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/vpnreviews/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r/vp",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/vpnreviews/",
+      "source_name": "r/vpnreviews",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/VPNReviewHub/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/VPNReviewHub/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/VPNReviewHub/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.co",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/VPNReviewHub/",
+      "source_name": "r/VPNReviewHub",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/mullvadvpn/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/mullvadvpn/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/mullvadvpn/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r/mu",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/mullvadvpn/",
+      "source_name": "r/mullvadvpn",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/Express_VPN/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/Express_VPN/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/Express_VPN/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/Express_VPN/",
+      "source_name": "r/expressvpn",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/firefox/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/firefox/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/firefox/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r/firefox/new",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/firefox/",
+      "source_name": "r/firefox",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/nordvpn/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/nordvpn/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/nordvpn/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r/nordvpn/new",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/nordvpn/",
+      "source_name": "r/nordvpn",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "manual_required",
+      "reason": "没有可直接抓取的公开 URL",
+      "source_name": "Apple App Store 搜索：vpn",
+      "platform": "App Store",
+      "url": "手动搜索 UK App Store",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/ProtonVPN/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/ProtonVPN/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/ProtonVPN/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r/Proto",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/ProtonVPN/",
+      "source_name": "r/protonvpn",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "manual_required",
+      "reason": "没有可直接抓取的公开 URL",
+      "source_name": "Google Play 搜索：vpn",
+      "platform": "Google Play",
+      "url": "手动搜索 UK Google Play",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/UniUK/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/UniUK/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/UniUK/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r/UniUK/new/?limit=",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/UniUK/",
+      "source_name": "r/UniUK",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "failed",
+      "reason": "public_json: 403 Client Error: Blocked for url: https://www.reddit.com/r/Piracy/new.json?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/Piracy/new.rss?limit=8 | rss: 403 Client Error: Blocked for url: https://www.reddit.com/r/Piracy/.rss?limit=8 | old_html: 403 Client Error: Blocked for url: https://old.reddit.com/r/Piracy/new/?li",
+      "method": "reddit_multifallback",
+      "url": "https://www.reddit.com/r/Piracy/",
+      "source_name": "r/Priacy",
+      "platform": "Reddit",
+      "intelligence_category": "reddit讨论"
+    },
+    {
+      "status": "limited",
+      "reason": "X/Twitter 泛搜索需要官方 API/监听工具或手工补充；未抓取时不生成旧信息。",
+      "method": "x_api_required",
+      "source_name": "X 搜索：VPN UK",
+      "platform": "X/Twitter",
+      "url": "https://x.com/search?q=VPN%20UK&src=typed_query",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "limited",
+      "reason": "YouTube 搜索若需稳定发布时间与原视频链接，建议配置 YOUTUBE_API_KEY；未配置时不纳入重点，避免旧视频混入。",
+      "method": "youtube_api_missing",
+      "source_name": "YouTube 搜索：best VPN UK",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/results?search_query=best+vpn+uk",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "limited",
+      "reason": "YouTube 搜索若需稳定发布时间与原视频链接，建议配置 YOUTUBE_API_KEY；未配置时不纳入重点，避免旧视频混入。",
+      "method": "youtube_api_missing",
+      "source_name": "YouTube 搜索：free VPN UK",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/results?search_query=free+vpn+uk",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "limited",
+      "reason": "TikTok 搜索页反爬较强；建议用 manual_inputs.csv 补充当天官方贴。",
+      "method": "tiktok_manual",
+      "source_name": "TikTok 搜索：VPN UK",
+      "platform": "TikTok",
+      "url": "https://www.tiktok.com/search?q=vpn%20uk",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/03/joint-statement-from-ico-and-ofcom-on-age-assurance/",
+      "source_name": "ICO & Ofcom age assurance statement",
+      "platform": "Government/Regulator",
+      "intelligence_category": "政策风险"
+    },
+    {
+      "status": "ok",
+      "fetched": 0,
+      "method": "html",
+      "url": "https://www.google.co.uk/search?q=best+vpn+uk",
+      "source_name": "Google UK: best VPN UK",
+      "platform": "Google Search",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "failed",
+      "reason": "403 Client Error: Forbidden for url: https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/roadmap-to-regulation",
+      "method": "html",
+      "source_name": "Ofcom Online Safety Act roadmap",
+      "platform": "Government/Regulator",
+      "url": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/roadmap-to-regulation",
+      "intelligence_category": "政策风险"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://www.techradar.com/vpn",
+      "source_name": "TechRadar VPN",
+      "platform": "Blog/Media",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "failed",
+      "reason": "403 Client Error: Forbidden for url: https://www.trustpilot.com/",
+      "method": "html",
+      "source_name": "Trustpilot",
+      "platform": "Other",
+      "url": "https://www.trustpilot.com",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://www.comparitech.com/vpn/",
+      "source_name": "Comparitech VPN",
+      "platform": "Blog/Media",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "manual_required",
+      "reason": "没有可直接抓取的公开 URL",
+      "source_name": "游戏玩家 Discord 群",
+      "platform": "Discord",
+      "url": "已加入fortnite",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "manual_required",
+      "reason": "没有可直接抓取的公开 URL",
+      "source_name": "英国留学生 Discord 群",
+      "platform": "Discord",
+      "url": "待补充邀请链接",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://www.tomsguide.com/best-picks/best-vpn",
+      "source_name": "Tom’s Guide VPN",
+      "platform": "Blog/Media",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://www.gov.uk/government/publications/fact-sheet-new-rules-to-protect-children-online/fact-sheet-new-rules-to-protect-children-online",
+      "source_name": "GOV.UK child online rules fact sheet",
+      "platform": "Government/Regulator",
+      "intelligence_category": "政策风险"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://www.gov.uk/government/collections/online-safety-act",
+      "source_name": "GOV.UK Online Safety Act collection",
+      "platform": "Government/Regulator",
+      "intelligence_category": "政策风险"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://privacyacademy.com",
+      "source_name": "Privacy Academy",
+      "platform": "Other",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://safepaper.io",
+      "source_name": "SafePaper",
+      "platform": "Other",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "ok",
+      "fetched": 0,
+      "method": "html",
+      "url": "https://www.top10vpn.com/reviews/x-vpn/",
+      "source_name": "top 10 VPN",
+      "platform": "Other",
+      "intelligence_category": "第三方网站"
+    },
+    {
+      "status": "ok",
+      "fetched": 8,
+      "method": "html",
+      "url": "https://www.vpncompare.co.uk",
+      "source_name": "VPNCompare",
+      "platform": "Other",
+      "intelligence_category": "第三方网站"
     }
   ],
-  "citation_links": [],
-  "keyword_cloud": [],
-  "runtime_seconds": 0.01
+  "citation_links": [
+    {
+      "label": "NordVPN Status｜All services are online",
+      "url": "https://status.nordvpn.com/",
+      "role": "竞品动态"
+    }
+  ],
+  "keyword_cloud": [
+    [
+      "all",
+      1
+    ],
+    [
+      "services",
+      1
+    ],
+    [
+      "online",
+      1
+    ],
+    [
+      "welcome",
+      1
+    ],
+    [
+      "nordvpn",
+      1
+    ],
+    [
+      "status",
+      1
+    ],
+    [
+      "page",
+      1
+    ],
+    [
+      "real-time",
+      1
+    ],
+    [
+      "historical",
+      1
+    ],
+    [
+      "data",
+      1
+    ],
+    [
+      "system",
+      1
+    ],
+    [
+      "performance",
+      1
+    ]
+  ],
+  "runtime_seconds": 4.68
 }

@@ -1,16 +1,16 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29 17:01:52 Asia/Singapore",
+  "generated_at": "2026-06-29 17:21:36 Asia/Singapore",
   "ok": true,
   "stats": {
     "total_sources": 99,
     "monitored_sources": 80,
-    "current_items": 0,
-    "raw_items": 0,
-    "filtered_items": 0,
-    "sources_ok": 0,
-    "sources_limited": 80,
-    "sources_failed": 0,
+    "current_items": 1,
+    "raw_items": 125,
+    "filtered_items": 124,
+    "sources_ok": 29,
+    "sources_limited": 20,
+    "sources_failed": 31,
     "reddit_oauth_ready": false,
     "x_api_ready": false,
     "freshness_windows": {
@@ -29,6 +29,6 @@
       "第三方网站": 1.5
     }
   },
-  "runtime_seconds": 0.01,
+  "runtime_seconds": 4.68,
   "reddit_oauth_ready": false
 }
