@@ -1,7 +1,17 @@
 {
-  "generated_at": "2026-06-29 Asia/Singapore",
+  "generated_at": "2026-06-29 16:04 Asia/Singapore",
+  "generated_at_iso": "2026-06-29T16:04:44.501786+08:00",
+  "date": "2026-06-29",
+  "timezone": "Asia/Singapore",
   "stats": {
     "total_sources": 49,
+    "due_sources": 49,
+    "fetched_sources": 7,
+    "partial_sources": 1,
+    "limited_sources": 6,
+    "failed_sources": 10,
+    "skipped_sources": 25,
+    "raw_items": 38,
     "candidate": 28,
     "sustainable": 28,
     "daily": 5,
@@ -12,278 +22,1251 @@
   "findings": [
     {
       "priority": "P0",
-      "theme": "UK 政策与合规窗口",
-      "title": "英国 under-16 社媒限制进入落地路径，VPN 绕过问题被官方点名研究",
-      "source": "GOV.UK / Ofcom",
-      "url": "https://www.gov.uk/government/publications/fact-sheet-new-rules-to-protect-children-online/fact-sheet-new-rules-to-protect-children-online",
-      "evidence": "政府计划在年底前提交第一批法规、2027 年春季实施；同时承认儿童可能使用 VPN 绕过年龄检查，并表示已委托研究，7 月更新。",
-      "audience": "家长、学生、隐私关注用户、英国本地媒体",
-      "impact": 95,
-      "industry": 95,
-      "growth": 92,
-      "action": "准备“合规、安全、隐私不冲突”的内容话术；监控 7 月官方更新与 Ofcom 年龄保证报告。",
+      "theme": "流媒体可用性 / 平台检测 / IP 信誉",
+      "title": "流媒体、地区切换和 IP 被识别仍是最靠近转化的高频痛点",
+      "source": "Comparitech VPN",
+      "url": "https://www.comparitech.com/blog/vpn-privacy/best-bbc-iplayer-vpn/",
+      "evidence": "今日抓取到 12 条相关信号，主要来自 Comparitech VPN, TechRadar VPN, Tom’s Guide VPN, r/VPN。代表内容：Comparitech VPN《BBC iPlayer》；r/VPN《Manual Split Tunneling》；r/VPN《does my vpn block batocera.org ???》。",
+      "audience": "流媒体用户、旅行用户、价格敏感用户、游戏/娱乐用户",
+      "impact": 96,
+      "industry": 94,
+      "growth": 99,
+      "action": "建立 UK/US 流媒体可用性监控；内容页突出“可用节点推荐、自动切换、失败排查、IP 信誉”。",
+      "tags": [
+        "Streaming",
+        "IP reputation",
+        "Netflix",
+        "BBC iPlayer"
+      ],
+      "supporting_items": [
+        {
+          "title": "BBC iPlayer",
+          "url": "https://www.comparitech.com/blog/vpn-privacy/best-bbc-iplayer-vpn/",
+          "source": "Comparitech VPN",
+          "snippet": "页面内相关链接：VPN Data Hub - Comparitech",
+          "score": 66,
+          "hits": [
+            "bbc iplayer",
+            "iplayer",
+            "流媒体"
+          ]
+        },
+        {
+          "title": "Manual Split Tunneling",
+          "url": "https://www.reddit.com/r/VPN/comments/1uigmfr/manual_split_tunneling/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>I wanted to have an mcp server connected to gemini to then use on roblox studio<br /> problem is roblox is blocked in my country, i used a vpn to bypass that ban before.</p> <p>but now…",
+          "score": 56,
+          "hits": [
+            "blocked"
+          ]
+        },
+        {
+          "title": "does my vpn block batocera.org ???",
+          "url": "https://www.reddit.com/r/VPN/comments/1uhu5qs/does_my_vpn_block_batoceraorg/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>i have several pcs in my house. they all have no problems connecting to <a href=\"http://batocera.org\">batocera.org</a>, for example to view the changelog, or the supported systems/updat…",
+          "score": 56,
+          "hits": [
+            "blocked"
+          ]
+        },
+        {
+          "title": "That one privacy website alternative",
+          "url": "https://www.reddit.com/r/VPN/comments/1uhsib7/that_one_privacy_website_alternative/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Due to the political drama around one specific Swedish VPN, I am looking for a fully privacy oriented alternative. I don't care about streaming, just zero log policy, hopefully put of t…",
+          "score": 56,
+          "hits": [
+            "streaming"
+          ]
+        },
+        {
+          "title": "Vpn support ended for hyperos 3",
+          "url": "https://www.reddit.com/r/VPN/comments/1ug9f0d/vpn_support_ended_for_hyperos_3/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Xiaomi literally ended vpn support starting hyperos 3, how to fix this? Tried using vpnify and it won't connect, Using von super unlimited proxy and it connects, but it uses my real ip.…",
+          "score": 56,
+          "hits": [
+            "proxy"
+          ]
+        },
+        {
+          "title": "VPN Data Hub - Comparitech",
+          "url": "https://www.comparitech.com/vpn/",
+          "source": "Comparitech VPN",
+          "snippet": "Independent benchmarks across speed, security, streaming and system impact Independent benchmarks across speed, security, streaming and system impact The Comparitech VPN Data Hub is a public testing laboratory that benc…",
+          "score": 56,
+          "hits": [
+            "streaming",
+            "流媒体"
+          ]
+        }
+      ]
+    },
+    {
+      "priority": "P0",
+      "theme": "政策 / 年龄验证 / VPN 合法性",
+      "title": "政策与年龄验证议题继续升温，VPN 绕过和合规表述需要重点监控",
+      "source": "r/VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1ui0s9w/advice_about_setting_up_a_vpn/",
+      "evidence": "今日抓取到 5 条相关信号，主要来自 Comparitech VPN, r/VPN。代表内容：r/VPN《Advice about setting up a VPN》；r/VPN《Can a VPN really hide my IP from Instagram?》；r/VPN《Can a VPN really hide my IP from Instagram?》。",
+      "audience": "家长、学生、英国本地用户、隐私关注用户、媒体读者",
+      "impact": 99,
+      "industry": 97,
+      "growth": 91,
+      "action": "准备“合规、安全、隐私不冲突”的内容话术；避免鼓励规避监管，聚焦隐私保护、公共 Wi‑Fi 安全和家长教育。",
       "tags": [
         "政策",
         "UK",
         "年龄验证",
-        "VPN 合法性"
+        "合规"
+      ],
+      "supporting_items": [
+        {
+          "title": "Advice about setting up a VPN",
+          "url": "https://www.reddit.com/r/VPN/comments/1ui0s9w/advice_about_setting_up_a_vpn/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Guys, I am very new into this. Due to recent concerns over my cloud storage accounts, I build a server at home. It's running TrueNAS to backup all my files. Because it's not a bought NA…",
+          "score": 66,
+          "hits": [
+            "government",
+            "act"
+          ]
+        },
+        {
+          "title": "Can a VPN really hide my IP from Instagram?",
+          "url": "https://www.reddit.com/r/VPN/comments/1uhv0qs/can_a_vpn_really_hide_my_ip_from_instagram/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>So I’ve been wondering about how Instagram handles IP bans and whether using a VPN actually works. Basically, I have another Instagram account that I don’t log on to on my phone only on…",
+          "score": 56,
+          "hits": [
+            "act"
+          ]
+        },
+        {
+          "title": "Can a VPN really hide my IP from Instagram?",
+          "url": "https://www.reddit.com/r/VPN/comments/1uhuza8/can_a_vpn_really_hide_my_ip_from_instagram/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>So I’ve been wondering about how Instagram handles IP bans and whether using a VPN actually works. Basically, I have another Instagram account that I don’t log on to on my phone only on…",
+          "score": 56,
+          "hits": [
+            "act"
+          ]
+        },
+        {
+          "title": "does my vpn block batocera.org ???",
+          "url": "https://www.reddit.com/r/VPN/comments/1uhu5qs/does_my_vpn_block_batoceraorg/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>i have several pcs in my house. they all have no problems connecting to <a href=\"http://batocera.org\">batocera.org</a>, for example to view the changelog, or the supported systems/updat…",
+          "score": 56,
+          "hits": [
+            "legal"
+          ]
+        },
+        {
+          "title": "VPN Data Hub - Comparitech",
+          "url": "https://www.comparitech.com/vpn/",
+          "source": "Comparitech VPN",
+          "snippet": "Independent benchmarks across speed, security, streaming and system impact Independent benchmarks across speed, security, streaming and system impact The Comparitech VPN Data Hub is a public testing laboratory that benc…",
+          "score": 46,
+          "hits": [
+            "act"
+          ]
+        }
       ]
     },
     {
       "priority": "P0",
-      "theme": "流媒体/平台检测",
-      "title": "用户在 Netflix / Prime / YouTube / 地区价格场景持续遇到 VPN 被识别、IP 被标记、资料库混乱",
-      "source": "r/VPN / r/VPN_Question / r/nordvpn",
-      "url": "https://www.reddit.com/r/VPN/new/",
-      "evidence": "多个新帖集中在“VPN 被平台识别”“某些服务器可用、某些失效”“地区价格/广告/流媒体资料库切换失败”。",
-      "audience": "流媒体用户、价格敏感用户、旅行用户、游戏用户",
-      "impact": 90,
-      "industry": 88,
-      "growth": 94,
-      "action": "建立 UK/US 流媒体可用性监控；将“可用服务器推荐、自动切换、IP 信誉”作为产品与内容卖点。",
+      "theme": "竞品口碑 / 续费 / 取消 / 客服",
+      "title": "竞品用户抱怨集中在续费透明、取消路径、客服响应和节点稳定",
+      "source": "r/VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1uhu5qs/does_my_vpn_block_batoceraorg/",
+      "evidence": "今日抓取到 35 条相关信号，主要来自 r/VPN。代表内容：r/VPN《does my vpn block batocera.org ???》；r/VPN《Vpn support ended for hyperos 3》；r/VPN《Manual Split Tunneling》。",
+      "audience": "竞品存量用户、价格敏感用户、购买前搜索用户",
+      "impact": 93,
+      "industry": 94,
+      "growth": 96,
+      "action": "用“透明价格、到期提醒、易取消、故障排查响应快”做竞品转化页和社区回复脚本。",
       "tags": [
-        "Streaming",
-        "IP reputation",
-        "Geo-price",
-        "Netflix"
+        "竞品",
+        "Churn",
+        "Renewal",
+        "Support"
+      ],
+      "supporting_items": [
+        {
+          "title": "does my vpn block batocera.org ???",
+          "url": "https://www.reddit.com/r/VPN/comments/1uhu5qs/does_my_vpn_block_batoceraorg/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>i have several pcs in my house. they all have no problems connecting to <a href=\"http://batocera.org\">batocera.org</a>, for example to view the changelog, or the supported systems/updat…",
+          "score": 66,
+          "hits": [
+            "support",
+            "竞品"
+          ]
+        },
+        {
+          "title": "Vpn support ended for hyperos 3",
+          "url": "https://www.reddit.com/r/VPN/comments/1ug9f0d/vpn_support_ended_for_hyperos_3/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Xiaomi literally ended vpn support starting hyperos 3, how to fix this? Tried using vpnify and it won't connect, Using von super unlimited proxy and it connects, but it uses my real ip.…",
+          "score": 66,
+          "hits": [
+            "support",
+            "竞品"
+          ]
+        },
+        {
+          "title": "Manual Split Tunneling",
+          "url": "https://www.reddit.com/r/VPN/comments/1uigmfr/manual_split_tunneling/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>I wanted to have an mcp server connected to gemini to then use on roblox studio<br /> problem is roblox is blocked in my country, i used a vpn to bypass that ban before.</p> <p>but now…",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "title": "Advice about setting up a VPN",
+          "url": "https://www.reddit.com/r/VPN/comments/1ui0s9w/advice_about_setting_up_a_vpn/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Guys, I am very new into this. Due to recent concerns over my cloud storage accounts, I build a server at home. It's running TrueNAS to backup all my files. Because it's not a bought NA…",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "title": "how to get VPN on laptop in China",
+          "url": "https://www.reddit.com/r/VPN/comments/1uhwyp8/how_to_get_vpn_on_laptop_in_china/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>hello, I’m currently a MacBook Pro user (2019 tho so it’s out soon), but im nmost sure about a new MacBook .. thinking a Microsoft Surface maybe , POINT IS, my vpn is on my Apple ID.. b…",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "title": "Can a VPN really hide my IP from Instagram?",
+          "url": "https://www.reddit.com/r/VPN/comments/1uhv0qs/can_a_vpn_really_hide_my_ip_from_instagram/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>So I’ve been wondering about how Instagram handles IP bans and whether using a VPN actually works. Basically, I have another Instagram account that I don’t log on to on my phone only on…",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        }
       ]
     },
     {
       "priority": "P0",
-      "theme": "竞品口碑：NordVPN",
-      "title": "Nord 用户关注 UK 服务器容量、5G/应用拦截、续费价格、取消订阅摩擦",
-      "source": "r/nordvpn",
-      "url": "https://www.reddit.com/r/nordvpn/new/",
-      "evidence": "新帖包含 UK Manchester 服务器 CAPTCHA/网站加载问题、5G 下地图/音乐/支付受阻、续费价格过高、取消订阅路径不清晰。",
-      "audience": "Nord 存量用户、英国本地 VPN 用户、价格敏感续费用户",
+      "theme": "英国节点 / 城市节点 / CAPTCHA",
+      "title": "英国城市级节点、CAPTCHA 和网站兼容性是 UK 市场的底层体验指标",
+      "source": "YouTube 搜索：free VPN UK",
+      "url": "https://www.youtube.com/results?search_query=free+vpn+uk",
+      "evidence": "今日抓取到 1 条相关信号，主要来自 YouTube 搜索：free VPN UK。代表内容：YouTube 搜索：free VPN UK《VPN UK Free â Best VPN for the United Kingdom ð (UK servers)》。",
+      "audience": "英国本地用户、留学生、旅行用户、远程办公用户",
       "impact": 88,
       "industry": 90,
-      "growth": 91,
-      "action": "以“英国城市级节点/低 CAPTCHA/透明续费/易取消”做竞品转化；社区回复脚本应强调故障排查与试用体验。",
+      "growth": 94,
+      "action": "建立 London/Manchester 等城市节点健康度看板，监控 CAPTCHA、银行/地图/流媒体兼容和速度。",
       "tags": [
-        "NordVPN",
         "UK servers",
-        "Renewal",
-        "Churn"
+        "CAPTCHA",
+        "London",
+        "Manchester"
+      ],
+      "supporting_items": [
+        {
+          "title": "VPN UK Free â Best VPN for the United Kingdom ð (UK servers)",
+          "url": "https://www.youtube.com/results?search_query=free+vpn+uk",
+          "source": "YouTube 搜索：free VPN UK",
+          "snippet": "YouTube search: free vpn uk",
+          "score": 66,
+          "hits": [
+            "uk server",
+            "uk servers",
+            "united kingdom"
+          ]
+        }
       ]
     },
     {
-      "priority": "P1",
-      "theme": "公共 Wi‑Fi 与移动场景",
-      "title": "机场、酒店、学校、5G 与校园网是高频真实场景，用户想要“自动、稳定、少打扰”",
-      "source": "r/VPN / r/nordvpn / r/UniUK",
-      "url": "https://www.reddit.com/r/VPN/new/",
-      "evidence": "新帖涉及机场 Wi‑Fi、酒店 Wi‑Fi、学校网络、车上 5G、eduroam/校园游戏等场景。痛点不是“是否需要 VPN”，而是连接后别影响地图、银行、流媒体、游戏。",
-      "audience": "学生、旅行/出差用户、远程办公、游戏用户",
-      "impact": 84,
-      "industry": 82,
-      "growth": 86,
-      "action": "做“公共 Wi‑Fi 自动连接 + 分应用/分流 + 低电量模式 + 兼容银行/地图”的使用指南和产品清单。",
+      "priority": "P0",
+      "theme": "隐私信任 / 审计 / 泄漏风险",
+      "title": "隐私信任、审计、WebRTC/DNS 泄漏和透明报告继续影响购买前判断",
+      "source": "r/VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1uigmfr/manual_split_tunneling/",
+      "evidence": "今日抓取到 18 条相关信号，主要来自 r/VPN。代表内容：r/VPN《Manual Split Tunneling》；r/VPN《That one privacy website alternative》；r/VPN《Advice about setting up a VPN》。",
+      "audience": "隐私安全用户、技术用户、媒体评测读者",
+      "impact": 91,
+      "industry": 91,
+      "growth": 87,
+      "action": "准备审计/透明报告/协议说明/WebRTC 修复证据包，让外部评测和购买前页面有可引用材料。",
       "tags": [
-        "Public Wi‑Fi",
-        "Student",
-        "Remote work",
-        "Mobile"
+        "Privacy",
+        "Audit",
+        "WebRTC",
+        "No logs"
+      ],
+      "supporting_items": [
+        {
+          "title": "Manual Split Tunneling",
+          "url": "https://www.reddit.com/r/VPN/comments/1uigmfr/manual_split_tunneling/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>I wanted to have an mcp server connected to gemini to then use on roblox studio<br /> problem is roblox is blocked in my country, i used a vpn to bypass that ban before.</p> <p>but now…",
+          "score": 66,
+          "hits": [
+            "wireguard",
+            "隐私"
+          ]
+        },
+        {
+          "title": "That one privacy website alternative",
+          "url": "https://www.reddit.com/r/VPN/comments/1uhsib7/that_one_privacy_website_alternative/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Due to the political drama around one specific Swedish VPN, I am looking for a fully privacy oriented alternative. I don't care about streaming, just zero log policy, hopefully put of t…",
+          "score": 66,
+          "hits": [
+            "jurisdiction",
+            "隐私"
+          ]
+        },
+        {
+          "title": "Advice about setting up a VPN",
+          "url": "https://www.reddit.com/r/VPN/comments/1ui0s9w/advice_about_setting_up_a_vpn/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Guys, I am very new into this. Due to recent concerns over my cloud storage accounts, I build a server at home. It's running TrueNAS to backup all my files. Because it's not a bought NA…",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        },
+        {
+          "title": "how to get VPN on laptop in China",
+          "url": "https://www.reddit.com/r/VPN/comments/1uhwyp8/how_to_get_vpn_on_laptop_in_china/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>hello, I’m currently a MacBook Pro user (2019 tho so it’s out soon), but im nmost sure about a new MacBook .. thinking a Microsoft Surface maybe , POINT IS, my vpn is on my Apple ID.. b…",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        },
+        {
+          "title": "Can a VPN really hide my IP from Instagram?",
+          "url": "https://www.reddit.com/r/VPN/comments/1uhv0qs/can_a_vpn_really_hide_my_ip_from_instagram/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>So I’ve been wondering about how Instagram handles IP bans and whether using a VPN actually works. Basically, I have another Instagram account that I don’t log on to on my phone only on…",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        },
+        {
+          "title": "Can a VPN really hide my IP from Instagram?",
+          "url": "https://www.reddit.com/r/VPN/comments/1uhuza8/can_a_vpn_really_hide_my_ip_from_instagram/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>So I’ve been wondering about how Instagram handles IP bans and whether using a VPN actually works. Basically, I have another Instagram account that I don’t log on to on my phone only on…",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        }
       ]
     },
     {
-      "priority": "P1",
-      "theme": "免费版与价格敏感",
-      "title": "免费 VPN、家庭套餐、低价续费、退款/取消是持续高转化入口",
-      "source": "r/VPN_Question / YouTube Search / Tom’s Guide / TechRadar",
-      "url": "https://www.reddit.com/r/VPN_Question/new/",
-      "evidence": "社区中“免费替代”“家庭套餐”“不贵但能流媒体”的需求不断出现；媒体与 YouTube 标题也大量围绕 best/free/UK/deals。",
-      "audience": "学生、价格敏感、轻度流媒体用户",
-      "impact": 82,
-      "industry": 78,
-      "growth": 93,
-      "action": "增长侧优先测试“免费额度→流媒体/英国节点试用→限时付费”的路径，并突出无套路取消和价格透明。",
+      "priority": "P0",
+      "theme": "免费版 / 价格敏感 / Deal",
+      "title": "免费额度、学生价、家庭套餐和退款承诺仍是增长入口",
+      "source": "YouTube 搜索：free VPN UK",
+      "url": "https://www.youtube.com/results?search_query=free+vpn+uk",
+      "evidence": "今日抓取到 5 条相关信号，主要来自 Comparitech VPN, TechRadar VPN, Tom’s Guide VPN, YouTube 搜索：free VPN UK。代表内容：YouTube 搜索：free VPN UK《VPN UK Free â Best VPN for the United Kingdom ð (UK servers)》；TechRadar VPN《Phone Deals》；Comparitech VPN《Cheapest VPNs》。",
+      "audience": "学生、轻度用户、价格敏感用户、免费 VPN 搜索用户",
+      "impact": 87,
+      "industry": 83,
+      "growth": 98,
+      "action": "测试“免费额度 → UK/流媒体试用 → 限时付费”的路径，并突出无套路取消和价格透明。",
       "tags": [
         "Free VPN",
         "Deals",
         "学生",
         "价格敏感"
+      ],
+      "supporting_items": [
+        {
+          "title": "VPN UK Free â Best VPN for the United Kingdom ð (UK servers)",
+          "url": "https://www.youtube.com/results?search_query=free+vpn+uk",
+          "source": "YouTube 搜索：free VPN UK",
+          "snippet": "YouTube search: free vpn uk",
+          "score": 76,
+          "hits": [
+            "free vpn",
+            "free",
+            "免费",
+            "价格"
+          ]
+        },
+        {
+          "title": "Phone Deals",
+          "url": "https://www.techradar.com/phones/deals",
+          "source": "TechRadar VPN",
+          "snippet": "页面内相关链接：VPN",
+          "score": 46,
+          "hits": [
+            "deal"
+          ]
+        },
+        {
+          "title": "Cheapest VPNs",
+          "url": "https://www.comparitech.com/blog/vpn-privacy/cheap-vpns/",
+          "source": "Comparitech VPN",
+          "snippet": "页面内相关链接：VPN Data Hub - Comparitech",
+          "score": 46,
+          "hits": [
+            "cheap"
+          ]
+        },
+        {
+          "title": "Phone Deals",
+          "url": "https://www.tomsguide.com/phones/deals",
+          "source": "Tom’s Guide VPN",
+          "snippet": "页面内相关链接：The best VPN in 2026: our top 5 picks",
+          "score": 43,
+          "hits": [
+            "deal"
+          ]
+        },
+        {
+          "title": "TV Deals",
+          "url": "https://www.tomsguide.com/tvs/deals",
+          "source": "Tom’s Guide VPN",
+          "snippet": "页面内相关链接：The best VPN in 2026: our top 5 picks",
+          "score": 43,
+          "hits": [
+            "deal"
+          ]
+        }
       ]
     },
     {
-      "priority": "P1",
-      "theme": "评测媒体竞品叙事",
-      "title": "媒体榜单存在分歧：Tom’s/TechRadar 偏 Nord，Comparitech 实时实验室当前偏 ExpressVPN",
-      "source": "Tom’s Guide / TechRadar / Comparitech",
-      "url": "https://www.comparitech.com/vpn/",
-      "evidence": "Tom’s Guide 将 NordVPN 作为 top recommendation；Comparitech live benchmark 显示 ExpressVPN 当前综合分第一、NordVPN 流媒体分最高。",
-      "audience": "购买前搜索用户、SEO 流量、联盟评测读者",
-      "impact": 80,
-      "industry": 92,
-      "growth": 85,
-      "action": "拆解各榜单维度差异，制作“按场景选 VPN”内容：隐私、流媒体、价格、英国节点、初学者。",
+      "priority": "P0",
+      "theme": "媒体榜单 / KOC / Affiliate 内容",
+      "title": "媒体榜单和 KOC 内容仍在重塑购买前认知，适合做场景化反向选题",
+      "source": "TechRadar VPN",
+      "url": "https://www.techradar.com/vpn",
+      "evidence": "今日抓取到 18 条相关信号，主要来自 TechRadar VPN, Tom’s Guide VPN。代表内容：TechRadar VPN《VPN》；TechRadar VPN《Phone Reviews》；TechRadar VPN《Computing Reviews》。",
+      "audience": "购买前搜索用户、YouTube/TikTok 受众、联盟评测读者",
+      "impact": 85,
+      "industry": 90,
+      "growth": 92,
+      "action": "拆解榜单维度，制作“按场景选 VPN”：UK 节点、隐私、流媒体、价格、学生、游戏。",
       "tags": [
         "SEO",
         "Affiliate",
-        "Competitors",
-        "Benchmark"
+        "KOC",
+        "Review"
+      ],
+      "supporting_items": [
+        {
+          "title": "VPN",
+          "url": "https://www.techradar.com/vpn",
+          "source": "TechRadar VPN",
+          "snippet": "The latest VPN breaking news, comment, reviews and features from the experts at TechRadar Your membership journey starts here. Keep exploring and earning more as a member. Latest in phones News, deals, reviews, guides a…",
+          "score": 96,
+          "hits": [
+            "review",
+            "affiliate",
+            "guide",
+            "评测",
+            "榜单",
+            "推荐"
+          ]
+        },
+        {
+          "title": "Phone Reviews",
+          "url": "https://www.techradar.com/phones/reviews",
+          "source": "TechRadar VPN",
+          "snippet": "页面内相关链接：VPN",
+          "score": 76,
+          "hits": [
+            "review",
+            "评测",
+            "榜单",
+            "推荐"
+          ]
+        },
+        {
+          "title": "Computing Reviews",
+          "url": "https://www.techradar.com/computing/reviews",
+          "source": "TechRadar VPN",
+          "snippet": "页面内相关链接：VPN",
+          "score": 76,
+          "hits": [
+            "review",
+            "评测",
+            "榜单",
+            "推荐"
+          ]
+        },
+        {
+          "title": "Privacy Policy",
+          "url": "https://futureplc.com/privacy-policy/",
+          "source": "TechRadar VPN",
+          "snippet": "页面内相关链接：VPN",
+          "score": 66,
+          "hits": [
+            "评测",
+            "榜单",
+            "推荐"
+          ]
+        },
+        {
+          "title": "Phone Deals",
+          "url": "https://www.techradar.com/phones/deals",
+          "source": "TechRadar VPN",
+          "snippet": "页面内相关链接：VPN",
+          "score": 66,
+          "hits": [
+            "评测",
+            "榜单",
+            "推荐"
+          ]
+        },
+        {
+          "title": "Software & Security",
+          "url": "https://www.techradar.com/computing/software",
+          "source": "TechRadar VPN",
+          "snippet": "页面内相关链接：VPN",
+          "score": 66,
+          "hits": [
+            "评测",
+            "榜单",
+            "推荐"
+          ]
+        }
       ]
     },
     {
-      "priority": "P1",
-      "theme": "X‑VPN 外部评价风险与机会",
-      "title": "Top10VPN 对 X‑VPN 的弱项集中在速度、隐私信任、WebRTC、价格与透明审计",
-      "source": "Top10VPN X‑VPN Review",
-      "url": "https://www.top10vpn.com/reviews/x-vpn/",
-      "evidence": "Top10VPN 给出付费版 5.4/10，列出慢速、Chrome 扩展 WebRTC 泄漏、闭源协议、订阅贵、所有权信任等负面点，同时认可流媒体设备支持和免费无限流量。",
-      "audience": "X‑VPN 品牌/产品/公关/增长团队",
-      "impact": 86,
-      "industry": 84,
-      "growth": 88,
-      "action": "将审计、透明报告、WebRTC 修复、速度数据、取消/价格透明作为外部声誉修复优先级。",
+      "priority": "P0",
+      "theme": "公共 Wi‑Fi / 校园 / 移动网络",
+      "title": "公共 Wi‑Fi、校园网、5G 和旅行场景需要更少打扰的自动化体验",
+      "source": "r/VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1ugqkm6/need_to_lock_location_on_my_internet_not_on/",
+      "evidence": "今日抓取到 1 条相关信号，主要来自 r/VPN。代表内容：r/VPN《Need to lock location on my internet not on computer, please help》。",
+      "audience": "学生、旅行/出差用户、远程办公、移动端用户",
+      "impact": 84,
+      "industry": 83,
+      "growth": 90,
+      "action": "产品和内容围绕“自动连接、分应用/分流、低电量、兼容银行/地图/音乐 App”打包。",
       "tags": [
-        "X‑VPN",
-        "Review",
-        "Trust",
-        "WebRTC"
+        "Public Wi‑Fi",
+        "Student",
+        "Mobile",
+        "Travel"
+      ],
+      "supporting_items": [
+        {
+          "title": "Need to lock location on my internet not on computer, please help",
+          "url": "https://www.reddit.com/r/VPN/comments/1ugqkm6/need_to_lock_location_on_my_internet_not_on/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Please help. I am getting a new job and they want me tied to the home address I put on my application. I am homeless. My home was destroyed by a tornado and I do not have stable housing…",
+          "score": 56,
+          "hits": [
+            "hotel"
+          ]
+        }
       ]
     },
     {
-      "priority": "P2",
-      "theme": "审查地区与技术用户",
-      "title": "中国、伊朗、俄罗斯等地区的可用性测试需求出现，用户更看重协议、节点稳定和真实测试反馈",
-      "source": "r/VPN / r/Windscribe / r/mullvadvpn / r/VPN_Question",
-      "url": "https://www.reddit.com/r/mullvadvpn/new/",
-      "evidence": "多帖涉及 GFW、伊朗网络恢复、俄罗斯 iOS 测试招募、VLESS/Reality、WireGuard 等协议和节点可用性。",
-      "audience": "高技术用户、审查地区用户、测试/KOC 用户",
-      "impact": 74,
-      "industry": 82,
-      "growth": 78,
-      "action": "不做高风险承诺，改做“可用性反馈池”和区域测试用户招募，输出透明可用性状态。",
+      "priority": "P0",
+      "theme": "审查地区 / 协议 / 可用性测试",
+      "title": "审查地区用户更关注协议、可用性反馈和真实测试状态",
+      "source": "r/VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1uhwyp8/how_to_get_vpn_on_laptop_in_china/",
+      "evidence": "今日抓取到 2 条相关信号，主要来自 r/VPN。代表内容：r/VPN《how to get VPN on laptop in China》；r/VPN《VPN for China?》。",
+      "audience": "高技术用户、审查地区用户、可用性测试用户",
+      "impact": 78,
+      "industry": 84,
+      "growth": 83,
+      "action": "避免高风险承诺，改做透明可用性状态和授权测试用户反馈池。",
       "tags": [
         "Censorship",
         "Protocol",
         "Testing",
         "KOC"
+      ],
+      "supporting_items": [
+        {
+          "title": "how to get VPN on laptop in China",
+          "url": "https://www.reddit.com/r/VPN/comments/1uhwyp8/how_to_get_vpn_on_laptop_in_china/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>hello, I’m currently a MacBook Pro user (2019 tho so it’s out soon), but im nmost sure about a new MacBook .. thinking a Microsoft Surface maybe , POINT IS, my vpn is on my Apple ID.. b…",
+          "score": 56,
+          "hits": [
+            "china"
+          ]
+        },
+        {
+          "title": "VPN for China?",
+          "url": "https://www.reddit.com/r/VPN/comments/1uhgxy8/vpn_for_china/",
+          "source": "r/VPN",
+          "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Hello, im travelling to China in the next few days and i really need a VPN to use Instagram, Whatsapp etc.<br /> I have one that works but it doesnt include TikTok<br /> Does anyone kno…",
+          "score": 56,
+          "hits": [
+            "china"
+          ]
+        }
       ]
     }
   ],
   "signals": [
     {
-      "name": "政策/年龄验证/VPN 合法性",
-      "heat": 96,
-      "confidence": 88,
-      "direction": "上升",
-      "owner": "政策监控 + 内容"
+      "name": "政策 / 年龄验证 / VPN 合法性",
+      "heat": 99,
+      "confidence": 81,
+      "direction": "新信号",
+      "owner": "政策监控 + 内容",
+      "item_count": 5
     },
     {
-      "name": "流媒体可用性/IP 被识别",
+      "name": "流媒体可用性 / 平台检测 / IP 信誉",
+      "heat": 99,
+      "confidence": 95,
+      "direction": "新信号",
+      "owner": "产品 + 运营",
+      "item_count": 12
+    },
+    {
+      "name": "竞品口碑 / 续费 / 取消 / 客服",
+      "heat": 99,
+      "confidence": 95,
+      "direction": "新信号",
+      "owner": "增长 + 客服 + 支付",
+      "item_count": 35
+    },
+    {
+      "name": "免费版 / 价格敏感 / Deal",
+      "heat": 99,
+      "confidence": 87,
+      "direction": "新信号",
+      "owner": "增长 + 支付",
+      "item_count": 5
+    },
+    {
+      "name": "隐私信任 / 审计 / 泄漏风险",
+      "heat": 99,
+      "confidence": 95,
+      "direction": "新信号",
+      "owner": "品牌 + 法务 + 安全",
+      "item_count": 18
+    },
+    {
+      "name": "媒体榜单 / KOC / Affiliate 内容",
+      "heat": 99,
+      "confidence": 95,
+      "direction": "新信号",
+      "owner": "内容 + KOC",
+      "item_count": 18
+    },
+    {
+      "name": "英国节点 / 城市节点 / CAPTCHA",
       "heat": 93,
-      "confidence": 85,
-      "direction": "上升",
-      "owner": "产品 + 运营"
+      "confidence": 62,
+      "direction": "新信号",
+      "owner": "网络 + 增长",
+      "item_count": 1
     },
     {
-      "name": "UK 节点容量与 IP 信誉",
-      "heat": 89,
-      "confidence": 82,
-      "direction": "上升",
-      "owner": "网络 + 增长"
+      "name": "公共 Wi‑Fi / 校园 / 移动网络",
+      "heat": 88,
+      "confidence": 62,
+      "direction": "新信号",
+      "owner": "内容 + 产品",
+      "item_count": 1
     },
     {
-      "name": "免费/低价/续费透明",
-      "heat": 86,
-      "confidence": 80,
-      "direction": "稳定高位",
-      "owner": "增长 + 支付"
-    },
-    {
-      "name": "公共 Wi‑Fi / 旅行 / 校园",
-      "heat": 83,
-      "confidence": 76,
-      "direction": "上升",
-      "owner": "内容 + 社群"
-    },
-    {
-      "name": "隐私信任/审计/透明报告",
-      "heat": 81,
-      "confidence": 84,
-      "direction": "稳定高位",
-      "owner": "品牌 + 法务"
-    },
-    {
-      "name": "游戏 Ping / 路由 / Discord",
-      "heat": 72,
-      "confidence": 68,
-      "direction": "观察",
-      "owner": "用户研究"
-    },
-    {
-      "name": "KOC/YouTube/TikTok 联盟内容",
-      "heat": 77,
-      "confidence": 70,
-      "direction": "上升",
-      "owner": "增长 + KOC"
+      "name": "审查地区 / 协议 / 可用性测试",
+      "heat": 88,
+      "confidence": 66,
+      "direction": "新信号",
+      "owner": "用户研究 + 网络",
+      "item_count": 2
     }
   ],
   "actions": [
     {
-      "lane": "内容/SEO",
-      "task": "做 3 篇 UK 场景内容：1）社媒年龄验证与 VPN 合法使用；2）VPN 被 Netflix/Prime 识别怎么办；3）学生/宿舍/公共 Wi‑Fi 安全指南。",
-      "why": "覆盖政策搜索、流媒体痛点、学生渠道",
+      "lane": "产品",
+      "task": "建立 UK/US 流媒体可用性监控；内容页突出“可用节点推荐、自动切换、失败排查、IP 信誉”。",
+      "why": "来自今日 流媒体可用性 / 平台检测 / IP 信誉 信号",
       "priority": "P0"
     },
     {
-      "lane": "产品/网络",
-      "task": "建立 UK 节点声誉监控：Manchester/London 等城市节点的 CAPTCHA、流媒体、银行/地图 App 可用性。",
-      "why": "竞品用户在 UK server reputation 上有显性抱怨",
+      "lane": "政策监控",
+      "task": "准备“合规、安全、隐私不冲突”的内容话术；避免鼓励规避监管，聚焦隐私保护、公共 Wi‑Fi 安全和家长教育。",
+      "why": "来自今日 政策 / 年龄验证 / VPN 合法性 信号",
       "priority": "P0"
     },
     {
-      "lane": "增长/付费",
-      "task": "测试“无套路取消 + 续费提醒 + 学生价/家庭价”落地页与付费弹窗文案。",
-      "why": "价格/续费/取消摩擦是竞品流失和转化机会",
-      "priority": "P1"
+      "lane": "增长",
+      "task": "用“透明价格、到期提醒、易取消、故障排查响应快”做竞品转化页和社区回复脚本。",
+      "why": "来自今日 竞品口碑 / 续费 / 取消 / 客服 信号",
+      "priority": "P0"
     },
     {
-      "lane": "社群/KOC",
-      "task": "从 Reddit / YouTube 小博主筛 20 个“免费 VPN/UK VPN/streaming VPN”内容作者，优先低粉高互动。",
-      "why": "搜索结果里低质量联盟内容很多，存在更真实内容空位",
-      "priority": "P1"
+      "lane": "网络",
+      "task": "建立 London/Manchester 等城市节点健康度看板，监控 CAPTCHA、银行/地图/流媒体兼容和速度。",
+      "why": "来自今日 英国节点 / 城市节点 / CAPTCHA 信号",
+      "priority": "P0"
     },
     {
-      "lane": "品牌/信任",
-      "task": "为外部评测准备证据包：协议开源/审计计划、WebRTC 修复、速度测试、隐私政策要点、透明报告路线。",
-      "why": "Top10VPN 等第三方评测会影响购买前用户信任",
-      "priority": "P1"
+      "lane": "品牌",
+      "task": "准备审计/透明报告/协议说明/WebRTC 修复证据包，让外部评测和购买前页面有可引用材料。",
+      "why": "来自今日 隐私信任 / 审计 / 泄漏风险 信号",
+      "priority": "P0"
     },
     {
-      "lane": "用户研究",
-      "task": "建立 20 人 UK 测试群，分层覆盖学生、旅行、流媒体、游戏、隐私用户，每周收集可用性截图和场景日志。",
-      "why": "你的月计划已包含核心用户群与访谈，这能直接喂给日报面板",
+      "lane": "增长",
+      "task": "测试“免费额度 → UK/流媒体试用 → 限时付费”的路径，并突出无套路取消和价格透明。",
+      "why": "来自今日 免费版 / 价格敏感 / Deal 信号",
+      "priority": "P0"
+    },
+    {
+      "lane": "内容",
+      "task": "拆解榜单维度，制作“按场景选 VPN”：UK 节点、隐私、流媒体、价格、学生、游戏。",
+      "why": "来自今日 媒体榜单 / KOC / Affiliate 内容 信号",
+      "priority": "P0"
+    },
+    {
+      "lane": "内容",
+      "task": "产品和内容围绕“自动连接、分应用/分流、低电量、兼容银行/地图/音乐 App”打包。",
+      "why": "来自今日 公共 Wi‑Fi / 校园 / 移动网络 信号",
       "priority": "P0"
     }
   ],
   "limitations": [
     {
-      "source": "X/Twitter search",
+      "source": "X 搜索：VPN UK",
       "status": "受限",
-      "note": "公开搜索页可能需要登录/反爬；日报建议通过 X API、第三方社媒监听工具或手工导出补充。"
+      "note": "需要 X_BEARER_TOKEN；公开搜索页通常需要登录或会触发反爬"
     },
     {
-      "source": "YouTube search",
-      "status": "部分可用",
-      "note": "可通过搜索结果识别标题与内容方向；评论区与实时排序建议用 YouTube Data API。"
-    },
-    {
-      "source": "TikTok search",
+      "source": "英国留学生 Discord 群",
       "status": "受限",
-      "note": "当前抓取受 robots/安全限制；建议用 TikTok Creative Center、手工采样或合规监听工具。"
+      "note": "非公开链接、Discord、应用商店手工入口或需补充邀请/API"
     },
     {
-      "source": "App Store / Google Play 手动搜索",
-      "status": "需接 API/手动",
-      "note": "ASO 排名和评论建议通过 AppTweak、SensorTower、data.ai 或商店手工记录。"
+      "source": "游戏玩家 Discord 群",
+      "status": "受限",
+      "note": "非公开链接、Discord、应用商店手工入口或需补充邀请/API"
     },
     {
-      "source": "Discord 群",
-      "status": "不可公开抓取",
-      "note": "需要入群权限与用户授权；建议只记录公开/授权反馈，避免隐私风险。"
+      "source": "Google UK: best VPN UK",
+      "status": "受限",
+      "note": "Google 搜索结果建议配置 SERPAPI_KEY；直接抓 Google 搜索结果不稳定"
+    },
+    {
+      "source": "Apple App Store 搜索：vpn",
+      "status": "受限",
+      "note": "非公开链接、Discord、应用商店手工入口或需补充邀请/API"
+    },
+    {
+      "source": "Google Play 搜索：vpn",
+      "status": "受限",
+      "note": "非公开链接、Discord、应用商店手工入口或需补充邀请/API"
+    },
+    {
+      "source": "r/vpnreviews",
+      "status": "失败",
+      "note": "Reddit RSS fallback"
+    },
+    {
+      "source": "r/Windscribe",
+      "status": "失败",
+      "note": "Reddit RSS fallback"
+    },
+    {
+      "source": "r/UniUK",
+      "status": "失败",
+      "note": "Reddit RSS fallback"
+    },
+    {
+      "source": "r/nordvpn",
+      "status": "失败",
+      "note": "Reddit RSS fallback"
+    },
+    {
+      "source": "r/protonvpn",
+      "status": "失败",
+      "note": "Reddit RSS fallback"
+    },
+    {
+      "source": "r/expressvpn",
+      "status": "失败",
+      "note": "Reddit RSS fallback"
+    },
+    {
+      "source": "r/mullvadvpn",
+      "status": "失败",
+      "note": "Reddit RSS fallback"
+    },
+    {
+      "source": "r/firefox",
+      "status": "失败",
+      "note": "Reddit RSS fallback"
+    },
+    {
+      "source": "r/VPN_Question",
+      "status": "失败",
+      "note": "Reddit RSS fallback"
+    },
+    {
+      "source": "r/VPNReviewHub",
+      "status": "失败",
+      "note": "Reddit RSS fallback"
+    }
+  ],
+  "source_health": [
+    {
+      "source_name": "X 搜索：VPN UK",
+      "platform": "X/Twitter",
+      "url": "https://x.com/search?q=VPN%20UK&src=typed_query",
+      "status": "limited",
+      "item_count": 0,
+      "note": "需要 X_BEARER_TOKEN；公开搜索页通常需要登录或会触发反爬",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "r/VPN",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/VPN/",
+      "status": "fetched",
+      "item_count": 15,
+      "note": "Reddit RSS fallback",
+      "elapsed_ms": 421
+    },
+    {
+      "source_name": "r/vpnreviews",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/vpnreviews/",
+      "status": "failed",
+      "item_count": 0,
+      "note": "Reddit RSS fallback",
+      "elapsed_ms": 95
+    },
+    {
+      "source_name": "r/Windscribe",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/Windscribe/",
+      "status": "failed",
+      "item_count": 0,
+      "note": "Reddit RSS fallback",
+      "elapsed_ms": 85
+    },
+    {
+      "source_name": "SafePaper",
+      "platform": "Other",
+      "url": "https://safepaper.io",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "top 10 VPN",
+      "platform": "Other",
+      "url": "https://www.top10vpn.com/reviews/x-vpn/",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "VPNCompare",
+      "platform": "Other",
+      "url": "https://www.vpncompare.co.uk",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "Trustpilot",
+      "platform": "Other",
+      "url": "https://www.trustpilot.com",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "TechRadar VPN",
+      "platform": "Blog/Media",
+      "url": "https://www.techradar.com/vpn",
+      "status": "fetched",
+      "item_count": 7,
+      "note": "web page (text/html; charset=utf-8)",
+      "elapsed_ms": 276
+    },
+    {
+      "source_name": "Tom’s Guide VPN",
+      "platform": "Blog/Media",
+      "url": "https://www.tomsguide.com/best-picks/best-vpn",
+      "status": "fetched",
+      "item_count": 7,
+      "note": "web page (text/html; charset=utf-8)",
+      "elapsed_ms": 357
+    },
+    {
+      "source_name": "Comparitech VPN",
+      "platform": "Blog/Media",
+      "url": "https://www.comparitech.com/vpn/",
+      "status": "fetched",
+      "item_count": 7,
+      "note": "web page (text/html; charset=UTF-8)",
+      "elapsed_ms": 106
+    },
+    {
+      "source_name": "r/UniUK",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/UniUK/",
+      "status": "failed",
+      "item_count": 0,
+      "note": "Reddit RSS fallback",
+      "elapsed_ms": 108
+    },
+    {
+      "source_name": "英国留学生 Discord 群",
+      "platform": "Discord",
+      "url": "待补充邀请链接",
+      "status": "limited",
+      "item_count": 0,
+      "note": "非公开链接、Discord、应用商店手工入口或需补充邀请/API",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "游戏玩家 Discord 群",
+      "platform": "Discord",
+      "url": "已加入fortnite",
+      "status": "limited",
+      "item_count": 0,
+      "note": "非公开链接、Discord、应用商店手工入口或需补充邀请/API",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "r/nordvpn",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/nordvpn/",
+      "status": "failed",
+      "item_count": 0,
+      "note": "Reddit RSS fallback",
+      "elapsed_ms": 85
+    },
+    {
+      "source_name": "r/protonvpn",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/ProtonVPN/",
+      "status": "failed",
+      "item_count": 0,
+      "note": "Reddit RSS fallback",
+      "elapsed_ms": 84
+    },
+    {
+      "source_name": "r/expressvpn",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/Express_VPN/",
+      "status": "failed",
+      "item_count": 0,
+      "note": "Reddit RSS fallback",
+      "elapsed_ms": 89
+    },
+    {
+      "source_name": "YouTube 搜索：best VPN UK",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/results?search_query=best+vpn+uk",
+      "status": "fetched",
+      "item_count": 15,
+      "note": "YouTube HTML fallback",
+      "elapsed_ms": 745
+    },
+    {
+      "source_name": "YouTube 搜索：free VPN UK",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/results?search_query=free+vpn+uk",
+      "status": "fetched",
+      "item_count": 15,
+      "note": "YouTube HTML fallback",
+      "elapsed_ms": 549
+    },
+    {
+      "source_name": "TikTok 搜索：VPN UK",
+      "platform": "TikTok",
+      "url": "https://www.tiktok.com/search?q=vpn%20uk",
+      "status": "partial",
+      "item_count": 1,
+      "note": "web page (text/html; charset=utf-8)",
+      "elapsed_ms": 193
+    },
+    {
+      "source_name": "Google UK: best VPN UK",
+      "platform": "Google Search",
+      "url": "https://www.google.co.uk/search?q=best+vpn+uk",
+      "status": "limited",
+      "item_count": 0,
+      "note": "Google 搜索结果建议配置 SERPAPI_KEY；直接抓 Google 搜索结果不稳定",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "Apple App Store 搜索：vpn",
+      "platform": "App Store",
+      "url": "手动搜索 UK App Store",
+      "status": "limited",
+      "item_count": 0,
+      "note": "非公开链接、Discord、应用商店手工入口或需补充邀请/API",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "Google Play 搜索：vpn",
+      "platform": "Google Play",
+      "url": "手动搜索 UK Google Play",
+      "status": "limited",
+      "item_count": 0,
+      "note": "非公开链接、Discord、应用商店手工入口或需补充邀请/API",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "vpntierlist",
+      "platform": "Other",
+      "url": "https://vpntierlists.com",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "the best VPN",
+      "platform": "Other",
+      "url": "https://thebestvpn.com",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "vpnMentor",
+      "platform": "Other",
+      "url": "https://www.vpnmentor.com",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "WizCase",
+      "platform": "Other",
+      "url": "https://zh.wizcase.com/vpn-reviews/",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "PrivacySavvy",
+      "platform": "Other",
+      "url": "https://privacysavvy.com/vpn/best/age-verification-vpn/",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "ProPrivacy",
+      "platform": "Other",
+      "url": "https://proprivacy.com/vpn/comparison/best-iphone-vpns#",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "Which?",
+      "platform": "Other",
+      "url": "https://www.which.co.uk/reviews/vpn-services/article/guides",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "PC Gamer",
+      "platform": "Other",
+      "url": "https://www.pcgamer.com/best-vpn-for-pc-gaming/",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "The Student Room",
+      "platform": "Forum",
+      "url": "https://www.thestudentroom.co.uk/",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "r/AskUK",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/AskUK/",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "bbc",
+      "platform": "media",
+      "url": "https://www.bbc.com/",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "Privacyguides",
+      "platform": "Forum",
+      "url": "https://discuss.privacyguides.net",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "Security.org VPN Reviews",
+      "platform": "Blog/Media",
+      "url": "https://www.security.org/vpn/",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "r/mullvadvpn",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/mullvadvpn/",
+      "status": "failed",
+      "item_count": 0,
+      "note": "Reddit RSS fallback",
+      "elapsed_ms": 95
+    },
+    {
+      "source_name": "r/Priacy",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/Piracy/",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "Privacy Academy",
+      "platform": "Other",
+      "url": "https://privacyacademy.com",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "r/firefox",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/firefox/",
+      "status": "failed",
+      "item_count": 0,
+      "note": "Reddit RSS fallback",
+      "elapsed_ms": 86
+    },
+    {
+      "source_name": "r/VPN_Question",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/VPN_Question/",
+      "status": "failed",
+      "item_count": 0,
+      "note": "Reddit RSS fallback",
+      "elapsed_ms": 92
+    },
+    {
+      "source_name": "r/VPNReviewHub",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/VPNReviewHub/",
+      "status": "failed",
+      "item_count": 0,
+      "note": "Reddit RSS fallback",
+      "elapsed_ms": 85
+    },
+    {
+      "source_name": "r/CyberGuides",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/CyberGuides/",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "r/VPN_Guide",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/VPN_Guide/",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "Air VPN",
+      "platform": "Other",
+      "url": "https://airvpn.org/forums/forum/2-general-suggestions/",
+      "status": "fetched",
+      "item_count": 1,
+      "note": "web page (text/html)",
+      "elapsed_ms": 683
+    },
+    {
+      "source_name": "r/VPNforFreedom",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/VPNforFreedom/",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "r/TechImpact",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/TechImpact/",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "r/PrivateInternetAccess",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/PrivateInternetAccess/",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
+    },
+    {
+      "source_name": "r/vpncoupons",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/vpncoupons/",
+      "status": "skipped",
+      "item_count": 0,
+      "note": "未到该来源追踪频率",
+      "elapsed_ms": 0
     }
   ],
   "sources": [
@@ -298,8 +1281,8 @@
       "追踪频率": "每日",
       "关键信息": "记录实时抱怨/政策话题",
       "备注": "舆情/及时需求",
-      "_row": 2,
-      "监控优先级分": 8,
+      "_row": "2",
+      "监控优先级分": "8",
       "日报层级": "核心日报源"
     },
     {
@@ -313,8 +1296,8 @@
       "追踪频率": "每日",
       "关键信息": "抓取高频问题",
       "备注": "竞品口碑/故障/需求",
-      "_row": 3,
-      "监控优先级分": 9,
+      "_row": "3",
+      "监控优先级分": "9",
       "日报层级": "核心日报源"
     },
     {
@@ -328,8 +1311,8 @@
       "追踪频率": "每日",
       "关键信息": "记录价格/续费讨论",
       "备注": "竞品口碑/故障/需求",
-      "_row": 4,
-      "监控优先级分": 9,
+      "_row": "4",
+      "监控优先级分": "9",
       "日报层级": "核心日报源"
     },
     {
@@ -343,8 +1326,8 @@
       "追踪频率": "每日",
       "关键信息": "补充并评估是否可持续",
       "备注": "竞品消息",
-      "_row": 5,
-      "监控优先级分": 9,
+      "_row": "5",
+      "监控优先级分": "9",
       "日报层级": "核心日报源"
     },
     {
@@ -358,8 +1341,8 @@
       "追踪频率": "每月",
       "关键信息": "补充并评估是否可持续",
       "备注": "独立性较高的VPN评测网站",
-      "_row": 6,
-      "监控优先级分": 6,
+      "_row": "6",
+      "监控优先级分": "6",
       "日报层级": "周更重点源"
     },
     {
@@ -373,8 +1356,8 @@
       "追踪频率": "每月",
       "关键信息": "独立审计/排行",
       "备注": "有X的相关评测但最新更新还是24年",
-      "_row": 7,
-      "监控优先级分": 6,
+      "_row": "7",
+      "监控优先级分": "6",
       "日报层级": "周更重点源"
     },
     {
@@ -388,8 +1371,8 @@
       "追踪频率": "每月",
       "关键信息": "补充并评估是否可持续",
       "备注": "英国本地化重点VPN评测网站",
-      "_row": 8,
-      "监控优先级分": 6,
+      "_row": "8",
+      "监控优先级分": "6",
       "日报层级": "周更重点源"
     },
     {
@@ -403,8 +1386,8 @@
       "追踪频率": "每月",
       "关键信息": "补充并评估是否可持续",
       "备注": "查看 VPN 品牌在用户中的投诉点，如退款、自动续费、速度、客服、解锁失败（主要评论在美国）",
-      "_row": 9,
-      "监控优先级分": 6,
+      "_row": "9",
+      "监控优先级分": "6",
       "日报层级": "周更重点源"
     },
     {
@@ -418,8 +1401,8 @@
       "追踪频率": "每周",
       "关键信息": "跟踪推荐榜单变动",
       "备注": "竞品卖点/评测维度",
-      "_row": 10,
-      "监控优先级分": 8,
+      "_row": "10",
+      "监控优先级分": "8",
       "日报层级": "核心日报源"
     },
     {
@@ -433,8 +1416,8 @@
       "追踪频率": "每周",
       "关键信息": "收集竞品维度",
       "备注": "内容结构/关键词",
-      "_row": 11,
-      "监控优先级分": 7,
+      "_row": "11",
+      "监控优先级分": "7",
       "日报层级": "核心日报源"
     },
     {
@@ -448,8 +1431,8 @@
       "追踪频率": "每周",
       "关键信息": "记录英国 VPN 推荐",
       "备注": "场景与竞品话术",
-      "_row": 12,
-      "监控优先级分": 8,
+      "_row": "12",
+      "监控优先级分": "8",
       "日报层级": "核心日报源"
     },
     {
@@ -463,8 +1446,8 @@
       "追踪频率": "每周",
       "关键信息": "设计学生调研入口",
       "备注": "学生价格/校园 Wi-Fi 需求",
-      "_row": 13,
-      "监控优先级分": 7,
+      "_row": "13",
+      "监控优先级分": "7",
       "日报层级": "核心日报源"
     },
     {
@@ -478,8 +1461,8 @@
       "追踪频率": "每周",
       "关键信息": "通过学生渠道找群",
       "备注": "种子用户招募",
-      "_row": 14,
-      "监控优先级分": 5,
+      "_row": "14",
+      "监控优先级分": "5",
       "日报层级": "周更重点源"
     },
     {
@@ -493,8 +1476,8 @@
       "追踪频率": "每周",
       "关键信息": "寻找测试用户",
       "备注": "游戏 Ping 反馈",
-      "_row": 15,
-      "监控优先级分": 5,
+      "_row": "15",
+      "监控优先级分": "5",
       "日报层级": "周更重点源"
     },
     {
@@ -508,8 +1491,8 @@
       "追踪频率": "每周",
       "关键信息": "补充并评估是否可持续",
       "备注": "竞品消息",
-      "_row": 16,
-      "监控优先级分": 8,
+      "_row": "16",
+      "监控优先级分": "8",
       "日报层级": "核心日报源"
     },
     {
@@ -523,8 +1506,8 @@
       "追踪频率": "每周",
       "关键信息": "补充并评估是否可持续",
       "备注": "竞品消息",
-      "_row": 17,
-      "监控优先级分": 8,
+      "_row": "17",
+      "监控优先级分": "8",
       "日报层级": "核心日报源"
     },
     {
@@ -538,8 +1521,8 @@
       "追踪频率": "每周",
       "关键信息": "补充并评估是否可持续",
       "备注": "竞品消息",
-      "_row": 18,
-      "监控优先级分": 8,
+      "_row": "18",
+      "监控优先级分": "8",
       "日报层级": "核心日报源"
     },
     {
@@ -553,8 +1536,8 @@
       "追踪频率": "每周",
       "关键信息": "找小博主和评论区痛点",
       "备注": "KOC/内容合作机会",
-      "_row": 19,
-      "监控优先级分": 8,
+      "_row": "19",
+      "监控优先级分": "8",
       "日报层级": "核心日报源"
     },
     {
@@ -568,8 +1551,8 @@
       "追踪频率": "每周",
       "关键信息": "找免费 VPN 需求评论",
       "备注": "免费版切入点",
-      "_row": 20,
-      "监控优先级分": 8,
+      "_row": "20",
+      "监控优先级分": "8",
       "日报层级": "核心日报源"
     },
     {
@@ -583,8 +1566,8 @@
       "追踪频率": "每周",
       "关键信息": "观察短视频话术",
       "备注": "短视频内容机会",
-      "_row": 21,
-      "监控优先级分": 7,
+      "_row": "21",
+      "监控优先级分": "7",
       "日报层级": "核心日报源"
     },
     {
@@ -598,8 +1581,8 @@
       "追踪频率": "每周",
       "关键信息": "记录 SEO 竞品与内容角度",
       "备注": "搜索需求/竞品内容",
-      "_row": 22,
-      "监控优先级分": 8,
+      "_row": "22",
+      "监控优先级分": "8",
       "日报层级": "核心日报源"
     },
     {
@@ -613,8 +1596,8 @@
       "追踪频率": "每周",
       "关键信息": "记录 X-VPN 与竞品排名",
       "备注": "ASO 排名/评论/关键词",
-      "_row": 23,
-      "监控优先级分": 8,
+      "_row": "23",
+      "监控优先级分": "8",
       "日报层级": "核心日报源"
     },
     {
@@ -628,8 +1611,8 @@
       "追踪频率": "每周",
       "关键信息": "记录 X-VPN 与竞品排名",
       "备注": "ASO 排名/评论/关键词",
-      "_row": 24,
-      "监控优先级分": 8,
+      "_row": "24",
+      "监控优先级分": "8",
       "日报层级": "核心日报源"
     },
     {
@@ -643,8 +1626,8 @@
       "追踪频率": "低频",
       "关键信息": "补充并评估是否可持续",
       "备注": "Affiliate 属性较强，需注意商业推荐偏向",
-      "_row": 25,
-      "监控优先级分": 1,
+      "_row": "25",
+      "监控优先级分": "1",
       "日报层级": "观察池"
     },
     {
@@ -658,8 +1641,8 @@
       "追踪频率": "低频",
       "关键信息": "补充并评估是否可持续",
       "备注": "Affiliate 属性较强，需注意商业推荐偏向",
-      "_row": 26,
-      "监控优先级分": 1,
+      "_row": "26",
+      "监控优先级分": "1",
       "日报层级": "观察池"
     },
     {
@@ -673,8 +1656,8 @@
       "追踪频率": "低频",
       "关键信息": "补充并评估是否可持续",
       "备注": "Affiliate 属性较强，需注意商业推荐偏向",
-      "_row": 27,
-      "监控优先级分": 1,
+      "_row": "27",
+      "监控优先级分": "1",
       "日报层级": "观察池"
     },
     {
@@ -688,8 +1671,8 @@
       "追踪频率": "低频",
       "关键信息": "补充并评估是否可持续",
       "备注": "Affiliate 属性较强，需注意商业推荐偏向",
-      "_row": 28,
-      "监控优先级分": 1,
+      "_row": "28",
+      "监控优先级分": "1",
       "日报层级": "观察池"
     },
     {
@@ -703,8 +1686,8 @@
       "追踪频率": "低频",
       "关键信息": "补充并评估是否可持续",
       "备注": "Affiliate 属性较强，需注意商业推荐偏向",
-      "_row": 29,
-      "监控优先级分": 1,
+      "_row": "29",
+      "监控优先级分": "1",
       "日报层级": "观察池"
     },
     {
@@ -718,8 +1701,8 @@
       "追踪频率": "低频",
       "关键信息": "补充并评估是否可持续",
       "备注": "Affiliate 属性较强，需注意商业推荐偏向",
-      "_row": 30,
-      "监控优先级分": 1,
+      "_row": "30",
+      "监控优先级分": "1",
       "日报层级": "观察池"
     },
     {
@@ -733,8 +1716,8 @@
       "追踪频率": "低频",
       "关键信息": "补充并评估是否可持续",
       "备注": "VPN信息较少，但26年有一篇VPN评测",
-      "_row": 31,
-      "监控优先级分": 1,
+      "_row": "31",
+      "监控优先级分": "1",
       "日报层级": "观察池"
     },
     {
@@ -748,8 +1731,8 @@
       "追踪频率": "低频",
       "关键信息": "补充并评估是否可持续",
       "备注": "游戏向VPN内容",
-      "_row": 32,
-      "监控优先级分": 1,
+      "_row": "32",
+      "监控优先级分": "1",
       "日报层级": "观察池"
     },
     {
@@ -763,8 +1746,8 @@
       "追踪频率": "低频",
       "关键信息": "调研合作/帖子观察",
       "备注": "学生使用场景",
-      "_row": 33,
-      "监控优先级分": 1,
+      "_row": "33",
+      "监控优先级分": "1",
       "日报层级": "观察池"
     },
     {
@@ -778,8 +1761,8 @@
       "追踪频率": "低频",
       "关键信息": "搜索历史帖子",
       "备注": "大众认知/价格顾虑",
-      "_row": 34,
-      "监控优先级分": 1,
+      "_row": "34",
+      "监控优先级分": "1",
       "日报层级": "观察池"
     },
     {
@@ -793,8 +1776,8 @@
       "追踪频率": "低频",
       "关键信息": "补充并评估是否可持续",
       "备注": "政策信息",
-      "_row": 35,
-      "监控优先级分": 2,
+      "_row": "35",
+      "监控优先级分": "2",
       "日报层级": "观察池"
     },
     {
@@ -808,8 +1791,8 @@
       "追踪频率": "每月",
       "关键信息": "补充并评估是否可持续",
       "备注": "隐私安全讨论论坛，有各类隐私政策测评内容",
-      "_row": 36,
-      "监控优先级分": 3,
+      "_row": "36",
+      "监控优先级分": "3",
       "日报层级": "观察池"
     },
     {
@@ -823,8 +1806,8 @@
       "追踪频率": "每月",
       "关键信息": "抽取评测维度",
       "备注": "信任背书/隐私维度",
-      "_row": 37,
-      "监控优先级分": 2,
+      "_row": "37",
+      "监控优先级分": "2",
       "日报层级": "观察池"
     },
     {
@@ -838,8 +1821,8 @@
       "追踪频率": "每周",
       "关键信息": "",
       "备注": "竞品口碑/故障/需求",
-      "_row": 38,
-      "监控优先级分": 8,
+      "_row": "38",
+      "监控优先级分": "8",
       "日报层级": "核心日报源"
     },
     {
@@ -853,8 +1836,8 @@
       "追踪频率": "每月",
       "关键信息": "补充并评估是否可持续",
       "备注": "隐私和安全问题，与VPN关联度高",
-      "_row": 39,
-      "监控优先级分": 4,
+      "_row": "39",
+      "监控优先级分": "4",
       "日报层级": "观察池"
     },
     {
@@ -868,8 +1851,8 @@
       "追踪频率": "每月",
       "关键信息": "",
       "备注": "隐私安全讨论论坛，有各类隐私政策测评内容",
-      "_row": 40,
-      "监控优先级分": 5,
+      "_row": "40",
+      "监控优先级分": "5",
       "日报层级": "周更重点源"
     },
     {
@@ -883,8 +1866,8 @@
       "追踪频率": "每周",
       "关键信息": "",
       "备注": "竞品口碑/故障/需求",
-      "_row": 41,
-      "监控优先级分": 8,
+      "_row": "41",
+      "监控优先级分": "8",
       "日报层级": "核心日报源"
     },
     {
@@ -898,8 +1881,8 @@
       "追踪频率": "每日",
       "关键信息": "抓取高频问题",
       "备注": "竞品口碑/故障/需求",
-      "_row": 42,
-      "监控优先级分": 9,
+      "_row": "42",
+      "监控优先级分": "9",
       "日报层级": "核心日报源"
     },
     {
@@ -913,8 +1896,8 @@
       "追踪频率": "每周",
       "关键信息": "",
       "备注": "竞品口碑/故障/需求",
-      "_row": 43,
-      "监控优先级分": 8,
+      "_row": "43",
+      "监控优先级分": "8",
       "日报层级": "核心日报源"
     },
     {
@@ -928,8 +1911,8 @@
       "追踪频率": "低频",
       "关键信息": "",
       "备注": "行业相关",
-      "_row": 44,
-      "监控优先级分": 1,
+      "_row": "44",
+      "监控优先级分": "1",
       "日报层级": "观察池"
     },
     {
@@ -943,8 +1926,8 @@
       "追踪频率": "低频",
       "关键信息": "",
       "备注": "行业相关",
-      "_row": 45,
-      "监控优先级分": 1,
+      "_row": "45",
+      "监控优先级分": "1",
       "日报层级": "观察池"
     },
     {
@@ -958,8 +1941,8 @@
       "追踪频率": "每周",
       "关键信息": "补充并评估是否可持续",
       "备注": "竞品口碑/故障/需求",
-      "_row": 46,
-      "监控优先级分": 8,
+      "_row": "46",
+      "监控优先级分": "8",
       "日报层级": "核心日报源"
     },
     {
@@ -973,8 +1956,8 @@
       "追踪频率": "低频",
       "关键信息": "",
       "备注": "行业相关",
-      "_row": 47,
-      "监控优先级分": 1,
+      "_row": "47",
+      "监控优先级分": "1",
       "日报层级": "观察池"
     },
     {
@@ -988,8 +1971,8 @@
       "追踪频率": "低频",
       "关键信息": "",
       "备注": "行业相关",
-      "_row": 48,
-      "监控优先级分": 1,
+      "_row": "48",
+      "监控优先级分": "1",
       "日报层级": "观察池"
     },
     {
@@ -1003,8 +1986,8 @@
       "追踪频率": "低频",
       "关键信息": "",
       "备注": "竞品口碑/故障/需求",
-      "_row": 49,
-      "监控优先级分": 2,
+      "_row": "49",
+      "监控优先级分": "2",
       "日报层级": "观察池"
     },
     {
@@ -1018,75 +2001,1536 @@
       "追踪频率": "低频",
       "关键信息": "找免费 VPN 需求评论",
       "备注": "免费版切入点",
-      "_row": 50,
-      "监控优先级分": 2,
+      "_row": "50",
+      "监控优先级分": "2",
       "日报层级": "观察池"
+    }
+  ],
+  "raw_items": [
+    {
+      "id": "5ff9c572719883ec",
+      "title": "Manual Split Tunneling",
+      "url": "https://www.reddit.com/r/VPN/comments/1uigmfr/manual_split_tunneling/",
+      "source": "r/VPN",
+      "platform": "Reddit",
+      "source_category": "社区",
+      "target_user": "技术/隐私用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "抓取高频问题",
+      "source_priority": 9,
+      "tier": "核心日报源",
+      "published": "2026-06-29T03:01:51+00:00",
+      "snippet": "<!-- SC_OFF --><div class=\"md\"><p>I wanted to have an mcp server connected to gemini to then use on roblox studio<br /> problem is roblox is blocked in my country, i used a vpn to bypass that ban before.</p> <p>but now that i want to use gemini, it detects the ip from vpn as spam or ddos idc<br /> so i thought about split tunneling through a vpn but the paid ones aren't an option cuz the credit cards in my country are blocked abroad</p> <p>i tried wireguard but it needed to reroute each ip and for any site it would be a pain in the ass<br /> i even tried normal windows rerouting to the vpn ip but the vpn overrules it</p> <p>i then tried something called sing box to reroute by domain name but roblox sends the packets encrypted so i can't really use them</p> <p>i got to a point that i am wondering if there could even be a solution</p> <p>i got an idea to reroute gemini out of vpn instead…",
+      "type": "reddit-rss",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "privacy_trust",
+          "score": 66,
+          "hits": [
+            "wireguard",
+            "隐私"
+          ]
+        },
+        {
+          "id": "streaming",
+          "score": 56,
+          "hits": [
+            "blocked"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7cac56e83fe43af1",
+      "title": "Advice about setting up a VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1ui0s9w/advice_about_setting_up_a_vpn/",
+      "source": "r/VPN",
+      "platform": "Reddit",
+      "source_category": "社区",
+      "target_user": "技术/隐私用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "抓取高频问题",
+      "source_priority": 9,
+      "tier": "核心日报源",
+      "published": "2026-06-28T15:51:42+00:00",
+      "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Guys, I am very new into this. Due to recent concerns over my cloud storage accounts, I build a server at home. It's running TrueNAS to backup all my files. Because it's not a bought NAS and the hardware I had allows it, I also installed a Windows VM for some tasks that I want to run unattended from anywhere in the world, and the Home Assistant is also running in another VM.</p> <p>I looked for the easiest way for a newbie to have VPN access, and I liked Tailscale for ease f use and not requiring any open ports. Then I asked a firend of mine about it, his job is actually consists in government contracts for cyber security and setting up servers and networks. He was recently hired by the Swiss government, and he moved over there. Sometimes I feel like he is overly caucious, especially for home use scenarios.</p> <p>I told him my options: Tailscale or usi…",
+      "type": "reddit-rss",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "policy",
+          "score": 66,
+          "hits": [
+            "government",
+            "act"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8fcd8414c4005075",
+      "title": "how to get VPN on laptop in China",
+      "url": "https://www.reddit.com/r/VPN/comments/1uhwyp8/how_to_get_vpn_on_laptop_in_china/",
+      "source": "r/VPN",
+      "platform": "Reddit",
+      "source_category": "社区",
+      "target_user": "技术/隐私用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "抓取高频问题",
+      "source_priority": 9,
+      "tier": "核心日报源",
+      "published": "2026-06-28T13:12:03+00:00",
+      "snippet": "<!-- SC_OFF --><div class=\"md\"><p>hello, I’m currently a MacBook Pro user (2019 tho so it’s out soon), but im nmost sure about a new MacBook .. thinking a Microsoft Surface maybe , POINT IS, my vpn is on my Apple ID.. but no windows, IF I WERE to get a micr or other laptop ONCE in China, how could I get VPN on it? Sadly buying before I arrive in China this fall is not gonna happen too many $ things unplanned</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Affectionate_Eye1809\"> /u/Affectionate_Eye1809 </a> <br /> <span><a href=\"https://www.reddit.com/r/VPN/comments/1uhwyp8/how_to_get_vpn_on_laptop_in_china/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/VPN/comments/1uhwyp8/how_to_get_vpn_on_laptop_in_china/\">[comments]</a></span>",
+      "type": "reddit-rss",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "competitor",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        },
+        {
+          "id": "censorship",
+          "score": 56,
+          "hits": [
+            "china"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cd46e6250bda5080",
+      "title": "Can a VPN really hide my IP from Instagram?",
+      "url": "https://www.reddit.com/r/VPN/comments/1uhv0qs/can_a_vpn_really_hide_my_ip_from_instagram/",
+      "source": "r/VPN",
+      "platform": "Reddit",
+      "source_category": "社区",
+      "target_user": "技术/隐私用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "抓取高频问题",
+      "source_priority": 9,
+      "tier": "核心日报源",
+      "published": "2026-06-28T11:36:14+00:00",
+      "snippet": "<!-- SC_OFF --><div class=\"md\"><p>So I’ve been wondering about how Instagram handles IP bans and whether using a VPN actually works. Basically, I have another Instagram account that I don’t log on to on my phone only on my computer. Does Instagram sees the VPN server’s IP or the real one. Since I don’t have that account logged on to my phone.</p> <p>P.S: I also use a separate Google Account for that Instagram account </p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/DryShare3412\"> /u/DryShare3412 </a> <br /> <span><a href=\"https://www.reddit.com/r/VPN/comments/1uhv0qs/can_a_vpn_really_hide_my_ip_from_instagram/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/VPN/comments/1uhv0qs/can_a_vpn_really_hide_my_ip_from_instagram/\">[comments]</a></span>",
+      "type": "reddit-rss",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "policy",
+          "score": 56,
+          "hits": [
+            "act"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4d49b3f8489a20d6",
+      "title": "Can a VPN really hide my IP from Instagram?",
+      "url": "https://www.reddit.com/r/VPN/comments/1uhuza8/can_a_vpn_really_hide_my_ip_from_instagram/",
+      "source": "r/VPN",
+      "platform": "Reddit",
+      "source_category": "社区",
+      "target_user": "技术/隐私用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "抓取高频问题",
+      "source_priority": 9,
+      "tier": "核心日报源",
+      "published": "2026-06-28T11:34:09+00:00",
+      "snippet": "<!-- SC_OFF --><div class=\"md\"><p>So I’ve been wondering about how Instagram handles IP bans and whether using a VPN actually works. Basically, I have another Instagram account that I don’t log on to on my phone only on my computer. Does Instagram sees the VPN server’s IP or the real one. Since I don’t have that account logged on to my phone</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/DryShare3412\"> /u/DryShare3412 </a> <br /> <span><a href=\"https://www.reddit.com/r/VPN/comments/1uhuza8/can_a_vpn_really_hide_my_ip_from_instagram/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/VPN/comments/1uhuza8/can_a_vpn_really_hide_my_ip_from_instagram/\">[comments]</a></span>",
+      "type": "reddit-rss",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "policy",
+          "score": 56,
+          "hits": [
+            "act"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9092b26815fd001a",
+      "title": "does my vpn block batocera.org ???",
+      "url": "https://www.reddit.com/r/VPN/comments/1uhu5qs/does_my_vpn_block_batoceraorg/",
+      "source": "r/VPN",
+      "platform": "Reddit",
+      "source_category": "社区",
+      "target_user": "技术/隐私用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "抓取高频问题",
+      "source_priority": 9,
+      "tier": "核心日报源",
+      "published": "2026-06-28T10:49:16+00:00",
+      "snippet": "<!-- SC_OFF --><div class=\"md\"><p>i have several pcs in my house. they all have no problems connecting to <a href=\"http://batocera.org\">batocera.org</a>, for example to view the changelog, or the supported systems/updates or dl the newest version. on only ONE i have ****** VPN installed, it runs Commodore OS Vision btw (the latest). when i want to go to <a href=\"http://batocera.org\">batocera.org</a> on that machine it does not even find the page. a 404 error. other sites are no problem except maybe cgterm which has a transport error code and cannot find any bbs from oasisbbs. is it that ******VPN just blocks certain sites ?</p> <p>i ask this because sites like the internet archive or almost any other are not being blocked. it just seems to have a grudge against <a href=\"http://batocera.org\">batocera.org</a> in particular and i also do not see why. they dont spread illegal content.</p> <…",
+      "type": "reddit-rss",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "competitor",
+          "score": 66,
+          "hits": [
+            "support",
+            "竞品"
+          ]
+        },
+        {
+          "id": "policy",
+          "score": 56,
+          "hits": [
+            "legal"
+          ]
+        },
+        {
+          "id": "streaming",
+          "score": 56,
+          "hits": [
+            "blocked"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c537b5a10926e0ba",
+      "title": "That one privacy website alternative",
+      "url": "https://www.reddit.com/r/VPN/comments/1uhsib7/that_one_privacy_website_alternative/",
+      "source": "r/VPN",
+      "platform": "Reddit",
+      "source_category": "社区",
+      "target_user": "技术/隐私用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "抓取高频问题",
+      "source_priority": 9,
+      "tier": "核心日报源",
+      "published": "2026-06-28T09:11:54+00:00",
+      "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Due to the political drama around one specific Swedish VPN, I am looking for a fully privacy oriented alternative. I don't care about streaming, just zero log policy, hopefully put of the 5-Eyes jurisdiction (preferably even out of the extended alliance jurisdiction), etc.</p> <p>Previously all of this could be seen on ThatOnePrivacyWebsite, but that has been sold out. Are there any alternatives out there?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/markofil\"> /u/markofil </a> <br /> <span><a href=\"https://www.reddit.com/r/VPN/comments/1uhsib7/that_one_privacy_website_alternative/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/VPN/comments/1uhsib7/that_one_privacy_website_alternative/\">[comments]</a></span>",
+      "type": "reddit-rss",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "privacy_trust",
+          "score": 66,
+          "hits": [
+            "jurisdiction",
+            "隐私"
+          ]
+        },
+        {
+          "id": "streaming",
+          "score": 56,
+          "hits": [
+            "streaming"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "07853d7b2d91b8e0",
+      "title": "VPN for China?",
+      "url": "https://www.reddit.com/r/VPN/comments/1uhgxy8/vpn_for_china/",
+      "source": "r/VPN",
+      "platform": "Reddit",
+      "source_category": "社区",
+      "target_user": "技术/隐私用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "抓取高频问题",
+      "source_priority": 9,
+      "tier": "核心日报源",
+      "published": "2026-06-27T23:13:42+00:00",
+      "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Hello, im travelling to China in the next few days and i really need a VPN to use Instagram, Whatsapp etc.<br /> I have one that works but it doesnt include TikTok<br /> Does anyone know any good legit vpns that work in china and let me use tiktok too?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Exciting_Hornet2417\"> /u/Exciting_Hornet2417 </a> <br /> <span><a href=\"https://www.reddit.com/r/VPN/comments/1uhgxy8/vpn_for_china/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/VPN/comments/1uhgxy8/vpn_for_china/\">[comments]</a></span>",
+      "type": "reddit-rss",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "competitor",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        },
+        {
+          "id": "censorship",
+          "score": 56,
+          "hits": [
+            "china"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ca3a69223f0a933f",
+      "title": "Need to connect VPN to Starlink",
+      "url": "https://www.reddit.com/r/VPN/comments/1ugqmu7/need_to_connect_vpn_to_starlink/",
+      "source": "r/VPN",
+      "platform": "Reddit",
+      "source_category": "社区",
+      "target_user": "技术/隐私用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "抓取高频问题",
+      "source_priority": 9,
+      "tier": "核心日报源",
+      "published": "2026-06-27T02:35:46+00:00",
+      "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Please help. </p> <p>I need to be able to hook up my new work computer to my Starlink, and somehow have a VPN connected to my Starlink so that it always shows my physical address on file despite where I am at. Can anyone give me advice on how to set this up? I have found 2 different options (at the tune of about $600) but the instructions seem unclear to me. TIA</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Broccoli_Pizzy\"> /u/Broccoli_Pizzy </a> <br /> <span><a href=\"https://www.reddit.com/r/VPN/comments/1ugqmu7/need_to_connect_vpn_to_starlink/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/VPN/comments/1ugqmu7/need_to_connect_vpn_to_starlink/\">[comments]</a></span>",
+      "type": "reddit-rss",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "competitor",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        },
+        {
+          "id": "content_affiliate",
+          "score": 56,
+          "hits": [
+            "how to"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4ee864732827c139",
+      "title": "Need to lock location on my internet not on computer, please help",
+      "url": "https://www.reddit.com/r/VPN/comments/1ugqkm6/need_to_lock_location_on_my_internet_not_on/",
+      "source": "r/VPN",
+      "platform": "Reddit",
+      "source_category": "社区",
+      "target_user": "技术/隐私用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "抓取高频问题",
+      "source_priority": 9,
+      "tier": "核心日报源",
+      "published": "2026-06-27T02:32:49+00:00",
+      "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Please help. I am getting a new job and they want me tied to the home address I put on my application. I am homeless. My home was destroyed by a tornado and I do not have stable housing, moving from Airbnb to campground to hotel. Every place I go to I am able to maintain a private HIPAA compliant workspace. </p> <p>I need to be able to hook up my new work computer to my Starlink, and somehow have a VPN connected to my Starlink so that it always shows my physical address on file despite where I am at. Can anyone give me advice on how to set this up? I have found 2 different options (at the tune of about $600) but the instructions seem unclear to me. TIA</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Broccoli_Pizzy\"> /u/Broccoli_Pizzy </a> <br /> <span><a href=\"https://www.reddit.com/r/VPN/comments/1ugqkm6/need_to_l…",
+      "type": "reddit-rss",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "competitor",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "public_wifi",
+          "score": 56,
+          "hits": [
+            "hotel"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3ce474c6f211f49e",
+      "title": "Vpn support ended for hyperos 3",
+      "url": "https://www.reddit.com/r/VPN/comments/1ug9f0d/vpn_support_ended_for_hyperos_3/",
+      "source": "r/VPN",
+      "platform": "Reddit",
+      "source_category": "社区",
+      "target_user": "技术/隐私用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "抓取高频问题",
+      "source_priority": 9,
+      "tier": "核心日报源",
+      "published": "2026-06-26T15:06:34+00:00",
+      "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Xiaomi literally ended vpn support starting hyperos 3, how to fix this? Tried using vpnify and it won't connect, Using von super unlimited proxy and it connects, but it uses my real ip. help me pls</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Big-Strike2357\"> /u/Big-Strike2357 </a> <br /> <span><a href=\"https://www.reddit.com/r/VPN/comments/1ug9f0d/vpn_support_ended_for_hyperos_3/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/VPN/comments/1ug9f0d/vpn_support_ended_for_hyperos_3/\">[comments]</a></span>",
+      "type": "reddit-rss",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "competitor",
+          "score": 66,
+          "hits": [
+            "support",
+            "竞品"
+          ]
+        },
+        {
+          "id": "streaming",
+          "score": 56,
+          "hits": [
+            "proxy"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "904bfedfaf42e3c7",
+      "title": "VPN stopped working with Reddit",
+      "url": "https://www.reddit.com/r/VPN/comments/1uhbg3b/vpn_stopped_working_with_reddit/",
+      "source": "r/VPN",
+      "platform": "Reddit",
+      "source_category": "社区",
+      "target_user": "技术/隐私用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "抓取高频问题",
+      "source_priority": 9,
+      "tier": "核心日报源",
+      "published": "2026-06-27T19:22:35+00:00",
+      "snippet": "<!-- SC_OFF --><div class=\"md\"><p>I’ve been using a VPN for about a year to be able to see NSFW posts since I live in UK, and suddenly no NSFW posts are showing up on Reddit anymore, I’ve tried multiple different VPN’s and none work anymore </p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Moist_Man69420\"> /u/Moist_Man69420 </a> <br /> <span><a href=\"https://www.reddit.com/r/VPN/comments/1uhbg3b/vpn_stopped_working_with_reddit/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/VPN/comments/1uhbg3b/vpn_stopped_working_with_reddit/\">[comments]</a></span>",
+      "type": "reddit-rss",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "competitor",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9f16d8b70271fbb6",
+      "title": "[Newbie] Should I use Cloudflare's 1.1.1.1 (Warp)?",
+      "url": "https://www.reddit.com/r/VPN/comments/1ugo7eh/newbie_should_i_use_cloudflares_1111_warp/",
+      "source": "r/VPN",
+      "platform": "Reddit",
+      "source_category": "社区",
+      "target_user": "技术/隐私用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "抓取高频问题",
+      "source_priority": 9,
+      "tier": "核心日报源",
+      "published": "2026-06-27T00:40:29+00:00",
+      "snippet": "<!-- SC_OFF --><div class=\"md\"><p>I came across <a href=\"https://one.one.one.one\">https://one.one.one.one</a>.</p> <p>Is it an alternative to using a VPN? Or should I use it with a VPN?</p> <p>I am currently using a specific VPN but I am about to move to another one that has a whitelist feature as some websites don't work with VPN / I can't find a VPN with dedicated ip for Brazil.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Designer_Holiday3284\"> /u/Designer_Holiday3284 </a> <br /> <span><a href=\"https://www.reddit.com/r/VPN/comments/1ugo7eh/newbie_should_i_use_cloudflares_1111_warp/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/VPN/comments/1ugo7eh/newbie_should_i_use_cloudflares_1111_warp/\">[comments]</a></span>",
+      "type": "reddit-rss",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "competitor",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c32d14970998a120",
+      "title": "Does vpn slow the internet down ?",
+      "url": "https://www.reddit.com/r/VPN/comments/1ufzzsu/does_vpn_slow_the_internet_down/",
+      "source": "r/VPN",
+      "platform": "Reddit",
+      "source_category": "社区",
+      "target_user": "技术/隐私用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "抓取高频问题",
+      "source_priority": 9,
+      "tier": "核心日报源",
+      "published": "2026-06-26T07:34:51+00:00",
+      "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Ever since I downloaded 2 VPNs my laptop’s internet has become slow. Websites are buffering which is very odd and it has become such a hassle to play any p8r@cy website even without turning the VPN on.<br /> What might be the cause ?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Antique_Situation878\"> /u/Antique_Situation878 </a> <br /> <span><a href=\"https://www.reddit.com/r/VPN/comments/1ufzzsu/does_vpn_slow_the_internet_down/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/VPN/comments/1ufzzsu/does_vpn_slow_the_internet_down/\">[comments]</a></span>",
+      "type": "reddit-rss",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "competitor",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fd2dd7974d39c010",
+      "title": "Simulate UK user experience",
+      "url": "https://www.reddit.com/r/VPN/comments/1ufpnaf/simulate_uk_user_experience/",
+      "source": "r/VPN",
+      "platform": "Reddit",
+      "source_category": "社区",
+      "target_user": "技术/隐私用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "抓取高频问题",
+      "source_priority": 9,
+      "tier": "核心日报源",
+      "published": "2026-06-25T23:10:30+00:00",
+      "snippet": "<!-- SC_OFF --><div class=\"md\"><p>Im in Brazil</p> <p>Need help simulating UK user experience created with the DMA prohibition of integration between search tool and location tool.</p> <p>Need this to gather media for a study. Is vpn enough to simulate this experience?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Dear_Waltz_6644\"> /u/Dear_Waltz_6644 </a> <br /> <span><a href=\"https://www.reddit.com/r/VPN/comments/1ufpnaf/simulate_uk_user_experience/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/VPN/comments/1ufpnaf/simulate_uk_user_experience/\">[comments]</a></span>",
+      "type": "reddit-rss",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "competitor",
+          "score": 56,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 56,
+          "hits": [
+            "隐私"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e2a3c4eb2852adcc",
+      "title": "VPN",
+      "url": "https://www.techradar.com/vpn",
+      "source": "TechRadar VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "购买前用户",
+      "source_note": "竞品卖点/评测维度",
+      "key_info": "跟踪推荐榜单变动",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "The latest VPN breaking news, comment, reviews and features from the experts at TechRadar Your membership journey starts here. Keep exploring and earning more as a member. Latest in phones News, deals, reviews, guides and more… Latest in computing News, deals, reviews, guides and more on the newest computing gadgets Start exploring exclusive deals, expert advice and more Member Rewards Unlock and manage exclusive Techradar member rewards. When you purchase through links on our site, we may earn an affiliate commission. Here’s how it works . Explore VPN VPN Privacy & Security VPN Services Editor's Picks Latest about VPN Is your World Cup stream buffering or dropping out? Use your VPN’s IP rotation tool to jump servers without breaking your connection By Jamie Richards published 27 June 26 Streaming services are prone to block data center traffic in the middle of a broadcast – but some VP…",
+      "type": "web-page",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 96,
+          "hits": [
+            "review",
+            "affiliate",
+            "guide",
+            "评测",
+            "榜单",
+            "推荐"
+          ]
+        },
+        {
+          "id": "streaming",
+          "score": 46,
+          "hits": [
+            "streaming"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 46,
+          "hits": [
+            "竞品"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "741fe8b0c158b229",
+      "title": "Privacy Policy",
+      "url": "https://futureplc.com/privacy-policy/",
+      "source": "TechRadar VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "购买前用户",
+      "source_note": "竞品卖点/评测维度",
+      "key_info": "跟踪推荐榜单变动",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：VPN",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 66,
+          "hits": [
+            "评测",
+            "榜单",
+            "推荐"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 46,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 46,
+          "hits": [
+            "privacy policy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0e4349a9873f95b5",
+      "title": "Phone Deals",
+      "url": "https://www.techradar.com/phones/deals",
+      "source": "TechRadar VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "购买前用户",
+      "source_note": "竞品卖点/评测维度",
+      "key_info": "跟踪推荐榜单变动",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：VPN",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 66,
+          "hits": [
+            "评测",
+            "榜单",
+            "推荐"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 46,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "price_free",
+          "score": 46,
+          "hits": [
+            "deal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ccfdefa73ac0df9e",
+      "title": "VPN Data Hub - Comparitech",
+      "url": "https://www.comparitech.com/vpn/",
+      "source": "Comparitech VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "隐私/流媒体用户",
+      "source_note": "场景与竞品话术",
+      "key_info": "记录英国 VPN 推荐",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "Independent benchmarks across speed, security, streaming and system impact Independent benchmarks across speed, security, streaming and system impact The Comparitech VPN Data Hub is a public testing laboratory that benchmarks major consumer Virtual Private Networks (VPNs) continuously (24/7) from a colocated bare-metal test fleet, with composite scores recomputed every two hours. Everything on this page is a live snapshot of that benchmark data… Today’s VPN lab standings A live snapshot of our composite benchmark scores across six independently measured pillars — Security, Speed, Streaming, Ease of Use, Value, and System Performance — recomputed every two hours as new tests land. ExpressVPN The strongest all-round package in the current panel: the highest measured speed score, the joint-highest security score, and the widest protocol set we instrument against (four distinct protocols).…",
+      "type": "web-page",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "streaming",
+          "score": 56,
+          "hits": [
+            "streaming",
+            "流媒体"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 56,
+          "hits": [
+            "expressvpn",
+            "竞品"
+          ]
+        },
+        {
+          "id": "policy",
+          "score": 46,
+          "hits": [
+            "act"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9091c084ec9b6790",
+      "title": "Business VPN",
+      "url": "https://www.comparitech.com/blog/vpn-privacy/business-vpn/",
+      "source": "Comparitech VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "隐私/流媒体用户",
+      "source_note": "场景与竞品话术",
+      "key_info": "记录英国 VPN 推荐",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：VPN Data Hub - Comparitech",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "streaming",
+          "score": 46,
+          "hits": [
+            "流媒体"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 46,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 46,
+          "hits": [
+            "隐私"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b26de4bba8102c3e",
+      "title": "BBC iPlayer",
+      "url": "https://www.comparitech.com/blog/vpn-privacy/best-bbc-iplayer-vpn/",
+      "source": "Comparitech VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "隐私/流媒体用户",
+      "source_note": "场景与竞品话术",
+      "key_info": "记录英国 VPN 推荐",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：VPN Data Hub - Comparitech",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "streaming",
+          "score": 66,
+          "hits": [
+            "bbc iplayer",
+            "iplayer",
+            "流媒体"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 46,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 46,
+          "hits": [
+            "隐私"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4f6780241e6db2fb",
+      "title": "All VPN Country Guides",
+      "url": "https://www.comparitech.com/countries-hub/",
+      "source": "Comparitech VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "隐私/流媒体用户",
+      "source_note": "场景与竞品话术",
+      "key_info": "记录英国 VPN 推荐",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：VPN Data Hub - Comparitech",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 56,
+          "hits": [
+            "guide",
+            "推荐"
+          ]
+        },
+        {
+          "id": "streaming",
+          "score": 46,
+          "hits": [
+            "流媒体"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 46,
+          "hits": [
+            "竞品"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18a1d417fa3af39d",
+      "title": "Fastest VPNs",
+      "url": "https://www.comparitech.com/blog/vpn-privacy/fastest-vpns-of-2016-our-top-5-for-speed/",
+      "source": "Comparitech VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "隐私/流媒体用户",
+      "source_note": "场景与竞品话术",
+      "key_info": "记录英国 VPN 推荐",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：VPN Data Hub - Comparitech",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "streaming",
+          "score": 46,
+          "hits": [
+            "流媒体"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 46,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "privacy_trust",
+          "score": 46,
+          "hits": [
+            "隐私"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "947ca84ad4ea5fe4",
+      "title": "Cheapest VPNs",
+      "url": "https://www.comparitech.com/blog/vpn-privacy/cheap-vpns/",
+      "source": "Comparitech VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "隐私/流媒体用户",
+      "source_note": "场景与竞品话术",
+      "key_info": "记录英国 VPN 推荐",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：VPN Data Hub - Comparitech",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "streaming",
+          "score": 46,
+          "hits": [
+            "流媒体"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 46,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "price_free",
+          "score": 46,
+          "hits": [
+            "cheap"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9919ac5e0e640162",
+      "title": "VPN UK Free â Best VPN for the United Kingdom ð (UK servers)",
+      "url": "https://www.youtube.com/results?search_query=free+vpn+uk",
+      "source": "YouTube 搜索：free VPN UK",
+      "platform": "YouTube",
+      "source_category": "视频",
+      "target_user": "价格敏感用户",
+      "source_note": "免费版切入点",
+      "key_info": "找免费 VPN 需求评论",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "YouTube search: free vpn uk",
+      "type": "youtube-search",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "price_free",
+          "score": 76,
+          "hits": [
+            "free vpn",
+            "free",
+            "免费",
+            "价格"
+          ]
+        },
+        {
+          "id": "uk_nodes",
+          "score": 66,
+          "hits": [
+            "uk server",
+            "uk servers",
+            "united kingdom"
+          ]
+        },
+        {
+          "id": "content_affiliate",
+          "score": 56,
+          "hits": [
+            "best vpn",
+            "youtube"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ac155381fac7d1ab",
+      "title": "Phone Reviews",
+      "url": "https://www.techradar.com/phones/reviews",
+      "source": "TechRadar VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "购买前用户",
+      "source_note": "竞品卖点/评测维度",
+      "key_info": "跟踪推荐榜单变动",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：VPN",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 76,
+          "hits": [
+            "review",
+            "评测",
+            "榜单",
+            "推荐"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 46,
+          "hits": [
+            "竞品"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "62f3e21f0d759936",
+      "title": "Software & Security",
+      "url": "https://www.techradar.com/computing/software",
+      "source": "TechRadar VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "购买前用户",
+      "source_note": "竞品卖点/评测维度",
+      "key_info": "跟踪推荐榜单变动",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：VPN",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 66,
+          "hits": [
+            "评测",
+            "榜单",
+            "推荐"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 46,
+          "hits": [
+            "竞品"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8333cab85bef49c5",
+      "title": "Cyber Security",
+      "url": "https://www.techradar.com/computing/computing-security/cyber-security",
+      "source": "TechRadar VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "购买前用户",
+      "source_note": "竞品卖点/评测维度",
+      "key_info": "跟踪推荐榜单变动",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：VPN",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 66,
+          "hits": [
+            "评测",
+            "榜单",
+            "推荐"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 46,
+          "hits": [
+            "竞品"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a3480c2812941186",
+      "title": "Computing Reviews",
+      "url": "https://www.techradar.com/computing/reviews",
+      "source": "TechRadar VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "购买前用户",
+      "source_note": "竞品卖点/评测维度",
+      "key_info": "跟踪推荐榜单变动",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：VPN",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 76,
+          "hits": [
+            "review",
+            "评测",
+            "榜单",
+            "推荐"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 46,
+          "hits": [
+            "竞品"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e6a8e2c85a0677f4",
+      "title": "Best VPN 2026 | Top 4 Best VPN Providers",
+      "url": "https://www.youtube.com/results?search_query=best+vpn+uk",
+      "source": "YouTube 搜索：best VPN UK",
+      "platform": "YouTube",
+      "source_category": "视频",
+      "target_user": "购买前用户",
+      "source_note": "KOC/内容合作机会",
+      "key_info": "找小博主和评论区痛点",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "YouTube search: best vpn uk",
+      "type": "youtube-search",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 56,
+          "hits": [
+            "best vpn",
+            "youtube"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c37fd17814a76784",
+      "title": "AirVPN",
+      "url": "https://airvpn.org/forums/forum/2-general-suggestions/",
+      "source": "Air VPN",
+      "platform": "Other",
+      "source_category": "第三方",
+      "target_user": "相关产品用户",
+      "source_note": "竞品口碑/故障/需求",
+      "key_info": "补充并评估是否可持续",
+      "source_priority": 8,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "AirVPN",
+      "type": "web-page",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "competitor",
+          "score": 46,
+          "hits": [
+            "竞品"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9884f83170659809",
+      "title": "The best VPN in 2026: our top 5 picks",
+      "url": "https://www.tomsguide.com/best-picks/best-vpn",
+      "source": "Tom’s Guide VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "购买前用户",
+      "source_note": "内容结构/关键词",
+      "key_info": "收集竞品维度",
+      "source_priority": 7,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "We've reviewed every major VPN (virtual private network) for privacy, security, speed, streaming and more – discover what our dedicated team recommends based on expert testing. We've reviewed every major VPN (virtual private network) for privacy, security, speed, streaming and more – discover what our dedicated team recommends based on expert testing. We've reviewed every major VPN (virtual private network) for privacy, security, speed, streaming and more – discover what our dedicated team recommends based on expert testing. Join the Tom's Guide Club for quick access. Enter your email below and we'll send confirmation, and sign you up to our newsletter. By submitting your information, you confirm you are aged 16 or over, have read our Privacy Policy and agree to the Terms & Conditions . Geographical rules apply. Your membership journey starts here. Keep exploring and earning more as a m…",
+      "type": "web-page",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 63,
+          "hits": [
+            "best vpn",
+            "review",
+            "guide"
+          ]
+        },
+        {
+          "id": "streaming",
+          "score": 53,
+          "hits": [
+            "streaming",
+            "geo"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 43,
+          "hits": [
+            "竞品"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2813a26231ce548f",
+      "title": "Phone Deals",
+      "url": "https://www.tomsguide.com/phones/deals",
+      "source": "Tom’s Guide VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "购买前用户",
+      "source_note": "内容结构/关键词",
+      "key_info": "收集竞品维度",
+      "source_priority": 7,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：The best VPN in 2026: our top 5 picks",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 53,
+          "hits": [
+            "best vpn",
+            "guide"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 43,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "price_free",
+          "score": 43,
+          "hits": [
+            "deal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0d7f43f994ae995a",
+      "title": "TV Deals",
+      "url": "https://www.tomsguide.com/tvs/deals",
+      "source": "Tom’s Guide VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "购买前用户",
+      "source_note": "内容结构/关键词",
+      "key_info": "收集竞品维度",
+      "source_priority": 7,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：The best VPN in 2026: our top 5 picks",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 53,
+          "hits": [
+            "best vpn",
+            "guide"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 43,
+          "hits": [
+            "竞品"
+          ]
+        },
+        {
+          "id": "price_free",
+          "score": 43,
+          "hits": [
+            "deal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9b9f7ad6dc2656d1",
+      "title": "Phone Best Picks",
+      "url": "https://www.tomsguide.com/phones/best-picks",
+      "source": "Tom’s Guide VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "购买前用户",
+      "source_note": "内容结构/关键词",
+      "key_info": "收集竞品维度",
+      "source_priority": 7,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：The best VPN in 2026: our top 5 picks",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 53,
+          "hits": [
+            "best vpn",
+            "guide"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 43,
+          "hits": [
+            "竞品"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2502f11746aab37f",
+      "title": "Phone Reviews",
+      "url": "https://www.tomsguide.com/phones/reviews",
+      "source": "Tom’s Guide VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "购买前用户",
+      "source_note": "内容结构/关键词",
+      "key_info": "收集竞品维度",
+      "source_priority": 7,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：The best VPN in 2026: our top 5 picks",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 63,
+          "hits": [
+            "best vpn",
+            "review",
+            "guide"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 43,
+          "hits": [
+            "竞品"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d35a49711c34ff0c",
+      "title": "TV Best Picks",
+      "url": "https://www.tomsguide.com/tvs/best-picks",
+      "source": "Tom’s Guide VPN",
+      "platform": "Blog/Media",
+      "source_category": "媒体",
+      "target_user": "购买前用户",
+      "source_note": "内容结构/关键词",
+      "key_info": "收集竞品维度",
+      "source_priority": 7,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "页面内相关链接：The best VPN in 2026: our top 5 picks",
+      "type": "web-link",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 53,
+          "hits": [
+            "best vpn",
+            "guide"
+          ]
+        },
+        {
+          "id": "competitor",
+          "score": 43,
+          "hits": [
+            "竞品"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "141e212d0e642c06",
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/search?q=vpn%20uk",
+      "source": "TikTok 搜索：VPN UK",
+      "platform": "TikTok",
+      "source_category": "视频",
+      "target_user": "年轻用户",
+      "source_note": "短视频内容机会",
+      "key_info": "观察短视频话术",
+      "source_priority": 7,
+      "tier": "核心日报源",
+      "published": "",
+      "snippet": "",
+      "type": "web-page",
+      "metrics": {},
+      "themes": [
+        {
+          "id": "content_affiliate",
+          "score": 43,
+          "hits": [
+            "tiktok"
+          ]
+        }
+      ]
     }
   ],
   "citation_links": [
     {
-      "label": "GOV.UK child online rules fact sheet",
-      "url": "https://www.gov.uk/government/publications/fact-sheet-new-rules-to-protect-children-online/fact-sheet-new-rules-to-protect-children-online"
+      "label": "Comparitech VPN",
+      "url": "https://www.comparitech.com/blog/vpn-privacy/best-bbc-iplayer-vpn/"
     },
     {
-      "label": "GOV.UK Online Safety Act collection",
-      "url": "https://www.gov.uk/government/collections/online-safety-act"
+      "label": "r/VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1uigmfr/manual_split_tunneling/"
     },
     {
-      "label": "Ofcom Online Safety Act roadmap",
-      "url": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/roadmap-to-regulation"
+      "label": "r/VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1uhu5qs/does_my_vpn_block_batoceraorg/"
     },
     {
-      "label": "ICO & Ofcom age assurance statement",
-      "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/03/joint-statement-from-ico-and-ofcom-on-age-assurance/"
+      "label": "r/VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1ui0s9w/advice_about_setting_up_a_vpn/"
     },
     {
-      "label": "Comparitech VPN Data Hub",
-      "url": "https://www.comparitech.com/vpn/"
+      "label": "r/VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1uhv0qs/can_a_vpn_really_hide_my_ip_from_instagram/"
     },
     {
-      "label": "Tom’s Guide best VPN 2026",
-      "url": "https://www.tomsguide.com/best-picks/best-vpn"
+      "label": "r/VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1uhuza8/can_a_vpn_really_hide_my_ip_from_instagram/"
     },
     {
-      "label": "TechRadar VPN coverage",
+      "label": "r/VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1ug9f0d/vpn_support_ended_for_hyperos_3/"
+    },
+    {
+      "label": "YouTube 搜索：free VPN UK",
+      "url": "https://www.youtube.com/results?search_query=free+vpn+uk"
+    },
+    {
+      "label": "r/VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1uhsib7/that_one_privacy_website_alternative/"
+    },
+    {
+      "label": "TechRadar VPN",
+      "url": "https://www.techradar.com/phones/deals"
+    },
+    {
+      "label": "Comparitech VPN",
+      "url": "https://www.comparitech.com/blog/vpn-privacy/cheap-vpns/"
+    },
+    {
+      "label": "TechRadar VPN",
       "url": "https://www.techradar.com/vpn"
     },
     {
-      "label": "Top10VPN X‑VPN review",
-      "url": "https://www.top10vpn.com/reviews/x-vpn/"
+      "label": "TechRadar VPN",
+      "url": "https://www.techradar.com/phones/reviews"
     },
     {
-      "label": "r/VPN new",
-      "url": "https://www.reddit.com/r/VPN/new/"
+      "label": "TechRadar VPN",
+      "url": "https://www.techradar.com/computing/reviews"
     },
     {
-      "label": "r/nordvpn new",
-      "url": "https://www.reddit.com/r/nordvpn/new/"
+      "label": "r/VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1ugqkm6/need_to_lock_location_on_my_internet_not_on/"
     },
     {
-      "label": "r/ProtonVPN new",
-      "url": "https://www.reddit.com/r/ProtonVPN/new/"
+      "label": "r/VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1uhwyp8/how_to_get_vpn_on_laptop_in_china/"
     },
     {
-      "label": "r/Express_VPN new",
-      "url": "https://www.reddit.com/r/Express_VPN/new/"
-    },
-    {
-      "label": "r/Windscribe new",
-      "url": "https://www.reddit.com/r/Windscribe/new/"
-    },
-    {
-      "label": "r/mullvadvpn new",
-      "url": "https://www.reddit.com/r/mullvadvpn/new/"
-    },
-    {
-      "label": "r/VPN_Question new",
-      "url": "https://www.reddit.com/r/VPN_Question/new/"
-    },
-    {
-      "label": "r/UniUK VPN search",
-      "url": "https://www.reddit.com/r/UniUK/search/?q=VPN&restrict_sr=1&sort=new"
+      "label": "r/VPN",
+      "url": "https://www.reddit.com/r/VPN/comments/1uhgxy8/vpn_for_china/"
     }
-  ]
+  ],
+  "method": {
+    "summary": "公开来源自动抓取 + 规则打分；若配置 OPENAI_API_KEY 且 OPENAI_MODEL 可启用 LLM 二次整合。",
+    "principles": [
+      "最重要",
+      "受众最关切",
+      "行业最相关",
+      "增长需求点"
+    ]
+  }
 }
